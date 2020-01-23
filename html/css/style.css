@@ -189,6 +189,36 @@ OUR SERVICES SECTION
   margin-bottom: 30px;
   vertical-align: middle;
 }
+.aa {
+width: 50%;
+max-width: 360px;
+margin: 0 auto;
+}
+.logo1 {
+width: 50%;
+height: auto;
+}
+.naranja {
+  color: #FF5100;
+}
+
+/* 1 columna para smartphones */
+.breakpoint  {
+max-width: 30%;
+display: inline-block;
+}
+/* 2 columnas para tablets */
+@media (min-width: 420px) {
+.breakpoint  {
+max-width: 16%;
+}
+}
+/* 4 columnas para grandes dispositivos*/
+@media (min-width: 760px) {
+.breakpoint  {
+max-width: 50%;
+}
+}
 
 .box-iconss {
   background-color: #BCBCBC;
@@ -210,6 +240,7 @@ color: #FFFFFF;
 border-radius:14px;
 -moz-border-radius:14px;
 -webkit-border-radius:14px;
+
 }
 .service-thumb-home a {
   display: inline-block;

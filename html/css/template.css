@@ -91,6 +91,30 @@ GENERAL
 img {
   max-width: 100%;
 }
+/*
+
+@media (max-width : 1024px) {
+  img {
+  max-width: 40%;
+}
+    }
+@media (max-width : 768px) {
+  img {
+  max-width: 40%;
+}
+    }
+@media (max-width : 600px) {
+  img {
+  max-width: 40%;
+}
+    }
+
+@media (max-width : 320px) {
+  img {
+  max-width: 40%;
+}
+    }*/
+
 
 hr {
   border-top: 1px solid #ebebeb;
@@ -858,10 +882,10 @@ CTA SECTION
 FOOTER WIDGET SECTION
 --------------------------------------------------------------------- */
 .footer-widget-section {
-background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
-background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
-background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
-background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+  background:-webkit-linear-gradient(90deg, rgb(205, 11, 11) 0%, rgb(223, 163, 16) 80%);
+background:-o-linear-gradient(90deg, rgb(205, 11, 11) 0%, rgb(223, 163, 16) 80%);
+background:-moz-linear-gradient(90deg, rgb(205, 11, 11) 0%, rgb(223, 163, 16) 80%);
+background:linear-gradient(90deg, rgb(205, 11, 11) 0%, rgb(223, 163, 16) 80%);
 color: #FFFFFF;
 border-radius:14px;
 -moz-border-radius:14px;
