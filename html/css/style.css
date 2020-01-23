@@ -190,6 +190,27 @@ OUR SERVICES SECTION
   vertical-align: middle;
 }
 
+.box-iconss {
+  background-color: #BCBCBC;
+   border-radius: 16px 16px 16px 16px;
+   padding-top:15px;
+   margin-right: 25px;
+}
+
+.box-iconss-min {
+  background-color: #FFFFFF;
+   border-radius: 16px 16px 16px 16px;
+}
+.btn-special {
+  background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+color: #FFFFFF;
+border-radius:14px;
+-moz-border-radius:14px;
+-webkit-border-radius:14px;
+}
 .service-thumb-home a {
   display: inline-block;
   border-radius: 50%;
