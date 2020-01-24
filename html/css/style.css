@@ -1553,7 +1553,7 @@ Services
 
 .service .carousel-control{
   background: none;
-  x
+  
 }
 
 .service .screenshot{
@@ -1586,6 +1586,8 @@ Services
   height: 5px;
   border: none;
   border-radius: 0px;
+
+  background: #000000;
 }
 
 .service .carousel-indicators li {
