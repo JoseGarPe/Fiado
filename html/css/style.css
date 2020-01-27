@@ -6,6 +6,16 @@ Author: Cloud Software Solution Ltd.
 */
 
 
+.tira {
+  background-color: #fff; 
+}
+
+@media (max-width: 700px ) {
+.tira{
+  background-color: #FEFEFE; 
+  display: block;
+}
+}
 /*-------------------------------------
  *  HERO SLIDER
  *-------------------------------------*/
@@ -210,16 +220,30 @@ display: inline-block;
 /* 2 columnas para tablets */
 @media (min-width: 420px) {
 .breakpoint  {
-max-width: 16%;
+max-width: 19%;
 }
 }
 /* 4 columnas para grandes dispositivos*/
-@media (min-width: 760px) {
+@media (min-width: 770px) {
 .breakpoint  {
-max-width: 50%;
+max-width: 36%;
+}
+}/* 4 columnas para grandes dispositivos*/
+@media (min-width: 800px) {
+.breakpoint  {
+max-width: 35%;
 }
 }
-
+.btn-naranja{
+    background:-webkit-linear-gradient(90deg, rgb(205, 11, 11) 0%, rgb(223, 163, 16) 80%);
+background:-o-linear-gradient(90deg, rgb(205, 11, 11) 0%, rgb(223, 163, 16) 80%);
+background:-moz-linear-gradient(90deg, rgb(205, 11, 11) 0%, rgb(223, 163, 16) 80%);
+background:linear-gradient(90deg, rgb(205, 11, 11) 0%, rgb(223, 163, 16) 80%);
+color: #FFFFFF;
+border-radius:14px;
+-moz-border-radius:14px;
+-webkit-border-radius:14px;
+}
 .box-iconss {
   background-color: #BCBCBC;
    border-radius: 16px 16px 16px 16px;
