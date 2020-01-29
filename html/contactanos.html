@@ -365,7 +365,11 @@
 								<div class="navbar-header">
 									<a id="logo" class="navbar-brand" href="index2.html"><img src="img/Logos/logo_modi.png"></a>
 									<!-- offcanvas-trigger -->
+<<<<<<< HEAD
 									<button id="botonMenu" type="button" class="navbar-toggle collapsed pull-right">
+=======
+			                       <button type="button" class="navbar-toggle collapsed pull-right" id="men-btn" style="display: block;">
+>>>>>>> 08febe2427ae474746691a342339acf7a3de087a
 			                          <span class="sr-only">Toggle navigation</span>
 			                          <i class="fa fa-bars fa-lg"></i>
 			                        </button>
@@ -590,5 +594,28 @@
   $('.service .carousel').carousel({
     interval: 4000
   })</script>
+   <script>
+	    	function myFunction(x) {
+			 	var tira = document.getElementById("men-btn");
+			 	//var carrusel = document.getElementById("carrusel");
+			  	if (x.matches) { // If media query matches
+			  	//  document.body.style.backgroundColor = "yellow";
+			  	//	document.getElementById('resultado').innerHTML = 'Carousel' ;
+					tira.style.display = "block";
+				//	carrusel.style.display = "block";
+					//alert("Hello! I am an alert box!!");
+
+			  	} else {
+			  		// document.body.style.backgroundColor = "pink";
+			  		//document.getElementById('resultado').innerHTML = 'No Carousel' ;
+					tira.style.display = "none";
+				//	carrusel.style.display = "none";
+					//alert("Hello! I am an alert box big!!");
+			  	}
+			}
+			var x = window.matchMedia("(max-width: 900px)");
+			myFunction(x) ;// Call listener function at run time
+			x.addListener(myFunction) ;// Attach listener function on state changes
+		</script>
 	</body>
 </html>

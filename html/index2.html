@@ -44,6 +44,7 @@
 		    <script src="js/vendor/respond.min.js"></script>
 	    <![endif]-->
 	</head>
+<<<<<<< HEAD
 	<style type="text/css">
 		@media screen and (max-width:400px) and (min-width:300px) {
 		  /* reglas CSS */
@@ -355,24 +356,43 @@
 		  }	
 		}
 	</style>
+=======
+
+
+>>>>>>> 08febe2427ae474746691a342339acf7a3de087a
 	<body id="page-top">
 		<div id="st-container" class="st-container">
 		    <div class="st-pusher">
 	        	<div class="st-content">
 				  	<header class="header">
+<<<<<<< HEAD
 						<nav class="navbar navbar-default" style="width: 100%;">	
 							<div class="container" id="cabecera">
 								<div class="navbar-header">
 									<a id="logo" class="navbar-brand" href="index2.html"><img src="img/Logos/logo_modi.png"></a>
 									<!-- offcanvas-trigger -->
 									<button id="botonMenu" type="button" class="navbar-toggle collapsed pull-right">
+=======
+						<nav class="navbar navbar-default" role="navigation">	
+							<div class="container mainnav">
+								<div class="navbar-header">
+									<h1 class="logo"><a class="navbar-brand breakpoint" href="index2.html"><img class="img-responsive" src="img/Logos/logo_modi.png"></a></h1>
+									<!-- offcanvas-trigger -->
+									<button type="button" class="navbar-toggle collapsed pull-right" id="men-btn" style="display: block;">
+>>>>>>> 08febe2427ae474746691a342339acf7a3de087a
 			                          <span class="sr-only">Toggle navigation</span>
-			                          <i class="fa fa-bars fa-lg"></i>
+			                          <i class="fa fa-bars"></i>
 			                        </button>
 								</div>
 								<!-- Collect the nav links, forms, and other content for toggling -->
+<<<<<<< HEAD
 								<div id="noseWe" class="collapse navbar-collapse navbar-collapse">
 									<ul id="noseWe2" class="nav navbar-nav navbar-right">
+=======
+								<div class="collapse navbar-collapse navbar-collapse">
+
+									<ul class="nav navbar-nav navbar-right">
+>>>>>>> 08febe2427ae474746691a342339acf7a3de087a
 										<!-- Home -->
                                         <li class="active"><a href="index2.html">Home</a></li>
                                         <li><span>|</span></li>
@@ -399,8 +419,11 @@
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</div><!-- /.container -->
+
+							
 						</nav>
 					</header>
+
                     <div id="main-carousel" class="carousel slide hero-slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -633,16 +656,18 @@
 		    </div> <!-- .st-pusher -->
 			
 			<!-- OFF CANVAS MENU -->
-	    	<div class="offcanvas-menu offcanvas-effect" style="background-color: #ffffff;">
+	    	<div class="offcanvas-menu offcanvas-effect">
 	    		<div class="offcanvas-wrap">
+			        <div class="off-canvas-header">
+			        	<button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
+			        </div>
 			        <ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
-			        	<li><a href="index2.html"><img class="img-responsive" src="img/Logos/logo_modi.png" width="250" style="padding-left: 30px; padding-top: 20px;"></a></li>
-			            <li><a href="index2.html"><h6>Home</h6></a></li>
-			            <li><a href="necesitasPisto.html"><h6>Necesitas pisto</h6></a></li>
-                        <li><a href="quieresinvertir.html"><h6>Quiéres invertir</h6></a></li>
-                        <li><a href="quienesSomos.html"><h6>¿ Quienes somos ?</h6></a></li>
-						<li><a href="preguntasFrecuentes.html"><h6>Preguntas Frecuentes</h6></a></li>
-						<li><a href="contactanos.html"><h6>Contáctanos</h6></a></li>
+			            <li class="active"><a href="index2.html">Home<span class="sr-only">(current)</span></a></li>
+			            <li><a href="necesitasPisto.html">Necesitas Pisto</a></li>
+                        <li><a href="quieresinvertir.html">Quiéres invertir</a></li>
+                        <li><a href="quienesSomos.html">¿ Quienes somos ?</a></li>
+						<li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+						<li><a href="contactanos.html">Contáctanos</a></li>
 			        </ul>
 				</div>
 	      	</div><!-- .offcanvas-menu -->
@@ -684,5 +709,28 @@
 	    <script src="js/twitterFetcher_min.js"></script>
 	    <!-- Custom Script -->
 	    <script src="js/scripts.js"></script>
+	    <script>
+	    	function myFunction(x) {
+			 	var tira = document.getElementById("men-btn");
+			 	//var carrusel = document.getElementById("carrusel");
+			  	if (x.matches) { // If media query matches
+			  	//  document.body.style.backgroundColor = "yellow";
+			  	//	document.getElementById('resultado').innerHTML = 'Carousel' ;
+					tira.style.display = "block";
+				//	carrusel.style.display = "block";
+					//alert("Hello! I am an alert box!!");
+
+			  	} else {
+			  		// document.body.style.backgroundColor = "pink";
+			  		//document.getElementById('resultado').innerHTML = 'No Carousel' ;
+					tira.style.display = "none";
+				//	carrusel.style.display = "none";
+					//alert("Hello! I am an alert box big!!");
+			  	}
+			}
+			var x = window.matchMedia("(max-width: 900px)");
+			myFunction(x) ;// Call listener function at run time
+			x.addListener(myFunction) ;// Attach listener function on state changes
+		</script>
 	</body>
 </html>
