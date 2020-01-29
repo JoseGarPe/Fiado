@@ -44,25 +44,87 @@
 		    <script src="js/vendor/respond.min.js"></script>
 	    <![endif]-->
 	</head>
+	<style type="text/css">
+		@media screen and (max-width:400px) and (min-width:300px) {
+		  /* reglas CSS */
+		  #logo{
+		  	width: 90px;
+		  }
+		  #cabecera{
+		  	height: 70px;
+		  }
+		}
+		@media screen and (max-width:450px) and (min-width:400px) {
+		  /* reglas CSS */
+		  #logo{
+		  	width: 90px;
+		  }
+		  #cabecera{
+		  	height: 70px;
+		  }
+		}
 
+		@media screen and (max-width:500px) and (min-width:450px) {
+		  /* reglas CSS */
+		  #logo{
+		  	width: 90px;
+		  }
+		  #cabecera{
+		  	height: 70px;
+		  }
+		}
 
+		@media screen and (max-width:640px) and (min-width:500px) {
+		  /* reglas CSS */
+		  #logo{
+		  	width: 90px;
+		  }
+		  #cabecera{
+		  	height: 70px;
+		  }
+		}
+		@media screen and (max-width:767px) and (min-width:640px) {
+		  /* reglas CSS */
+			 #logo{
+			  	width: 90px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+		}
+		@media screen and (max-width:800px) and (min-width:768px) {
+		  /* reglas CSS */
+		  #logo{
+		  	width: 90px;
+		  }
+		  #cabecera{
+		  	height: 70px;
+		  }
+		}
+		@media screen and (max-width:990px) and (min-width:900px) {
+		  /* reglas CSS */
+		}
+		@media screen and (min-width:1000px) {
+		  /* reglas CSS */
+		}
+	</style>
 	<body id="page-top">
 		<div id="st-container" class="st-container">
 		    <div class="st-pusher">
 	        	<div class="st-content">
 				  	<header class="header">
-						<nav class="navbar navbar-default" role="navigation">	
-							<div class="container mainnav">
+						<nav class="navbar navbar-default">	
+							<div class="container" id="cabecera">
 								<div class="navbar-header">
-									<h1 class="logo"><a class="navbar-brand breakpoint" href="index2.html"><img class="img-responsive" src="img/Logos/logo_modi.png"></a></h1>
+									<a class="navbar-brand" href="index2.html"><img id="logo" class="img-responsive" src="img/Logos/logo_modi.png"></a>
 									<!-- offcanvas-trigger -->
-									<button type="button" class="navbar-toggle collapsed pull-right" >
+									<button type="button" class="navbar-toggle collapsed pull-right">
 			                          <span class="sr-only">Toggle navigation</span>
-			                          <i class="fa fa-bars"></i>
+			                          <i class="fa fa-bars fa-lg"></i>
 			                        </button>
 								</div>
 								<!-- Collect the nav links, forms, and other content for toggling -->
-								<div class="collapse navbar-collapse navbar-collapse">
+								<div id="noseWe" class="collapse">
 
 									<ul class="nav navbar-nav navbar-right">
 										<!-- Home -->
@@ -91,11 +153,8 @@
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</div><!-- /.container -->
-
-							
 						</nav>
 					</header>
-
                     <div id="main-carousel" class="carousel slide hero-slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -340,18 +399,16 @@
 		    </div> <!-- .st-pusher -->
 			
 			<!-- OFF CANVAS MENU -->
-	    	<div class="offcanvas-menu offcanvas-effect">
+	    	<div class="offcanvas-menu offcanvas-effect" style="background-color: #ffffff;">
 	    		<div class="offcanvas-wrap">
-			        <div class="off-canvas-header">
-			        	<button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
-			        </div>
 			        <ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
-			            <li class="active"><a href="index2.html">Home<span class="sr-only">(current)</span></a></li>
-			            <li><a href="necesitasPisto.html">Necesitas Pisto</a></li>
-                        <li><a href="quieresinvertir.html">Quiéres invertir</a></li>
-                        <li><a href="quienesSomos.html">¿ Quienes somos ?</a></li>
-						<li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-						<li><a href="contactanos.html">Contáctanos</a></li>
+			        	<li><a href="index2.html"><img class="img-responsive" src="img/Logos/logo_modi.png" width="250" style="padding-left: 30px; padding-top: 20px;"></a></li>
+			            <li><a href="index2.html"><h6>Home</h6></a></li>
+			            <li><a href="necesitasPisto.html"><h6>Necesitas pisto</h6></a></li>
+                        <li><a href="quieresinvertir.html"><h6>Quiéres invertir</h6></a></li>
+                        <li><a href="quienesSomos.html"><h6>¿ Quienes somos ?</h6></a></li>
+						<li><a href="preguntasFrecuentes.html"><h6>Preguntas Frecuentes</h6></a></li>
+						<li><a href="contactanos.html"><h6>Contáctanos</h6></a></li>
 			        </ul>
 				</div>
 	      	</div><!-- .offcanvas-menu -->
