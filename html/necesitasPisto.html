@@ -134,7 +134,7 @@
 					<style type="text/css">
 						@media screen and (max-width:450px) and (min-width:400px) {
 						  /* reglas CSS */
-						  #basura img{
+						  #calculadoraResponsive{
 						  	max-width: 100%;
 						  	padding-bottom: 30px;
 						  	padding-left: 20px;
@@ -143,7 +143,7 @@
 
 						@media screen and (max-width:500px) and (min-width:450px) {
 						  /* reglas CSS */
-						  #basura img{
+						  #calculadoraResponsive{
 						  	max-width: 100%;
 						  	padding-bottom: 50px;
 						  	padding-left: 40px;
@@ -152,39 +152,35 @@
 
 						@media screen and (max-width:640px) and (min-width:500px) {
 						  /* reglas CSS */
-						  #basura img{
+						  #calculadoraResponsive{
 						  	max-width: 100%;
 						  	padding-bottom: 50px;
-						  	padding-left: 60px;
 						  }
 						}
 						@media screen and (max-width:800px) and (min-width:640px) {
 						  /* reglas CSS */
-						  #basura img{
+						  #calculadoraResponsive{
 						  	max-width: 100%;
 						  	padding-bottom: 30px;
-						  	padding-left: 150px;
 						  }
 						}
 						@media screen and (max-width:900px) and (min-width:800px) {
 						  /* reglas CSS */
-						  #basura img{
+						  #calculadoraResponsive{
 						  	max-width: 100%;
 						  	padding-bottom: 30px;
-						  	padding-left: 200px;
 						  }
 						}
 						@media screen and (max-width:990px) and (min-width:900px) {
 						  /* reglas CSS */
-						  #basura img{
+						  #calculadoraResponsive{
 						  	max-width: 100%;
 						  	padding-bottom: 30px;
-						  	padding-left: 200px;
 						  }
 						}
 						@media screen and (min-width:1000px) {
 						  /* reglas CSS */
-						  #basura img{
+						  #calculadoraResponsive{
 						  	max-width: 100%;
 						  	padding: 40px;
 						  }
@@ -193,11 +189,68 @@
 						  }
 						}
 					</style>
+					<style type="text/css">
+						.slidecontainer {
+						  width: 100%;
+						}
+
+						.slider {
+						  -webkit-appearance: none;
+						  width: 100%;
+						  height: 15px;
+						  border-radius: 5px;
+						  background: #d3d3d3;
+						  outline: none;
+						  opacity: 0.7;
+						  -webkit-transition: .2s;
+						  transition: opacity .2s;
+						}
+
+						.slider:hover {
+						  opacity: 1;
+						}
+
+						.slider::-webkit-slider-thumb {
+						  -webkit-appearance: none;
+						  appearance: none;
+						  width: 25px;
+						  height: 25px;
+						  border-radius: 50%;
+						  background: #4CAF50;
+						  cursor: pointer;
+						}
+
+						.slider::-moz-range-thumb {
+						  width: 25px;
+						  height: 25px;
+						  border-radius: 50%;
+						  background: #4CAF50;
+						  cursor: pointer;
+						}
+					</style>
 					<div id="basura" class="container" style="border: solid; padding: 20px; text-align: center;">
 						<div class="row">
 							<div class="col-md-12">
-								<div class="col-md-4 col-xs-12">
-									<img class="img-responsive" src="img/300x400.png">
+								<div id="calculadoraResponsive" class="col-md-6 col-xs-12">
+									<label for="rangoDinero">¿Cuanto dinero quierés prestar?</label>
+									<input type="range" min="1" max="10000" value="5000" class="slider" id="rangoDinero">
+  									<br>
+  									<label for="rangoTiempo">¿A cuánto tiempo quieres prestrarlo?</label>
+									<input type="range" min="1" max="24" value="12" class="slider" id="rangoTiempo">
+  									<div style="padding-top: 10px;">
+  										<div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
+  											<h6>DINERO</h6><h4>$<span id="dinero"></span></h4>
+  										</div>
+  										<div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
+  											<h6>TIEMPO</h6><h4><span id="tiempo"></span></h4>
+  										</div>
+  										<div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
+  											<h6>IVA</h6><h4>$200</h4>
+  										</div>
+  										<div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
+  											<h6>Cuota Mensual</h6><h4>$<span id="tiempo">70</span></h4>
+  										</div>
+  									</div>
 								</div><!-- /.col-md-6 -->
 								<div id="textoCalculadora" class="col-md-6 col-xs-12">
 									<p align="justify">Lorem Ipsum is simply dummy text of the printing
@@ -555,5 +608,22 @@
 			myFunction(x) ;// Call listener function at run time
 			x.addListener(myFunction) ;// Attach listener function on state changes
   		</script>
+  		<script>
+			var rangoDinero = document.getElementById("rangoDinero");
+			var dinero = document.getElementById("dinero");
+			dinero.innerHTML = rangoDinero.value;
+
+			rangoDinero.oninput = function() {
+			  dinero.innerHTML = this.value;
+			}
+
+			var rangoTiempo = document.getElementById("rangoTiempo");
+			var tiempo = document.getElementById("tiempo");
+			tiempo.innerHTML = rangoTiempo.value;
+
+			rangoTiempo.oninput = function() {
+			  tiempo.innerHTML = this.value;
+			}
+		</script>
 	</body>
 </html>
