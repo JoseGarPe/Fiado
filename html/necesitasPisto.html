@@ -131,13 +131,75 @@
                     	</div>
 					</div>
 					<br>
-					<div class="container" style="border: solid; padding: 20px;">
-						<div class="col-md-12">
-							<div class="row">
-								<div class="col-md-4" style="padding-left: 100px;">
-										<img class="img-responsive" src="img/300x400.png">
+					<style type="text/css">
+						@media screen and (max-width:450px) and (min-width:400px) {
+						  /* reglas CSS */
+						  #basura img{
+						  	max-width: 100%;
+						  	padding-bottom: 30px;
+						  	padding-left: 20px;
+						  }
+						}
+
+						@media screen and (max-width:500px) and (min-width:450px) {
+						  /* reglas CSS */
+						  #basura img{
+						  	max-width: 100%;
+						  	padding-bottom: 50px;
+						  	padding-left: 40px;
+						  }
+						}
+
+						@media screen and (max-width:640px) and (min-width:500px) {
+						  /* reglas CSS */
+						  #basura img{
+						  	max-width: 100%;
+						  	padding-bottom: 50px;
+						  	padding-left: 60px;
+						  }
+						}
+						@media screen and (max-width:800px) and (min-width:640px) {
+						  /* reglas CSS */
+						  #basura img{
+						  	max-width: 100%;
+						  	padding-bottom: 30px;
+						  	padding-left: 150px;
+						  }
+						}
+						@media screen and (max-width:900px) and (min-width:800px) {
+						  /* reglas CSS */
+						  #basura img{
+						  	max-width: 100%;
+						  	padding-bottom: 30px;
+						  	padding-left: 200px;
+						  }
+						}
+						@media screen and (max-width:990px) and (min-width:900px) {
+						  /* reglas CSS */
+						  #basura img{
+						  	max-width: 100%;
+						  	padding-bottom: 30px;
+						  	padding-left: 200px;
+						  }
+						}
+						@media screen and (min-width:1000px) {
+						  /* reglas CSS */
+						  #basura img{
+						  	max-width: 100%;
+						  	padding: 40px;
+						  }
+						  #textoCalculadora{
+						  	padding-top: 100px;
+						  }
+						}
+					</style>
+					<div id="basura" class="container" style="border: solid; padding: 20px; text-align: center;">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-4 col-xs-12">
+									<img class="img-responsive" src="img/300x400.png">
 								</div><!-- /.col-md-6 -->
-								<div class="col-md-6" ALIGN="justify" style="padding-top: 80px; padding-left: 100px">
+								<div id="textoCalculadora" class="col-md-6 col-xs-12">
 									<p align="justify">Lorem Ipsum is simply dummy text of the printing
 									and typesetting industry. Lorem Ipsum has been
 									the industry's standard dummy text ever since the
