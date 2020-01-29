@@ -66,7 +66,7 @@
 									<h1 class="logo"><a class="navbar-brand breakpoint" href="index.html"><img class="img-responsive" src="img/Logos/logo_modi.png"></a></h1>
 
 									<!-- offcanvas-trigger -->
-			                        <button type="button" class="navbar-toggle collapsed pull-right" >
+			                 <button type="button" class="navbar-toggle collapsed pull-right" id="men-btn" style="display: block;">
 			                          <span class="sr-only">Toggle navigation</span>
 			                          <i class="fa fa-bars"></i>
 			                        </button>
@@ -516,35 +516,30 @@
 	    <!-- Custom Script -->
 	    <script src="js/scripts.js"></script>
 	    <script>
- 
-	    	function myFunction(x) {
- var tira = document.getElementById("tira");
- var carrusel = document.getElementById("carrusel");
-  if (x.matches) { // If media query matches
-  //  document.body.style.backgroundColor = "yellow";
-  	//	document.getElementById('resultado').innerHTML = 'Carousel' ;
-  	
-		tira.style.display = "none";
-		carrusel.style.display = "block";
-		//alert("Hello! I am an alert box!!");
+ function myFunction(x) {
+			 	var tira = document.getElementById("tira");
+			 	var carrusel = document.getElementById("carrusel");
+			 	var men_btn = document.getElementById("men-btn");
+			  	if (x.matches) { // If media query matches
+			  	//  document.body.style.backgroundColor = "yellow";
+			  	//	document.getElementById('resultado').innerHTML = 'Carousel' ;
+					tira.style.display = "none";
+					carrusel.style.display = "block";
+					men_btn.style.display = "block";
+					//alert("Hello! I am an alert box!!");
 
-  } else {
-  // document.body.style.backgroundColor = "pink";
-
-  		//document.getElementById('resultado').innerHTML = 'No Carousel' ;
-  		
-		tira.style.display = "block";
-		carrusel.style.display = "none";
-		//alert("Hello! I am an alert box big!!");
-
-  }
-}
-
-var x = window.matchMedia("(max-width: 900px)");
-myFunction(x) ;// Call listener function at run time
-x.addListener(myFunction) ;// Attach listener function on state changes
-
-
+			  	} else {
+			  		// document.body.style.backgroundColor = "pink";
+			  		//document.getElementById('resultado').innerHTML = 'No Carousel' ;
+					tira.style.display = "block";
+					carrusel.style.display = "none";
+					men_btn.style.display = "none";
+					//alert("Hello! I am an alert box big!!");
+			  	}
+			}
+			var x = window.matchMedia("(max-width: 900px)");
+			myFunction(x) ;// Call listener function at run time
+			x.addListener(myFunction) ;// Attach listener function on state changes
   </script>
       <script>
 
