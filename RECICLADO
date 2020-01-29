@@ -1,3 +1,42 @@
+//------------------calculadora
+  <div class="row">
+              <div class="col-md-12">
+                <div id="calculadoraResponsive" class="col-md-6 col-xs-12">
+                  <label for="rangoDinero">¿Cuanto dinero quierés prestar?</label>
+                  <input type="range" min="1" max="10000" value="5000" class="slider" id="rangoDinero">
+                    <br>
+                    <label for="rangoTiempo">¿A cuánto tiempo quieres prestrarlo?</label>
+                  <input type="range" min="1" max="24" value="12" class="slider" id="rangoTiempo">
+                    <div style="padding-top: 10px;">
+                      <div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
+                        <h6>DINERO</h6><h4>$<span id="dinero"></span></h4>
+                      </div>
+                      <div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
+                        <h6>TIEMPO</h6><h4><span id="tiempo"></span></h4>
+                      </div>
+                      <div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
+                        <h6>IVA</h6><h4>$200</h4>
+                      </div>
+                      <div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
+                        <h6>Cuota Mensual</h6><h4>$<span id="tiempo">70</span></h4>
+                      </div>
+                    </div>
+                </div><!-- /.col-md-6 -->
+                <div id="textoCalculadora" class="col-md-6 col-xs-12">
+                  <p align="justify">Lorem Ipsum is simply dummy text of the printing
+                  and typesetting industry. Lorem Ipsum has been
+                  the industry's standard dummy text ever since the
+                  1500s, when an unknown printer took a galley of
+                  type and scrambled it to make a type specimen
+                  book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the </p> 
+                </div><!-- /.col-md-6 -->
+              </div><!-- /.row -->
+                  </div><!-- /.col-md-12 --> 
+
+
+
 //----------------------carousel services
 	<div class="row services">
         <div class="col-md-12">
