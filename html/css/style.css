@@ -255,6 +255,15 @@ border-radius:14px;
   background-color: #FFFFFF;
    border-radius: 16px 16px 16px 16px;
 }
+.box-coments {
+  background-color: #494848;
+   padding-top:15px;
+   margin-right: 5px;
+   color: white;
+   padding-left: -10px;
+   font-family: sans-serif;
+ }
+
 .btn-special {
   background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
 background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			canvas {border:1px solid;
+				background-color: #000; }
+		</style>
+ 
+		<script>
+		window.onload=function()
+		{
+			var elemento = document.getElementById("canvas");
+				var ctx1 = elemento.getContext("2d");
+				var img1 = new Image();
+				img1.src = "img/icono_pequeño_100.png";
+				ctx1.drawImage(img1, 0, 0);
+				img1.onload = function(){
+				  ctx1.drawImage(img1, 0, 0);
+				}
+
+			for (var i = 1; i <= 20; i++) {
+				var canvas = document.getElementById("canvas"+i);
+				var ctx = canvas.getContext("2d");
+				var img = new Image();
+				img.src = "img/icono_pequeño_100.png";
+				ctx.drawImage(img, 0, 0);
+				img.onload = function(){
+				  ctx.drawImage(img, 0, 0);
+				}
+}
+			var elemento=document.getElementById("canvas");
+			elemento.onmouseover = function(e) {
+ 
+				// El contenido de esta funcion se ejecutara cuanso el mouse
+				// pase por encima del elemento
+ 
+				document.getElementById("estado").innerHTML="El ratón esta encima del recuadro";
+			};
+			elemento.onmouseout = function(e) {
+ 
+				// El contenido de esta funcion se ejecutara cuanso el mouse
+				// salga del elemento
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+
+				var canvas1 = document.getElementById("canvas1");
+
+			canvas1.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 2";
+					};
+
+			canvas1.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+
+				var canvas2 = document.getElementById("canvas2");
+
+			canvas2.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 3";
+					};
+
+			canvas2.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+				var canvas3 = document.getElementById("canvas3");	
+			canvas3.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 4";
+					};
+					canvas3.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas4 = document.getElementById("canvas4");	
+			canvas4.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 5";
+					};
+
+					canvas4.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas5 = document.getElementById("canvas5");	
+			canvas5.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 6";
+					};
+					canvas5.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas6 = document.getElementById("canvas6");	
+			canvas6.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 7";
+					};	
+					canvas6.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas7 = document.getElementById("canvas7");	
+			canvas7.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 8";
+					};
+					canvas7.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas8 = document.getElementById("canvas8");	
+			canvas8.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 9";
+					};
+					canvas8.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas9 = document.getElementById("canvas9");	
+			canvas9.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 10";
+					};
+					canvas9.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas10 = document.getElementById("canvas10");	
+			canvas10.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 11";
+					};
+					canvas10.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+
+					var canvas11 = document.getElementById("canvas11");	
+			canvas11.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 12";
+					};
+					canvas11.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+
+					var canvas12 = document.getElementById("canvas12");	
+			canvas12.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 13";
+					};
+				canvas12.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas13 = document.getElementById("canvas13");	
+			canvas13.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 14";
+					};
+					canvas13.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas14 = document.getElementById("canvas14");	
+			canvas14.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 15";
+					};
+					canvas14.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas15 = document.getElementById("canvas15");	
+			canvas15.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 16";
+					};
+					canvas15.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas16 = document.getElementById("canvas16");	
+			canvas16.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 17";
+					};
+					canvas16.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas17 = document.getElementById("canvas17");	
+			canvas17.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 18";
+					};
+					canvas17.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas18 = document.getElementById("canvas18");	
+			canvas18.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 19";
+					};
+			canvas18.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas19 = document.getElementById("canvas19");	
+			canvas19.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 20";
+					};
+					canvas19.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+					var canvas20 = document.getElementById("canvas20");	
+			canvas20.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 21";
+					};
+					canvas20.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML="El ratón NO esta encima del recuadro";
+			};
+
+		}
+		</script>
+	</head>
+ 
+	<body>
+ 					<div class="row">
+						        <table align="center" id="tablaMosaico">
+								  <thead>
+								    <tr>
+								      <th><canvas id="canvas" width="100" height="100">
+										</canvas></th>
+								      <th>
+								      	<canvas id="canvas1" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas2" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas3" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas4" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas5" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas6" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <th><canvas id="canvas7" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas8" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas9" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas10" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas11" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas12" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas13" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								    </tr>
+								    <tr>
+								      <th><canvas id="canvas14" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas15" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas16" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas17" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas18" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas19" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas20" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								    </tr>
+								  </tbody>
+								</table>
+					      	</div> 
+
+		<div id="estado">El ratón NO esta encima del recuadro</div>
+	</body>
+</html>
