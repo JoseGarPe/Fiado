@@ -1824,6 +1824,8 @@ Intro
 
 .carousel {
   position: relative;
+
+    margin-left: 24px;
 }
 
 .carousel-inner {
