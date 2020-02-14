@@ -133,7 +133,10 @@ Author: Cloud Software Solution Ltd.
     .hero-slide .carousel-caption{
         padding: 40px 0;
         }
+
+  
     }
+
 
 
 @media (max-width : 768px) {
@@ -189,7 +192,11 @@ Author: Cloud Software Solution Ltd.
         }
     }
 
-
+@media( min-width:1300px ){
+h3{
+    font-size: 40px;
+  }
+}
 
 /* ------------------------------------------------------------------
 OUR SERVICES SECTION
