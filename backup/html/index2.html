@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Fiado</title>
+	    <!-- Web Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap Core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Flaticon CSS -->
+	    <link href="fonts/flaticon/flaticon.css" rel="stylesheet">
+	    <!-- font-awesome CSS -->
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+	    <!-- Offcanvas CSS -->
+	    <link href="css/hippo-off-canvas.css" rel="stylesheet">
+	    <!-- animate CSS -->
+	    <link href="css/animate.css" rel="stylesheet">
+	    <!-- language CSS -->
+	    <link href="css/language-select.css" rel="stylesheet">
+	    <!-- owl.carousel CSS -->
+	    <link href="owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+		<!-- magnific-popup -->
+    	<link href="css/magnific-popup.css" rel="stylesheet">
+    	<!-- Main menu -->
+    	<link href="css/menu.css" rel="stylesheet">
+    	<!-- Template Common Styles -->
+    	<link href="css/template.css" rel="stylesheet">
+	    <!-- Custom CSS -->
+	    <link href="css/style.css" rel="stylesheet">
+	    <!-- Responsive CSS -->
+	    <link href="css/responsive.css" rel="stylesheet">
+
+	    <script src="js/vendor/modernizr-2.8.1.min.js"></script>
+
+		<script>
+		window.onload=function()
+		{
+			var elemento = document.getElementById("canvas");
+				var ctx1 = elemento.getContext("2d");
+				var img1 = new Image();
+				img1.src = "img/icono_pequeño_100.png";
+				ctx1.drawImage(img1, 0, 0);
+				img1.onload = function(){
+				  ctx1.drawImage(img1, 0, 0);
+				}
+
+			for (var i = 1; i <= 20; i++) {
+				var canvas = document.getElementById("canvas"+i);
+				var ctx = canvas.getContext("2d");
+				var img = new Image();
+				img.src = "img/icono_pequeño_100.png";
+				ctx.drawImage(img, 0, 0);
+				img.onload = function(){
+				  ctx.drawImage(img, 0, 0);
+				}
+}
+			var elemento=document.getElementById("canvas");
+			elemento.onmouseover = function(e) {
+ 
+				// El contenido de esta funcion se ejecutara cuanso el mouse
+				// pase por encima del elemento
+ 
+				document.getElementById("estado").innerHTML="El ratón esta encima del recuadro";
+			};
+			elemento.onmouseout = function(e) {
+ 
+				// El contenido de esta funcion se ejecutara cuanso el mouse
+				// salga del elemento
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+
+				var canvas1 = document.getElementById("canvas1");
+
+			canvas1.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 2";
+					};
+
+			canvas1.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+
+				var canvas2 = document.getElementById("canvas2");
+
+			canvas2.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 3";
+					};
+
+			canvas2.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+				var canvas3 = document.getElementById("canvas3");	
+			canvas3.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 4";
+					};
+					canvas3.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas4 = document.getElementById("canvas4");	
+			canvas4.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 5";
+					};
+
+					canvas4.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas5 = document.getElementById("canvas5");	
+			canvas5.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 6";
+					};
+					canvas5.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas6 = document.getElementById("canvas6");	
+			canvas6.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 7";
+					};	
+					canvas6.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas7 = document.getElementById("canvas7");	
+			canvas7.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 8";
+					};
+					canvas7.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas8 = document.getElementById("canvas8");	
+			canvas8.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 9";
+					};
+					canvas8.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas9 = document.getElementById("canvas9");	
+			canvas9.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 10";
+					};
+					canvas9.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas10 = document.getElementById("canvas10");	
+			canvas10.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 11";
+					};
+					canvas10.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+
+					var canvas11 = document.getElementById("canvas11");	
+			canvas11.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 12";
+					};
+					canvas11.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+
+					var canvas12 = document.getElementById("canvas12");	
+			canvas12.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 13";
+					};
+				canvas12.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas13 = document.getElementById("canvas13");	
+			canvas13.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 14";
+					};
+					canvas13.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas14 = document.getElementById("canvas14");	
+			canvas14.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 15";
+					};
+					canvas14.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas15 = document.getElementById("canvas15");	
+			canvas15.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 16";
+					};
+					canvas15.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas16 = document.getElementById("canvas16");	
+			canvas16.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 17";
+					};
+					canvas16.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas17 = document.getElementById("canvas17");	
+			canvas17.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 18";
+					};
+					canvas17.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas18 = document.getElementById("canvas18");	
+			canvas18.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 19";
+					};
+			canvas18.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas19 = document.getElementById("canvas19");	
+			canvas19.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 20";
+					};
+					canvas19.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+					var canvas20 = document.getElementById("canvas20");	
+			canvas20.onmouseover = function(e) {
+		 		document.getElementById("estado").innerHTML="Comentario usuario numero: 21";
+					};
+					canvas20.onmouseout = function(e) {
+ 
+				document.getElementById("estado").innerHTML=" ";
+			};
+
+		}
+		</script>
+			<style>
+			canvas {
+				padding-right: 5px;
+				background-color: #494848; 
+				
+			}
+		</style>
+
+	    	    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+		    <script src="js/vendor/html5shim.js"></script>
+		    <script src="js/vendor/respond.min.js"></script>
+	    <![endif]-->
+	    <style type="text/css">
+			@media screen and (max-width:400px) and (min-width:300px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 90px;
+			  }
+
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:450px) and (min-width:400px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 90px;
+			  }
+
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+
+			@media screen and (max-width:500px) and (min-width:450px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 120px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+
+			@media screen and (max-width:640px) and (min-width:500px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 120px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:767px) and (min-width:640px) {
+			  /* reglas CSS */
+				 #logo{
+				  	width: 130px;
+				  }
+				  #cabecera{
+				  	height: 70px;
+				  }
+				  #botonMenu{
+				  	font-size: 20px;
+				  	padding-right: 40px;
+				  	padding-top: 7px;
+				  }
+				  #sliderIndex{
+				  	width: 100%;
+				  	height: 500px;
+				  }
+				  #sliderIndex img{
+				  	width: 100%;
+				  	height: 500px;
+				  }
+				  #contenedores{
+				  	padding-left: 40px;
+				  }
+				  #imagenCalculadora{
+				  	padding-left: 150px;
+				  }
+				  #pruebaNose{
+				  	width: 100%;
+				  	padding-top: 30px;
+				  }
+				  #pruebaNose2{
+				  	width: 100%;
+				  	padding-top: 30px;
+				  }
+			}
+			@media screen and (max-width:800px) and (min-width:768px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 150px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+
+			  #noseWe2{
+			  	visibility: none;
+			  	display: none;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 470px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 470px;
+			  }
+			  #contenedores{
+				  	padding-left: 40px;
+				  }
+			  #imagenCalculadora{
+			  	padding-left: 150px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:990px) and (min-width:800px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 150px;
+			  	text-align: left;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+
+			  #noseWe2{
+			  	visibility: none;
+			  	display: none;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 470px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 470px;
+			  }
+			  #contenedores{
+				  	padding-left: 40px;
+				  }
+			  #imagenCalculadora{
+			  	padding-left: 150px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }	
+			}
+			@media screen and (min-width:991px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 120px;
+			  	padding-right: 10px;
+			  	padding-bottom: 30px;
+			  }
+			  #botonMenu{
+			  	visibility: none;
+			  	display: none;
+			  }
+
+			  #noseWe{
+			  	padding-top: 10px;
+			  	padding-left: 100px;
+			  }
+			  #contenedores{
+			  	padding-left: 200px;
+			  }
+
+			  #contenidoCalculadora{
+			  	padding-top: 80px;	
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }	
+
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 22px;
+			  }	
+			}
+		</style>
+		<style type="text/css">
+			@media screen and (max-width:400px) and (min-width:300px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 90px;
+			  }
+
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:450px) and (min-width:400px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 90px;
+			  }
+
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+
+			@media screen and (max-width:500px) and (min-width:450px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 120px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+
+			@media screen and (max-width:640px) and (min-width:500px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 120px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:767px) and (min-width:640px) {
+			  /* reglas CSS */
+				 #logo{
+				  	width: 130px;
+				  }
+				  #cabecera{
+				  	height: 70px;
+				  }
+				  #botonMenu{
+				  	font-size: 20px;
+				  	padding-right: 40px;
+				  	padding-top: 7px;
+				  }
+				  #sliderIndex{
+				  	width: 100%;
+				  	height: 400px;
+				  }
+				  #sliderIndex img{
+				  	width: 100%;
+				  	height: 400px;
+				  }
+				  #contenedores{
+				  	padding-left: 40px;
+				  }
+				  #imagenCalculadora{
+				  	padding-left: 150px;
+				  }
+				  #pruebaNose{
+				  	width: 100%;
+				  	padding-top: 30px;
+				  }
+				  #pruebaNose2{
+				  	width: 100%;
+				  	padding-top: 30px;
+				  }
+			}
+			@media screen and (max-width:800px) and (min-width:768px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 150px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+
+			  #noseWe2{
+			  	visibility: none;
+			  	display: none;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #contenedores{
+				  	padding-left: 40px;
+				  }
+			  #imagenCalculadora{
+			  	padding-left: 150px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:990px) and (min-width:800px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 150px;
+			  	text-align: left;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+
+			  #noseWe2{
+			  	visibility: none;
+			  	display: none;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 400px;
+			  }
+			  #contenedores{
+				  	padding-left: 40px;
+				  }
+			  #imagenCalculadora{
+			  	padding-left: 150px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }	
+			}
+			@media screen and (min-width:991px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 120px;
+			  	padding-right: 10px;
+			  	padding-bottom: 30px;
+			  }
+			  #botonMenu{
+			  	visibility: none;
+			  	display: none;
+			  }
+
+			  #noseWe{
+			  	padding-top: 10px;
+			  	padding-left: 100px;
+			  }
+			  #contenedores{
+			  	padding-left: 200px;
+			  }
+
+			  #contenidoCalculadora{
+			  	padding-top: 80px;	
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }	
+
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 22px;
+			  }	
+			}
+		</style>
+	</head>
+	<body id="page-top">
+		<div id="st-container" class="st-container">
+		    <div class="st-pusher">
+	        	<div class="st-content">
+				  	<header class="header">
+						<nav class="navbar navbar-default" style="width: 100%;">	
+							<div class="container" id="cabecera">
+								<div class="navbar-header">
+									<a id="logo" class="navbar-brand" href="index2.html"><img src="img/Logos/logo_modi.png"></a>
+									<!-- offcanvas-trigger -->
+									<button id="botonMenu" type="button" class="navbar-toggle collapsed pull-right">
+			                          <span class="sr-only">Toggle navigation</span>
+			                          <i class="fa fa-bars fa-lg"></i>
+			                        </button>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div id="noseWe" class="collapse navbar-collapse navbar-collapse">
+									<ul id="noseWe2" class="nav navbar-nav navbar-right">
+										<!-- Home -->
+                                        <li class="active"><a href="index2.html">Home</a></li>
+                                        <li><span>|</span></li>
+                                        <!-- /Home -->
+
+                                        <!-- Pages -->
+                                        <li><a href="necesitasPisto.html">Necesitas Pisto</a></li>
+                                        <li><span>|</span></li>
+                                        <!-- /Pages -->
+
+                                        <!-- Services -->
+                                        <li><a href="quieresInvertir.html">Quiéres invertir</a></li>
+                                        <li><span>|</span></li>
+                                        <!-- /Pages -->
+										<!-- Blog -->
+                                        <li><a href="quienesSomos.html">¿ Quienes somos ?</a></li>
+                                        <li><span>|</span></li>
+
+										<li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+										<li><span>|</span></li>
+
+										<li><a href="contactanos.html">Contáctanos</a></li>
+
+									</ul>
+								</div><!-- /.navbar-collapse -->
+							</div><!-- /.container -->
+						</nav>
+					</header>
+                    <div id="main-carousel" class="carousel slide hero-slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#main-carousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div id="sliderIndex" class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/slider/slide-1.png">
+                                <!--Slide Image-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <img src="img/slider/slide-1.png">
+                            <!--.item-->
+                        	</div>
+                        </div>
+                        <!--.carousel-inner-->
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="container">
+                    	<div class="row">
+                    		<div class="col-md-12">
+                    			<div class="text-center">
+                    				<h2 align="justify">“Creemos que todo el mundo merece tener en sus manos
+								la oportunidad de lograr que su vida sea cada día más </h2>
+                    				<br>
+                    				<h3 style="text-align: justify;">“Creemos que todo el mundo merece tener en sus manos
+								la oportunidad de lograr que su vida sea cada día más" </h3>
+                    			</div>
+                    		</div>
+                    		<div class="col-md-12">
+                    			<div class="text-center">
+                    				<h1 class="naranja">Así, de facil, así de rápido</h1>
+                    			</div>
+                    		</div>
+                    		<br>
+                    		<div id="contenedores" class="col-md-12">
+
+                    		<div class="row">
+                    			<div class="col-md-2 text-center box-iconss" name="box-iconss">
+                    				<br>
+                    				<img class="box-iconss-min" src="img/Iconos/Iconos-17-m.png" width="80px" height="60px">
+                    				<p>Titulo 1</p>
+                    				<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h6>
+                    				<h6></h6>
+                    			</div>
+                    			<div class="col-md-2 text-center box-iconss">
+                    				<br>
+                    				<img class="box-iconss-min"  src="img/Iconos/Iconos-18-m.png" width="80px" height="60px">
+                    				<p>Titulo 2</p>
+                    				<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                    				<h6></h6>
+                    			</div>
+                    			<div class="col-md-2 text-center box-iconss">
+                    				<br>
+                    				<img  class="box-iconss-min" src="img/Iconos/Iconos-44-m.png"  width="58px" height="58px">
+                    				<p>Titulo 3</p>
+                    				<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                    				<h6></h6>
+                    			</div>
+
+                    			<div class="col-md-2 text-center box-iconss">
+                    				<br>
+                    				<img class="box-iconss-min"  src="img/Iconos/Iconos-37-m.png" width="34%">
+                    				<p>Titulo 4</p>
+                    				<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                    				<h6></h6>
+                    			</div>
+                    			
+                    		</div>
+                    		</div>
+                    	</div>
+                    </div>
+			        <section class="section-padding">
+			        	<div class="container">
+			              <div class="row content-row">
+			              	<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6" id="imgCal">
+										<img src="img/banner-04.jpg" id="imagenCalculadora" width="75%" height="75%">
+									</div><!-- /.col-md-6 -->
+									<div class="col-md-6 content-text" id="contenidoCalculadora">
+										<h3 align="center"><img src="img/Iconos/Iconos-58.png">Calculadora de crédito</h3>
+
+										<p align="justify">Lorem Ipsum is simply dummy text of
+										the printing and typesetting industry.
+										Lorem Ipsum has been the industry's
+										standard dummy text ever since the
+										1500s, when an unknown printer took a </p> 
+
+										<h2 class="naranja" align="justify">Aprobación en menos de 5 min
+										Tasas desde 3% mensual</h2>
+									</div><!-- /.col-md-6 -->
+								</div><!-- /.row -->
+			              	</div><!-- /.col-md-12 -->
+			              </div><!-- /.row -->
+
+			        	</div><!-- /.container -->
+			        </section>
+			        <!-- why-us-setion end -->
+			        <hr>
+			        <!-- testimonial-section start -->
+					<section>
+			            <div class="container text-center">
+			              <div class="row">
+			                <div class="col-xs-12">
+			                  <h2 class="section-title naranja">¿ Necesitas pisto, ó quieres invertirlo ?</h2>
+			                </div>
+			              </div> <!-- /.row -->
+
+			              <div class="row row-content">
+			              	<div class="col-md-12">
+								<div class="col-md-4 col-md-offset-2">
+									<div class="box-iconss" id="pruebaNose">
+										<center><img class="img-responsive box-iconss-min" src="img/Iconos/Iconos-11-m.png" width="100px" height="100px" alt=""></center>
+										<br>
+									</div>
+									<br>
+									<h2 class="btn-special">Necesito Pisto</h2>
+								</div>
+								<div class="col-md-4 ">
+									<div class="box-iconss" id="pruebaNose2">
+									<center><img class="img-responsive box-iconss-min" src="img/Iconos/Iconos-24-m.png" width="100px" height="100px" alt=""></center>
+										<br>
+									</div>
+									<br>
+									<h2 class="btn-special">Quiero prestar</h2>
+								</div>
+			              	</div><!-- /.col-md-12 -->
+			              	<div class="col-md-12">
+								<div class="col-md-4 col-md-offset-2">
+									
+								</div>
+								<div class="col-md-4">
+									
+								</div>
+			              	</div><!-- /.col-md-12 -->
+			              </div><!-- /.row -->
+
+			              <hr>
+
+			    
+			            </div><!-- /.container -->
+			        </section>
+			        <section class="text-center">
+			        	<div class="col-md-12 container ">
+							<div class="row">
+								<div class="col-md-3"></div>
+								<div class="col-md-6 box-coments">
+									
+						        <table class="" align="center" id="tablaMosaico">
+								  <thead>
+								    <tr>
+								      <th><canvas id="canvas" width="100" height="100">
+										</canvas></th>
+								      <th>
+								      	<canvas id="canvas1" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas2" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas3" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas4" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas5" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas6" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								    <tr>
+								      <th><canvas id="canvas7" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas8" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas9" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas10" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas11" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas12" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas13" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								    </tr>
+								    <tr>
+								      <th><canvas id="canvas14" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas15" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas16" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas17" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas18" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas19" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								      <th><canvas id="canvas20" width="100" height="100">
+								      	<img src="img/icono_pequeño_100.png" style="padding: 0.3px;">
+										</canvas></th>
+								    </tr>
+								  </tbody>
+								</table>
+								<div id="estado" align="center"> </div>
+								</div>
+					      	</div> 
+			        	</div>
+			        </section>
+			        <br>
+			        <br>
+			        <section>
+			        	<div class="container text-center">
+							<div class="row">
+						        <h1 class="naranja">Llego la APP que pone pisto en tus manos</h1>
+						        <h2>hoy si, y mañana tambien</h2>
+						        <img src="img/google_play.png" width="30%">
+					      	</div> <!-- /.row -->
+			        	</div><!-- /.container -->
+			        </section><!-- /.counter-section -->
+			        <!-- counter end -->
+			        <!-- footer-widget-section start -->
+			        <section class="footer-widget-section section-padding">
+			        	<div class="container">
+			        		<div class="row">
+			        			<div class="col-md-3 col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>¿ Que es Fiado ?</h3>
+										<p>¿Cómo funciona?</p>
+										<p>Preguntas precuentes</p>
+										<p>Contáctanos</p>
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+
+			        			<div class="col-md-3 col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Necesito un credito</h3>
+										<p>¿Cómo funciona?</p>
+										<p>Requisitos</p>
+										<p>Calculadora de crédito</p>
+										<p>Depósitos y pagos</p>
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+
+			        			<div class="col-md-3 col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Quiero prestar</h3>
+			        					<p>¿Cómo funciona?</p>
+										<p>Simulador de préstamo</p>
+										<p>Inversión y ganancias</p>	        				
+									</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+			        			<div class="col-md-3 col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Fiado</h3>
+			        					<p>Aviso de privacidad</p>
+										<p>Terminos y condiciones</p>
+										<ul class="social-links list-inline">
+						  					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						  					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						  					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						  					<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+						  				</ul>
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+			        		</div><!-- /.row -->
+			        	</div><!-- /.container -->
+			        	<br>
+			        	<br>
+			        	<div class="col-md-12">
+			        		<p style="font-size: 12px;" align="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			        	</div>
+			        </section><!-- /.cta-section -->
+	    		</div> <!-- .st-content -->
+		    </div> <!-- .st-pusher -->
+			
+			<!-- OFF CANVAS MENU -->
+	    	<div class="offcanvas-menu offcanvas-effect" style="background-color: #ffffff;">
+	    		<div class="offcanvas-wrap">
+			        <ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
+			        	<li><a href="index2.html"><img class="img-responsive" src="img/Logos/logo_modi.png" width="250" style="padding-left: 30px; padding-top: 20px;"></a></li>
+			            <li><a href="index2.html"><h6>Home</h6></a></li>
+			            <li><a href="necesitasPisto.html"><h6>Necesitas pisto</h6></a></li>
+                        <li><a href="quieresInvertir.html"><h6>Quiéres invertir</h6></a></li>
+                        <li><a href="quienesSomos.html"><h6>¿ Quienes somos ?</h6></a></li>
+						<li><a href="preguntasFrecuentes.html"><h6>Preguntas Frecuentes</h6></a></li>
+						<li><a href="contactanos.html"><h6>Contáctanos</h6></a></li>
+			        </ul>
+				</div>
+	      	</div><!-- .offcanvas-menu -->
+		</div><!-- /st-container -->
+
+
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">
+				<div class="status-mes"></div>
+			</div>
+		</div>
+
+	    <!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+	    <!-- owl.carousel -->
+	    <script src="owl.carousel/owl.carousel.min.js"></script>
+	    <!-- Magnific-popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Offcanvas Menu -->
+		<script src="js/hippo-offcanvas.js"></script>
+		<!-- inview -->
+		<script src="js/jquery.inview.min.js"></script>
+		<!-- stellar -->
+		<script src="js/jquery.stellar.js"></script>
+		<!-- countTo -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- classie -->
+		<script src="js/classie.js"></script>
+		<!-- selectFx -->
+		<script src="js/selectFx.js"></script>
+		<!-- sticky kit -->
+		<script src="js/jquery.sticky-kit.min.js"></script>
+	    <!-- GOGLE MAP -->
+	    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	    <!--TWITTER FETCHER-->
+	    <script src="js/twitterFetcher_min.js"></script>
+	    <!-- Custom Script -->
+	    <script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Fiado</title>
+	    <!-- Web Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap Core CSS -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Flaticon CSS -->
+	    <link href="fonts/flaticon/flaticon.css" rel="stylesheet">
+	    <!-- font-awesome CSS -->
+	    <link href="css/font-awesome.min.css" rel="stylesheet">
+	    <!-- Offcanvas CSS -->
+	    <link href="css/hippo-off-canvas.css" rel="stylesheet">
+	    <!-- animate CSS -->
+	    <link href="css/animate.css" rel="stylesheet">
+	    <!-- language CSS -->
+	    <link href="css/language-select.css" rel="stylesheet">
+	    <!-- owl.carousel CSS -->
+	    <link href="owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+		<!-- magnific-popup -->
+    	<link href="css/magnific-popup.css" rel="stylesheet">
+    	<!-- Main menu -->
+    	<link href="css/menu.css" rel="stylesheet">
+    	<!-- Template Common Styles -->
+    	<link href="css/template.css" rel="stylesheet">
+	    <!-- Custom CSS -->
+	    <link href="css/style.css" rel="stylesheet">
+	    <!-- Responsive CSS -->
+	    <link href="css/responsive.css" rel="stylesheet">
+
+	    <script src="js/vendor/modernizr-2.8.1.min.js"></script>
+	    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+		    <script src="js/vendor/html5shim.js"></script>
+		    <script src="js/vendor/respond.min.js"></script>
+	    <![endif]-->
+	    <style type="text/css">
+			@media screen and (max-width:400px) and (min-width:300px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 90px;
+			  }
+
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:450px) and (min-width:400px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 90px;
+			  }
+
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+
+			@media screen and (max-width:500px) and (min-width:450px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 120px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+
+			@media screen and (max-width:640px) and (min-width:500px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 130px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 500px;
+			  }
+
+			  #contenedores{
+			  	padding-left: 40px;
+			  }
+
+			  #imagenCalculadora{
+			  	padding-left: 120px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:767px) and (min-width:640px) {
+			  /* reglas CSS */
+				 #logo{
+				  	width: 130px;
+				  }
+				  #cabecera{
+				  	height: 70px;
+				  }
+				  #botonMenu{
+				  	font-size: 20px;
+				  	padding-right: 40px;
+				  	padding-top: 7px;
+				  }
+				  #sliderIndex{
+				  	width: 100%;
+				  	height: 500px;
+				  }
+				  #sliderIndex img{
+				  	width: 100%;
+				  	height: 500px;
+				  }
+				  #contenedores{
+				  	padding-left: 40px;
+				  }
+				  #imagenCalculadora{
+				  	padding-left: 150px;
+				  }
+				  #pruebaNose{
+				  	width: 100%;
+				  	padding-top: 30px;
+				  }
+				  #pruebaNose2{
+				  	width: 100%;
+				  	padding-top: 30px;
+				  }
+			}
+			@media screen and (max-width:800px) and (min-width:768px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 150px;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+
+			  #noseWe2{
+			  	visibility: none;
+			  	display: none;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 470px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 470px;
+			  }
+			  #contenedores{
+				  	padding-left: 40px;
+				  }
+			  #imagenCalculadora{
+			  	padding-left: 150px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			}
+			@media screen and (max-width:990px) and (min-width:800px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 150px;
+			  	text-align: left;
+			  }
+			  #cabecera{
+			  	height: 70px;
+			  }
+
+			  #noseWe2{
+			  	visibility: none;
+			  	display: none;
+			  }
+			  #botonMenu{
+			  	font-size: 20px;
+			  	padding-right: 40px;
+			  	padding-top: 7px;
+			  }
+			  #sliderIndex{
+			  	width: 100%;
+			  	height: 470px;
+			  }
+			  #sliderIndex img{
+			  	width: 100%;
+			  	height: 470px;
+			  }
+			  #contenedores{
+				  	padding-left: 40px;
+				  }
+			  #imagenCalculadora{
+			  	padding-left: 150px;
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }	
+			}
+			@media screen and (min-width:991px) {
+			  /* reglas CSS */
+			  #logo{
+			  	width: 120px;
+			  	padding-right: 10px;
+			  	padding-bottom: 30px;
+			  }
+			  #botonMenu{
+			  	visibility: none;
+			  	display: none;
+			  }
+
+			  #noseWe{
+			  	padding-top: 10px;
+			  	padding-left: 100px;
+			  }
+			  #contenedores{
+			  	padding-left: 200px;
+			  }
+
+			  #contenidoCalculadora{
+			  	padding-top: 80px;	
+			  }
+			  #pruebaNose{
+			  	width: 100%;
+			  	padding-top: 30px;
+			  }	
+
+			  #pruebaNose2{
+			  	width: 100%;
+			  	padding-top: 22px;
+			  }	
+			}
+		</style>
+	</head>
+	<body id="page-top">
+		<div id="st-container" class="st-container">
+		    <div class="st-pusher">
+	        	<div class="st-content">
+				  	<header class="header">
+						<nav class="navbar navbar-default" style="width: 100%;">	
+							<div class="container" id="cabecera">
+								<div class="navbar-header">
+									<a id="logo" class="navbar-brand" href="index2.html"><img src="img/Logos/logo_modi.png"></a>
+									<!-- offcanvas-trigger -->
+									<button id="botonMenu" type="button" class="navbar-toggle collapsed pull-right">
+			                          <span class="sr-only">Toggle navigation</span>
+			                          <i class="fa fa-bars fa-lg"></i>
+			                        </button>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div id="noseWe" class="collapse navbar-collapse navbar-collapse">
+									<ul id="noseWe2" class="nav navbar-nav navbar-right">
+										<!-- Home -->
+                                        <li><a href="index2.html">Home</a></li>
+                                        <li><span>|</span></li>
+                                        <!-- /Home -->
+
+                                        <!-- Pages -->
+                                        <li><a href="necesitasPisto.html">Necesitas Pisto</a></li>
+                                        <li><span>|</span></li>
+                                        <!-- /Pages -->
+
+                                        <!-- Services -->
+                                        <li><a href="quieresinvertir.html">Quiéres invertir</a></li>
+                                        <li><span>|</span></li>
+                                        <!-- /Pages -->
+										<!-- Blog -->
+                                        <li><a href="quienesSomos.html">¿ Quienes somos ?</a></li>
+                                        <li><span>|</span></li>
+
+										<li class="active"><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+										<li><span>|</span></li>
+
+										<li><a href="contactanos.html">Contáctanos</a></li>
+
+									</ul>
+								</div><!-- /.navbar-collapse -->
+							</div><!-- /.container -->
+						</nav>
+					</header>
+					<br>
+					<div class="container">
+						<div class="row left-center">
+							<div class="col-md-12">
+								<h2 class="naranja">Preguntas Frecuentes</h2>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<h3>¿Quienes somos?</h3>
+									<h5 align="justify">Somo Sociedad de Ahorro y Crédito Multivalores, S.A. y hemos innovado en la forma de faciliar crédito a los salvadoreños, siguiendo estos principios : sencillo, rápido y fácil</h5>
+									<h5 align="justify">
+										Multivalores es una Institución regulada  y supervisada por la Superintendencia del Sistema Financiero.
+									</h5>
+								</div>
+								<div class="col-md-6">
+									<h3>¿Por qué elegir un producto multimoney?</h3>
+									<h5 align="justify">
+										Somos tu solución financiera 100% digial con procesos ágiles y tecnología de punta.
+									</h5>
+									<h5 align="justify">
+										Atendemos tus solicitudes de una manera rápida y sencilla para que puedas utilizar tu tiempo en lo que para ti es importante.
+									</h5>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-md-6">
+									<h3>¿Cuáles son las características de la línea de Crédito multimoney?</h3>
+									<h5 align="justify">Es una línea de crédito ratativa, con la cual te prestamos desde $450 hasta $18,800 con un plazo de hasta 60 meses.</h5>
+									<h5 align="justify">
+										La línea autorizada la podes utilizar total  parcialmente.Si utilizas tu línea parcialmente, poes solicitar dinero adicional en cualquier momento, sin támites adicionales. A medida vayas pagando tu crédito, vas incremenando el disponible que podés utilizar.Si realizás pagos extraordinarios disminuirás tu plazo. 
+									</h5>
+									<h5 class="justify">
+										El monto y condiciones de la línea de cédito rotativa y desembolsos adicionales son sujetos a aprobación de politica de crédito vigente.
+									</h5>
+									<h5 class="justify">
+										<a href="#">Hacé click aquí para ver condiciones.</a>
+									</h5>
+								</div>
+								<div class="col-md-6">
+									<h3>¿Cuáles son los requisitos para aplicar a una línea de crédito multimoney?</h3>
+									<h5 align="justify">
+										Debés tener al menos 21 años de edad, presentar DUI, NIT, comprobante de ingresos, recibo de servicios (agua, luz, teléfono) reciente y cumplir nuestra politíca de crédito vigente.
+									</h5>
+								</div>
+							</div>
+						</div>
+					</div>				
+
+			        <!-- footer-widget-section start -->
+			        <section class="footer-widget-section section-padding">
+			        	<div class="container">
+			        		<div class="row">
+			        			<div class="col-md-3 col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>¿ Que es Fiado ?</h3>
+										<p>¿Cómo funciona?</p>
+										<p>Preguntas precuentes</p>
+										<p>Contáctanos</p>
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+
+			        			<div class="col-md-3 col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Necesito un credito</h3>
+										<p>¿Cómo funciona?</p>
+										<p>Requisitos</p>
+										<p>Calculadora de crédito</p>
+										<p>Depósitos y pagos</p>
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+
+			        			<div class="col-md-3 col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Quiero prestar</h3>
+			        					<p>¿Cómo funciona?</p>
+										<p>Simulador de préstamo</p>
+										<p>Inversión y ganancias</p>	        				
+									</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+			        			<div class="col-md-3 col-sm-4">
+			        				<div class="footer-widget">
+			        					<h3>Fiado</h3>
+			        					<p>Aviso de privacidad</p>
+										<p>Terminos y condiciones</p>
+										<ul class="social-links list-inline">
+						  					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						  					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						  					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						  					<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+						  				</ul>
+			        				</div><!-- /.footer-widget -->
+			        			</div><!-- /.col-md-4 -->
+			        		</div><!-- /.row -->
+			        	</div><!-- /.container -->
+			        	<br>
+			        	<br>
+			        	<div class="col-md-12">
+			        		<p style="font-size: 15px;" align="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			        	</div>
+			        </section><!-- /.cta-section -->
+	    		</div> <!-- .st-content -->
+		    </div> <!-- .st-pusher -->
+			
+			<!-- OFF CANVAS MENU -->
+	    	<div class="offcanvas-menu offcanvas-effect" style="background-color: #ffffff;">
+	    		<div class="offcanvas-wrap">
+			        <ul id ="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
+			        	<li><a href="index2.html"><img class="img-responsive" src="img/Logos/logo_modi.png" width="250" style="padding-left: 30px; padding-top: 20px;"></a></li>
+			            <li><a href="index2.html"><h6>Home</h6></a></li>
+			            <li><a href="necesitasPisto.html"><h6>Necesitas pisto</h6></a></li>
+                        <li><a href="quieresinvertir.html"><h6>Quiéres invertir</h6></a></li>
+                        <li><a href="quienesSomos.html"><h6>¿ Quienes somos ?</h6></a></li>
+						<li class="active"><a href="preguntasFrecuentes.html"><h6>Preguntas Frecuentes</h6></a></li>
+						<li><a href="contactanos.html"><h6>Contáctanos</h6></a></li>
+			        </ul>
+				</div>
+	      	</div><!-- .offcanvas-menu -->
+		</div><!-- /st-container -->
+
+
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">
+				<div class="status-mes"></div>
+			</div>
+		</div>
+
+	    <!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+	    <!-- owl.carousel -->
+	    <script src="owl.carousel/owl.carousel.min.js"></script>
+	    <!-- Magnific-popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Offcanvas Menu -->
+		<script src="js/hippo-offcanvas.js"></script>
+		<!-- inview -->
+		<script src="js/jquery.inview.min.js"></script>
+		<!-- stellar -->
+		<script src="js/jquery.stellar.js"></script>
+		<!-- countTo -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- classie -->
+		<script src="js/classie.js"></script>
+		<!-- selectFx -->
+		<script src="js/selectFx.js"></script>
+		<!-- sticky kit -->
+		<script src="js/jquery.sticky-kit.min.js"></script>
+	    <!-- GOGLE MAP -->
+	    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	    <!--TWITTER FETCHER-->
+	    <script src="js/twitterFetcher_min.js"></script>
+	    <!-- Custom Script -->
+	    <script src="js/scripts.js"></script>
+	    <script>
+  // Carousel
+  $('.service .carousel').carousel({
+    interval: 4000
+  })</script>
+	</body>
+</html>
