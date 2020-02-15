@@ -1,0 +1,104 @@
+/* Condicion Basica de cuadrado trasparente interior fotos*/
+.caption {
+padding: 0px;
+position: relative;
+}
+.caption img {
+width: 50%;
+padding: 0px;
+height: auto;
+display: block;
+border: 0;
+}
+.caption::before {
+content: attr(title);
+position: absolute;
+background: #000000;
+background: rgba(0, 0, 0, 0.6);
+color: #fff;
+font-size: 16px;
+padding: 5px;
+right: 0;
+bottom: 0;
+left: 0;
+text-align: center;
+opacity:0;
+filter:alpha(opacity=00);
+-webkit-transition: all 0.4s linear;
+-moz-transition: all 0.4s linear;
+-o-transition: all 0.4s linear;
+-ms-transition: all 0.4s linear;
+transition: all 0.4s linear;
+}
+.caption:hover:before {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+/* Final Condicion Basica de cuadrado trasparente interior fotos*/
+
+/* Efecto Bordes Inicio */
+.overlayone-border{ /* Propiedades de imagen */
+margin:0px;
+text-align: center;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16px;
+padding: 0px;
+width: 348px; /* medida ancho rectangulo */
+height: 150px; /* medida alto rectangulo */
+display: inline-block;
+position: relative;
+}
+.overlayinn-border { /* Propiedades de la transparencia */
+background-color: rgba(0, 0, 0, 0.6);
+width: 150px; /* ancho del contenedor de texto */
+height: 110px; /* alto del contenedor de texto */
+top: 10px; /*distancia hacia abajo*/
+left: 90px; /*distancia hacia la derecha*/
+border-radius: 15px 15px 15px 15px; /*efecto esquinas redondeadas */
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border: 0px solid #000000;
+opacity: 0; /* esta condicion mantiene el texto oculto */
+position: absolute;
+padding: 20px; /* espacio entre texto y bordes */
+transition: opacity .5s;
+text-align: center; /* texto centrado */
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 16px; /* tamaño de letra */
+color:#ffffff; /* color de texto */
+}
+.overlayinn-border:hover { /* Efecto al pasar el mouse */
+opacity: 1;
+transition: opacity .5s;
+}
+/* Efecto Bordes final */
+
+/* EFECTO HOVER SOBRE LA IMAGEN CODIGO CHILTEX*/
+.comments{
+	width: 120px;
+	height: 120px;
+display: inline-block;
+
+}
+
+.info1{
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	background-color: rgba(31 , 31, 31,0.9);
+	-webkit-transition: opacity 0.2;
+	opacity: 0;
+	margin-top: -100px;
+ z-index: 5px;
+	margin-left: -75px;
+}
+.comments:hover .info1{
+	opacity: 1;
+}
+ .info11{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	font-family: 'Sriracha', cursive;
+}
