@@ -20,7 +20,7 @@ Author: Cloud Software Solution Ltd.
  *  HERO SLIDER
  *-------------------------------------*/
 .hero-slide img{
-    min-width: 100%;
+   /* min-width: 100%;*/
     }
 .hero-slide .container {
     position  : absolute;
@@ -1016,7 +1016,8 @@ ABOUT PAGE
 SERVICE PAGES
 --------------------------------------------------------------------- */
 .service-featured-thumbs img {
-  width: 100%;
+  /*width: 100%;*/
+
 }
 
 .service-featured-thumbs .service-thumb {
@@ -2037,4 +2038,27 @@ Intro
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
+}
+/*--------------*/
+.box-slider{
+  border-radius: 15px 15px 0px 0px;
+-moz-border-radius: 15px 15px 0px 0px;
+-webkit-border-radius: 15px 15px 0px 0px;
+border: 0px solid #000000;
+background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+width: auto;
+height: 815px;
+}
+.btn-slider{
+  background-color: white;
+  color: #FB590D;
+border-radius:14px;
+-moz-border-radius:14px;
+-webkit-border-radius:14px;
+padding-left: 45px;
+padding-right: 45px;
+font-size: 20px;
 }
