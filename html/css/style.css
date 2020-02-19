@@ -2040,6 +2040,9 @@ Intro
   text-align: center;
 }
 /*--------------*/
+.text-slider{
+  font-size: 85px;
+}
 .box-slider{
   border-radius: 15px 15px 0px 0px;
 -moz-border-radius: 15px 15px 0px 0px;
