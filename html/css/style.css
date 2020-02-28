@@ -265,7 +265,7 @@ border-radius:14px;
    padding-left: -10px;
    font-family: sans-serif;
    margin: 0 auto;
-   width: 50%;
+   width: 70%;
    height: 25%;
  }
 
@@ -2040,6 +2040,9 @@ Intro
   text-align: center;
 }
 /*--------------*/
+.text-slider{
+  font-size: 85px;
+}
 .box-slider{
   border-radius: 15px 15px 0px 0px;
 -moz-border-radius: 15px 15px 0px 0px;

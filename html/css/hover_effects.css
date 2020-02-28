@@ -79,6 +79,8 @@ transition: opacity .5s;
 	width: 120px;
 	height: 120px;
 display: inline-block;
+margin-left: -20px;
+margin-top: -15px;
 
 }
 
@@ -91,7 +93,7 @@ display: inline-block;
 	opacity: 0;
 	margin-top: -100px;
  z-index: 5px;
-	margin-left: -75px;
+	margin-left: -45px;
 }
 .comments:hover .info1{
 	opacity: 1;
