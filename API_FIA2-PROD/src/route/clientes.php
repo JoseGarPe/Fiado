@@ -1,0 +1,87 @@
+<?php
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Slim\Factory\AppFactory;
+
+$app = new \Slim\App;
+
+//GET Todas las consultas
+
+$app->get('/api/clientes', function(Request $request, Response $response){
+    $sql ="SELECT * FROM request";
+    try{
+        $db = new db();
+        $db = $db->conectDB();
+        $result = $db->query($sql);
+        if($result->rowCount()>0){
+            $solicitud = $result->fetchAll(PDO::FETCH_OBJ);
+            echo json_encode($solicitud);
+        }else{
+            echo json_encode("No existen solicitudes en la Base");
+        }
+        $result = null;
+        $db=null;
+    }catch(PDOException $e){
+        
+        echo '{ "error": {"text":'.$e.getMessage().'}}';
+    }
+});
+
+
+//GET una solicitud
+
+$app->get('/api/clientes/{id}', function(Request $request, Response $response){
+    $id_cliente = $request->getAttribute('id');
+    $sql ="SELECT * FROM request WHERE user_id=$id_cliente";
+    try{
+        $db = new db();
+        $db = $db->conectDB();
+        $result = $db->query($sql);
+        if($result->rowCount()>0){
+            $solicitud = $result->fetchAll(PDO::FETCH_OBJ);
+            echo json_encode($solicitud);
+        }else{
+            echo json_encode("No existen solicitudes en la Base");
+        }
+        $result = null;
+        $db=null;
+    }catch(PDOException $e){
+        
+        echo '{ "error": {"text":'.$e.getMessage().'}}';
+    }
+});
+
+
+//POST crear solicitud
+
+$app->post('/api/clientes/nuevo', function(Request $request, Response $response){
+    $user_id =$request->getParam('user_id');
+    $initial_amount = $request->getParam('initial_amount');
+    $total_installments=$request->getParam('total_installments');
+    $interest_rate=$request->getParam('interest_rate');
+    $installment_amount=$request->getParam('installment_amount');
+    $reason=$request->getParam('reason');
+    $status='Solicitado';
+    $sql ="INSERT INTO `request`(`request_id`, `user_id`, `initial_amount`, `total_installments`, `interest_rate`, `installment_amount`, `reason`, `status`) VALUES(null,:user_id,:initial_amount,:total_installments,:interest_rate,:installment_amount,:reason,:status)";
+    try{
+        $db = new db();
+        $db = $db->conectDB();
+        $result = $db->prepare($sql);
+        $result->bindParam(':user_id',$user_id);
+        $result->bindParam(':initial_amount',$initial_amount);
+        $result->bindParam(':total_installments',$total_installments);
+        $result->bindParam(':interest_rate',$interest_rate);
+        $result->bindParam(':installment_amount',$installment_amount);
+        $result->bindParam(':reason',$reason);
+        $result->bindParam(':status',$status);
+        $result->execute();
+        
+            echo json_encode("Creado");
+     
+        $result = null;
+        $db=null;
+    }catch(PDOException $e){
+        
+        echo '{ "error": {"text":'.$e->getMessage().'}';
+    }
+});

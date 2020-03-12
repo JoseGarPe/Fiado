@@ -1,0 +1,26 @@
+CREATE TABLE `api-fia2`.`producer` ( 
+`user_id_prod` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`first_name` VARCHAR(150) NOT NULL , 
+`last_name` VARCHAR(180) NOT NULL , 
+`DUI` VARCHAR(11) NOT NULL , 
+`amount_fund` DECIMAL(11,2) NOT NULL DEFAULT '0.00' ,
+`phone_number` VARCHAR(9) NOT NULL
+) ENGINE = InnoDB;
+
+CREATE TABLE `api-fia2`.`request` ( 
+`request_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`user_id` INT(11) NOT NULL,
+`initial_amount` DECIMAL(11,2) NOT NULL DEFAULT '0.00' ,
+`total_installments` INT(11) NOT NULL,
+`interest_rate` DECIMAL(1,3) NOT NULL,
+`installment_amount` DECIMAL(11,2) NOT NULL,
+`reason` VARCHAR(1500) NOT NULL,
+`status` VARCHAR(75) NOT NULL
+) ENGINE = InnoDB;
+
+CREATE TABLE `api-fia2`.`response_producer` ( 
+`response_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`user_id_prod` INT(11) NOT NULL,
+`request_id` INT(11) NOT NULL,
+`contribution_amount` DECIMAL(11,2) NOT NULL
+) ENGINE = InnoDB;
