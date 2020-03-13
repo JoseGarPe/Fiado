@@ -53,6 +53,16 @@ $app->get('/api/clientes/{id}', function(Request $request, Response $response){
 
 
 //POST crear solicitud
+/* 
+    {
+  "user_id":"15",
+  "initial_amount":"1500",
+  "total_installments":"7",
+  "interest_rate":"0.15",
+  "installment_amount":"25.5",
+  "reason":"cirugia"
+}
+*/
 
 $app->post('/api/clientes/nuevo', function(Request $request, Response $response){
     $user_id =$request->getParam('user_id');
@@ -77,6 +87,69 @@ $app->post('/api/clientes/nuevo', function(Request $request, Response $response)
         $result->execute();
         
             echo json_encode("Creado");
+     
+        $result = null;
+        $db=null;
+    }catch(PDOException $e){
+        
+        echo '{ "error": {"text":'.$e->getMessage().'}';
+    }
+});
+
+
+//PUT ACTUALIZAR solicitud
+
+$app->put('/api/clientes/update/{id}', function(Request $request, Response $response){
+    $request_id =$request->getAttribute('id');
+    $user_id =$request->getParam('user_id');
+    $initial_amount = $request->getParam('initial_amount');
+    $total_installments=$request->getParam('total_installments');
+    $interest_rate=$request->getParam('interest_rate');
+    $installment_amount=$request->getParam('installment_amount');
+    $reason=$request->getParam('reason');
+    $status='Solicitado';
+    $sql ="UPDATE `request` SET `user_id`=:user_id,`initial_amount`=:initial_amount,`total_installments`=:total_installments,`interest_rate`=:interest_rate,`installment_amount`=:installment_amount,`reason`=:reason WHERE `request_id`=$request_id";
+    try{
+        $db = new db();
+        $db = $db->conectDB();
+        $result = $db->prepare($sql);
+        $result->bindParam(':user_id',$user_id);
+        $result->bindParam(':initial_amount',$initial_amount);
+        $result->bindParam(':total_installments',$total_installments);
+        $result->bindParam(':interest_rate',$interest_rate);
+        $result->bindParam(':installment_amount',$installment_amount);
+        $result->bindParam(':reason',$reason);
+        $result->execute();
+        
+            echo json_encode("modificado");
+     
+        $result = null;
+        $db=null;
+    }catch(PDOException $e){
+        
+        echo '{ "error": {"text":'.$e->getMessage().'}';
+    }
+});
+
+
+
+//PUT ELIMINAR solicitud
+
+$app->delete('/api/clientes/delete/{id}', function(Request $request, Response $response){
+    $request_id =$request->getAttribute('id');
+    $sql ="DELETE FROM request WHERE `request_id`=$request_id";
+    try{
+        $db = new db();
+        $db = $db->conectDB();
+        $result = $db->prepare($sql);
+        if($result->rowCount() >0){
+            echo json_encode("Solicitud eliminada");
+        }else{
+            echo json_encode("Solicitud no existe");
+        }
+        $result->execute();
+        
+            echo json_encode("modificado");
      
         $result = null;
         $db=null;
