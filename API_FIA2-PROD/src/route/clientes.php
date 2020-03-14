@@ -9,6 +9,7 @@ $app = new \Slim\App;
 
 $app->get('/api/clientes', function(Request $request, Response $response){
     $sql ="SELECT * FROM request";
+  
     try{
         $db = new db();
         $db = $db->conectDB();
@@ -157,4 +158,27 @@ $app->delete('/api/clientes/delete/{id}', function(Request $request, Response $r
         
         echo '{ "error": {"text":'.$e->getMessage().'}';
     }
+});
+
+//POST crear solicitud
+/* 
+    {
+  "user_id_prod":"1",
+  "contribution_amount":"1500",
+  "request_id":"1"
+}
+*/
+
+$app->post('/api/ResponseProd/nuevo', function(Request $request, Response $response){
+    $user_id_prod =$request->getParam('user_id_prod');
+    $contribution_amount = $request->getParam('contribution_amount');
+    $request_id=$request->getParam('request_id');
+   
+   
+    $producer_response = new Producer_Response();
+    $producer_response->setUser_id_prod($user_id_prod);
+    $producer_response->setRequest_id($request_id);
+    $producer_response->setContribution_amount($contribution_amount);
+    $data=$producer_response->save();
+    echo json_encode($data);
 });

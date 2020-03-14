@@ -6,6 +6,7 @@ use Slim\Factory\AppFactory;
 //require __DIR__ . '/../vendor/autoload.php';
 require '../vendor/autoload.php';
 require '../src/config/db.php';
+require '../src/class/producer_response.php';
 //$app = AppFactory::create();
 $app = new \Slim\App;
 /*
