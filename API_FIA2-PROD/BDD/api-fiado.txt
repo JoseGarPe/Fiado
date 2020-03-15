@@ -15,7 +15,8 @@ CREATE TABLE `api-fia2`.`request` (
 `interest_rate` DECIMAL(1,3) NOT NULL,
 `installment_amount` DECIMAL(11,2) NOT NULL,
 `reason` VARCHAR(1500) NOT NULL,
-`status` VARCHAR(75) NOT NULL
+`status` VARCHAR(75) NOT NULL,
+`amount_entered` DECIMAL(11,4) NOT NULL DEFAULT '0.00'
 ) ENGINE = InnoDB;
 
 CREATE TABLE `api-fia2`.`response_producer` ( 

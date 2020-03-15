@@ -5,26 +5,60 @@ use Slim\Factory\AppFactory;
 
 $app = new \Slim\App;
 
+    $app->response->headers['Content-type'] ='application/json';
+    $app->response->headers['secret_id'] ='user';
+
+ function echoResponse($status_code, $response) {
+$app = new \Slim\App;
+// Http response code
+$app->status($status_code);
+ 
+echo json_encode($response);
+}
+$authtentication=function(){
+
+    $app = \Slim\Slim::getInstance();
+    $user=$app->request->headers->get('HTTP_USER');
+    $pass=$app->request->headers->get('HTTP_PASS');
+    $USER= new User();
+
+};
+
 //GET Todas las consultas
 
-$app->get('/api/clientes', function(Request $request, Response $response){
-    $sql ="SELECT * FROM request";
+$app->get('/api/clientes', function(Request $request, Response $response)use($app){
   
+    $sql ="SELECT * FROM request";
+    
     try{
         $db = new db();
         $db = $db->conectDB();
         $result = $db->query($sql);
         if($result->rowCount()>0){
             $solicitud = $result->fetchAll(PDO::FETCH_OBJ);
-            echo json_encode($solicitud);
+          $solicitud['header']= $arrayName = array('Content-type' => $app->response->headers['Content-type'], 'secret_id'=>$app->response->headers['secret_id']); 
+         // $solicitud['header']= $app->response->headers['secret_id'] ;
+          //  $solicitud['header']=$headers['Content-type'];
+            $respon = array();
+            $respon['status']=200;
+            $respon['error']='false';
+            $respon['message']='Datos Solicitudes';
+            $respon['token']= bin2hex(openssl_random_pseudo_bytes(8));
+            $respon['request']=$solicitud;
+      
+            echo json_encode($respon);
         }else{
             echo json_encode("No existen solicitudes en la Base");
         }
         $result = null;
         $db=null;
     }catch(PDOException $e){
-        
-        echo '{ "error": {"text":'.$e.getMessage().'}}';
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Ocurrio un error al consultar';
+            $respon['request']=$e.getMessage();
+            json_encode($respon);
     }
 });
 
@@ -48,7 +82,12 @@ $app->get('/api/clientes/{id}', function(Request $request, Response $response){
         $db=null;
     }catch(PDOException $e){
         
-        echo '{ "error": {"text":'.$e.getMessage().'}}';
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Ocurrio un error al consultar';
+            $respon['request']=$e.getMessage();
+            json_encode($respon);
     }
 });
 
@@ -93,7 +132,12 @@ $app->post('/api/clientes/nuevo', function(Request $request, Response $response)
         $db=null;
     }catch(PDOException $e){
         
-        echo '{ "error": {"text":'.$e->getMessage().'}';
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Ocurrio un error al consultar';
+            $respon['request']=$e.getMessage();
+            json_encode($respon);
     }
 });
 
@@ -128,7 +172,12 @@ $app->put('/api/clientes/update/{id}', function(Request $request, Response $resp
         $db=null;
     }catch(PDOException $e){
         
-        echo '{ "error": {"text":'.$e->getMessage().'}';
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Ocurrio un error al consultar';
+            $respon['request']=$e.getMessage();
+            json_encode($respon);
     }
 });
 
@@ -156,7 +205,12 @@ $app->delete('/api/clientes/delete/{id}', function(Request $request, Response $r
         $db=null;
     }catch(PDOException $e){
         
-        echo '{ "error": {"text":'.$e->getMessage().'}';
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Ocurrio un error al consultar';
+            $respon['request']=$e.getMessage();
+            json_encode($respon);
     }
 });
 
@@ -169,7 +223,7 @@ $app->delete('/api/clientes/delete/{id}', function(Request $request, Response $r
 }
 */
 
-$app->post('/api/ResponseProd/nuevo', function(Request $request, Response $response){
+$app->post('/api/ResponseProd/nuevo', function(Request $request, Response $response)use($app){
     $user_id_prod =$request->getParam('user_id_prod');
     $contribution_amount = $request->getParam('contribution_amount');
     $request_id=$request->getParam('request_id');
@@ -180,5 +234,32 @@ $app->post('/api/ResponseProd/nuevo', function(Request $request, Response $respo
     $producer_response->setRequest_id($request_id);
     $producer_response->setContribution_amount($contribution_amount);
     $data=$producer_response->save();
-    echo json_encode($data);
+    $respon=array();
+    //$data['Headers']= $app->response->headers['Content-type'] ;
+    $respon['error']='false';
+    $respon['message']='Datos Creados con Exito';
+    $respon['Contribution-producer']=$data;
+   // echoResponse(200,$respon);
+$app->status(200);
+   echo json_encode($data);
 });
+
+$app->post('/api/token', function(Request $request, Response $response)use($app){
+    $client_id=$request->getParam('client_id');
+    $client_secret = $request->getParam('client_secret');
+   
+   
+    $user = new User();
+    $user->setClient_id($client_id);
+    $user->setClient_secret($client_secret);
+    $data=$user->login();
+    $respon=array();
+    //$data['Headers']= $app->response->headers['Content-type'] ;
+    $respon['error']='false';
+    $respon['message']='Datos Creados con Exito';
+    $respon['Contribution-producer']=$data;
+   // echoResponse(200,$respon);
+
+   echo json_encode($data);
+});
+

@@ -142,6 +142,7 @@ class Producer_Response
         $db=null;
     }catch(PDOException $e){
         
+        $app->status(400);
         echo '{ "error": {"text":'.$e->getMessage().'}';
     }
         
