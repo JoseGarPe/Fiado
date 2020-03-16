@@ -133,19 +133,83 @@ $app->get('/api/clientes/{id}', function(Request $request, Response $response){
 }
 */
 
-$app->post('/api/clientes/nuevo', function(Request $request, Response $response){
-    $user_id =$request->getParam('user_id');
-    $initial_amount = $request->getParam('initial_amount');
-    $total_installments=$request->getParam('total_installments');
-    $interest_rate=$request->getParam('interest_rate');
-    $installment_amount=$request->getParam('installment_amount');
-    $reason=$request->getParam('reason');
-    $status='Solicitado';
+$app->post('/api/request/new', function(Request $request, Response $response){
+  /* OBETENER VALORES DEL METODO POST*/
+  if ($request->getParam('user_id') !=null){
+   $user_id =$request->getParam('user_id');
+    if ($request->getParam('initial_amount')!=null) {
+      $initial_amount = $request->getParam('initial_amount');
+       if ($request->getParam('total_installments')!=null) {
+            $total_installments=$request->getParam('total_installments');
+          if ($request->getParam('interest_rate')!=null) {
+                 $interest_rate=$request->getParam('interest_rate');
+                 if ($request->getParam('installment_amount')!=null) {
+                  $installment_amount=$request->getParam('installment_amount');
+                  if ($request->getParam('reason')!=null) {
+                                          
+                        $reason=$request->getParam('reason');
+                        $status='Solicitado';
+                  }else{
+
+                    $respon = array();
+                    $respon['status']=400;
+                    $respon['error']='true';
+                    $respon['message']='Failed to receive request';
+                    echo $response->withJson($respon,400); 
+                  }
+                  }else{
+                    $respon = array();
+                    $respon['status']=400;
+                    $respon['error']='true';
+                    $respon['message']='Failed to receive request';
+                    echo $response->withJson($respon,400); 
+
+
+                  }
+              
+          }else{
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Failed to receive request';
+            echo $response->withJson($respon,400); 
+
+          }
+        } else{
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Failed to receive request';
+            echo $response->withJson($respon,400); 
+
+        }
+     }else{
+
+      $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Failed to receive request';
+            echo $response->withJson($respon,400);     
+     }
+  }else{
+      $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Failed to receive request';
+           
+           
+           echo $response->withJson($respon,400);       
+
+  }
+    
+
+    //query mysql
     $sql ="INSERT INTO `request`(`request_id`, `user_id`, `initial_amount`, `total_installments`, `interest_rate`, `installment_amount`, `reason`, `status`) VALUES(null,:user_id,:initial_amount,:total_installments,:interest_rate,:installment_amount,:reason,:status)";
     try{
         $db = new db();
         $db = $db->conectDB();
         $result = $db->prepare($sql);
+        //ENVIAR DATOS A LOS PARAMETROS DE LA CONSULTA
         $result->bindParam(':user_id',$user_id);
         $result->bindParam(':initial_amount',$initial_amount);
         $result->bindParam(':total_installments',$total_installments);
@@ -154,8 +218,30 @@ $app->post('/api/clientes/nuevo', function(Request $request, Response $response)
         $result->bindParam(':reason',$reason);
         $result->bindParam(':status',$status);
         $result->execute();
-        
-            echo json_encode("Creado");
+        if($result->rowCount() >0){
+         $data=array();
+             $req_entri= array();
+             $req_entri['user_id']=$user_id;
+             $req_entri['initial_amount']=$initial_amount;
+             $req_entri['total_installments']=$total_installments;
+             $req_entri['interest_rate']=$interest_rate;
+             $req_entri['installment_amount']=$installment_amount;
+             $req_entri['reason']=$reason;
+
+         $data['success']=true;
+         $data['msg']='Request Received';
+         $data['request']=$req_entri;
+           // echo json_encode($data);
+           echo $response->withJson($data,201);
+
+        }else{
+                $respon = array();
+            $respon['status']=500;
+            $respon['error']='true';
+            $respon['message']='Failed to receive request';
+           
+           
+           echo $response->withJson($respon,500);        }
      
         $result = null;
         $db=null;
@@ -166,14 +252,15 @@ $app->post('/api/clientes/nuevo', function(Request $request, Response $response)
             $respon['error']='true';
             $respon['message']='Ocurrio un error al consultar';
             $respon['request']=$e.getMessage();
-            json_encode($respon);
+         
+           echo $response->withJson($respon,500);   
     }
 });
 
 
 //PUT ACTUALIZAR solicitud
 
-$app->put('/api/clientes/update/{id}', function(Request $request, Response $response){
+$app->put('/api/request/update/{id}', function(Request $request, Response $response){
     $request_id =$request->getAttribute('id');
     $user_id =$request->getParam('user_id');
     $initial_amount = $request->getParam('initial_amount');
@@ -251,7 +338,7 @@ $app->delete('/api/clientes/delete/{id}', function(Request $request, Response $r
   "request_id":"1"
 }
 */
-
+//* 
 $app->post('/api/producerContribution/new', function(Request $request, Response $response){
     $user_id_prod =$request->getParam('user_id_prod');
     $contribution_amount = $request->getParam('contribution_amount');
@@ -265,9 +352,13 @@ $app->post('/api/producerContribution/new', function(Request $request, Response 
     $data=$producer_response->save();
     $respon=array();
     //$data['Headers']= $app->response->headers['Content-type'] ;
-    $respon['error']='false';
-    $respon['message']='Datos Creados con Exito';
-    $respon['Contribution-producer']=$data;
+    //$app->response->setStatus(201);
+        if (!empty($data)) {
+            $respon['sucess']='true';
+            $respon['data']=$data;
+
+           echo $response->withJson($respon,201);  //imprime un json con status 200: OK CREATED
+        }
    // echoResponse(200,$respon);
 
    echo json_encode($data);
