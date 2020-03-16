@@ -1,0 +1,13 @@
+{
+  "name":"Api_fia2-node",
+  "version": "1.0.0",
+  "description":"",
+  "main":"index.js"
+  "scripts":{
+  "dev":"nodemon src/app.js"
+  },
+  "keywords":[],
+  "author":"",
+  "license":"ISC"
+
+}

@@ -52,11 +52,9 @@ class Producer_Response
          $sql ="INSERT INTO `response_producer`(`response_id`, `user_id_prod`, `request_id`, `contribution_amount`) VALUES (null,:user_id_prod,:request_id,:contribution_amount)";
          $sql_prod="SELECT * FROM `producer` WHERE user_id_prod = $this->user_id_prod";
          $sql_request_update="UPDATE `request` SET `amount_entered`=:amount_entered WHERE `request_id`=:request_id"; 
+         $sql_producer_update="UPDATE `producer` SET `amount_fund`=:amount_fund WHERE `user_id_prod`=:user_id_prod"; 
          $sql_request="SELECT * FROM `request` WHERE request_id = $this->request_id";
     try{
-        
-        
-        
         $db = new db();
         $db = $db->conectDB();
         $result_prod = $db->query($sql_prod);
@@ -103,13 +101,14 @@ class Producer_Response
                                 $result_request->bindParam(':request_id',$this->request_id);
                                 $result_request->bindParam(':amount_entered',$actu_cantidad);
                             $result_request->execute();
-                        }else{
-                            
-                        }
-                
-                            /** -Json response- */
-                                   $data = array();
-                                    $data['status']='Contribution Create';
+                            if ($result_request->rowCount()>0) {
+                                $fondos_actualizados = $fondos-$this->contribution_amount;
+                                   $result_producer = $db->prepare($sql_producer_update);
+                                $result_producer->bindParam(':user_id_prod',$this->user_id_prod);
+                                $result_producer->bindParam(':amount_fund',$fondos_actualizados);
+                            $result_producer->execute();
+                            $data = array();
+                                    $data['status']='201';
                                     $data['request_id']=$this->request_id;
                                     $data['contribution_amount']=$this->contribution_amount;
                                     $data['user_id_prod']=$this->user_id_prod;
@@ -119,6 +118,23 @@ class Producer_Response
                                     $data['fondeo']=round($fondeo_total,2);
                                     return $data;
 
+                            }else{
+                                    $data = array();
+                                    $data['status']='Contribution NOT Create';
+                                    $data['request_id']='';
+                                    $data['contribution_amount']='';
+                                    $data['user_id_prod']='';
+                                    $data['user_id']='';
+                                    $data['initial_amount']='';
+                                    $data['amount_entered']='';
+                                    return $data;
+                            }
+                        }else{
+                            
+                        }
+                
+                            /** -Json response- */
+                                   
             }else{
                        /** -Json response- */
                                    $data = array();

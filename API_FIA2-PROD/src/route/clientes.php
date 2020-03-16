@@ -15,50 +15,79 @@ $app->status($status_code);
  
 echo json_encode($response);
 }
-$authtentication=function(){
+$authtentication=function() use($app){
 
-    $app = \Slim\Slim::getInstance();
-    $user=$app->request->headers->get('HTTP_USER');
-    $pass=$app->request->headers->get('HTTP_PASS');
-    $USER= new User();
+   
+   // $user=$app->request->headers->get('HTTP_TOKEN');
+   /* $user= $app->response->headers['token'];
+    session_start();
+    $local_token=$_SESSION['token'];
+    if ($user!=$local_token) {
+        
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='TOKEN LOST';
+            $respon['token1']=$local_token;
+            $respon['token2']=$user;
+            echo json_encode($respon);
+    }elseif (!isset($_SESSION['token'])) {
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='TOKEN NULL';
+          
+            echo json_encode($respon);
+    }elseif (!isset($user)) {
+        #    $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='TOKEN no SPECIFY';
+          
+            echo json_encode($respon);
+    }*/
 
 };
 
+
+
+
 //GET Todas las consultas
 
-$app->get('/api/clientes', function(Request $request, Response $response)use($app){
+$app->post('/api/clientes',function(Request $request, Response $response)use($app){
   
     $sql ="SELECT * FROM request";
     
     try{
-        $db = new db();
-        $db = $db->conectDB();
-        $result = $db->query($sql);
-        if($result->rowCount()>0){
-            $solicitud = $result->fetchAll(PDO::FETCH_OBJ);
-          $solicitud['header']= $arrayName = array('Content-type' => $app->response->headers['Content-type'], 'secret_id'=>$app->response->headers['secret_id']); 
-         // $solicitud['header']= $app->response->headers['secret_id'] ;
-          //  $solicitud['header']=$headers['Content-type'];
-            $respon = array();
-            $respon['status']=200;
-            $respon['error']='false';
-            $respon['message']='Datos Solicitudes';
-            $respon['token']= bin2hex(openssl_random_pseudo_bytes(8));
-            $respon['request']=$solicitud;
-      
-            echo json_encode($respon);
-        }else{
-            echo json_encode("No existen solicitudes en la Base");
-        }
-        $result = null;
-        $db=null;
+           $db = new db();
+            $db = $db->conectDB();
+            $result = $db->query($sql);
+            if($result->rowCount()>0){
+                $solicitud = $result->fetchAll(PDO::FETCH_OBJ);
+              $solicitud['header']= $arrayName = array('Content-type' => $app->response->headers['Content-type'], 'secret_id'=>$app->response->headers['secret_id']); 
+             // $solicitud['header']= $app->response->headers['secret_id'] ;
+              //  $solicitud['header']=$headers['Content-type'];
+                $respon = array();
+                $respon['status']=200;
+                $respon['error']='false';
+                $respon['message']='Datos Solicitudes';
+                $respon['token']= bin2hex(openssl_random_pseudo_bytes(8));
+                $respon['request']=$solicitud;
+          
+                echo json_encode($respon);
+            }else{
+                echo json_encode("No existen solicitudes en la Base");
+            }
+            $result = null;
+            $db=null;
+       
     }catch(PDOException $e){
             $respon = array();
             $respon['status']=400;
             $respon['error']='true';
             $respon['message']='Ocurrio un error al consultar';
             $respon['request']=$e.getMessage();
-            json_encode($respon);
+            echo json_encode($respon);
     }
 });
 
@@ -223,7 +252,7 @@ $app->delete('/api/clientes/delete/{id}', function(Request $request, Response $r
 }
 */
 
-$app->post('/api/ResponseProd/nuevo', function(Request $request, Response $response)use($app){
+$app->post('/api/producerContribution/new', function(Request $request, Response $response){
     $user_id_prod =$request->getParam('user_id_prod');
     $contribution_amount = $request->getParam('contribution_amount');
     $request_id=$request->getParam('request_id');
@@ -240,11 +269,11 @@ $app->post('/api/ResponseProd/nuevo', function(Request $request, Response $respo
     $respon['message']='Datos Creados con Exito';
     $respon['Contribution-producer']=$data;
    // echoResponse(200,$respon);
-$app->status(200);
+
    echo json_encode($data);
 });
 
-$app->post('/api/token', function(Request $request, Response $response)use($app){
+$app->post('/api/token', function(Request $request, Response $response){
     $client_id=$request->getParam('client_id');
     $client_secret = $request->getParam('client_secret');
    
@@ -257,9 +286,47 @@ $app->post('/api/token', function(Request $request, Response $response)use($app)
     //$data['Headers']= $app->response->headers['Content-type'] ;
     $respon['error']='false';
     $respon['message']='Datos Creados con Exito';
-    $respon['Contribution-producer']=$data;
+    $respon['user_data']=$data;
    // echoResponse(200,$respon);
 
-   echo json_encode($data);
+   echo json_encode($respon);
 });
 
+//*********************** TOKEENS
+
+/**
+ * Realiza la conexion curl para comprobar si el token es valido en la api para el scope solicitado
+ * $token - Token a comprobar
+ * $scope - permisos para el usuario. Cada metodo de nuestra api va a tener su propio scope: en este caso los posibles valores son "usuarios", "usuario", "mensajes", "mensaje"
+ */
+function curlCheckToken($token_value, $scope = null) {
+
+    $ch = curl_init();
+    //Url al servidor Oauth
+    curl_setopt($ch, CURLOPT_URL, "http://localhost/oauth-demo/response.php");
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, 'access_token=' . $token_value . '&scope=' . urlencode($scope));
+    //Json response
+    $raw_data = curl_exec($ch);
+    curl_close($ch);
+
+    $data = json_decode($raw_data);
+    /**
+     * Procesamos la respuesta de curlhttp://localhost/api-slimframework/listado/
+     * Si en el array devuelto se encuentra la clave success con valor true es que hemos tenido exito
+     * Si no, mostramos los errores que nos devuelve la api
+     */
+    if (isset($data->success) AND $data->success == true) {
+
+        return true;
+    }
+    else {
+
+        echo $raw_data;
+    }
+}
+
+
+?>
