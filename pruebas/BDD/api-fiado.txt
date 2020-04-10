@@ -1,0 +1,44 @@
+CREATE TABLE `api-fia2`.`producer` ( 
+`user_id_prod` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`first_name` VARCHAR(150) NOT NULL , 
+`last_name` VARCHAR(180) NOT NULL , 
+`DUI` VARCHAR(11) NOT NULL , 
+`amount_fund` DECIMAL(11,2) NOT NULL DEFAULT '0.00' ,
+`phone_number` VARCHAR(9) NOT NULL
+) ENGINE = InnoDB;
+
+CREATE TABLE `api-fia2`.`request` ( 
+`request_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`user_id` INT(11) NOT NULL,
+`initial_amount` DECIMAL(11,2) NOT NULL DEFAULT '0.00' ,
+`total_installments` INT(11) NOT NULL,
+`interest_rate` DECIMAL(1,3) NOT NULL,
+`installment_amount` DECIMAL(11,2) NOT NULL,
+`reason` VARCHAR(1500) NOT NULL,
+`status` VARCHAR(75) NOT NULL,
+`amount_entered` DECIMAL(11,4) NOT NULL DEFAULT '0.00'
+) ENGINE = InnoDB;
+
+CREATE TABLE `api-fia2`.`response_producer` ( 
+`response_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`user_id_prod` INT(11) NOT NULL,
+`request_id` INT(11) NOT NULL,
+`contribution_amount` DECIMAL(11,2) NOT NULL
+) ENGINE = InnoDB;
+
+CREATE TABLE `api-fia2`.`user` ( 
+`user_id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+`client_id` VARCHAR(256) NOT NULL,
+`client_secret` VARCHAR(256) NOT NULL,
+`token` VARCHAR(256) NOT NULL
+) ENGINE = InnoDB;
+
+
+/* OAUTH 2
+CREATE TABLE oauth_clients (client_id VARCHAR(80) NOT NULL, client_secret VARCHAR(80), redirect_uri VARCHAR(2000) NOT NULL, grant_types VARCHAR(80), scope VARCHAR(100), user_id VARCHAR(80), CONSTRAINT clients_client_id_pk PRIMARY KEY (client_id));
+CREATE TABLE oauth_access_tokens (access_token VARCHAR(40) NOT NULL, client_id VARCHAR(80) NOT NULL, user_id VARCHAR(255), expires TIMESTAMP NOT NULL, scope VARCHAR(2000), CONSTRAINT access_token_pk PRIMARY KEY (access_token));
+CREATE TABLE oauth_authorization_codes (authorization_code VARCHAR(40) NOT NULL, client_id VARCHAR(80) NOT NULL, user_id VARCHAR(255), redirect_uri VARCHAR(2000), expires TIMESTAMP NOT NULL, scope VARCHAR(2000), CONSTRAINT auth_code_pk PRIMARY KEY (authorization_code));
+CREATE TABLE oauth_refresh_tokens (refresh_token VARCHAR(40) NOT NULL, client_id VARCHAR(80) NOT NULL, user_id VARCHAR(255), expires TIMESTAMP NOT NULL, scope VARCHAR(2000), CONSTRAINT refresh_token_pk PRIMARY KEY (refresh_token));
+CREATE TABLE oauth_users (username VARCHAR(255) NOT NULL, password VARCHAR(2000), first_name VARCHAR(255), last_name VARCHAR(255), CONSTRAINT username_pk PRIMARY KEY (username));
+CREATE TABLE oauth_scopes (scope TEXT, is_default BOOLEAN);
+CREATE TABLE oauth_jwt (client_id VARCHAR(80) NOT NULL, subject VARCHAR(80), public_key VARCHAR(2000), CONSTRAINT jwt_client_id_pk PRIMARY KEY (client_id));
