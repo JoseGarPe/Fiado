@@ -92,21 +92,21 @@ class User
                 //--------------------------------------------------//
 
         $secret_key = "fiado_productores_2020";
-        $issuer_claim = "chiltex"; // this can be the servername
-        $audience_claim = "fia2";
+   //     $issuer_claim = "chiltex"; // this can be the servername
+   //     $audience_claim = "fia2";
         $issuedat_claim = time(); // issued at
         $notbefore_claim = $issuedat_claim + 10; //not before in seconds
         $expire_claim = $issuedat_claim + 600; // expire time in seconds
         $token = array(
-            "iss" => $issuer_claim,
-            "aud" => $audience_claim,
+   //         "iss" => $issuer_claim,
+     //       "aud" => $audience_claim,
             "iat" => $issuedat_claim,
             "nbf" => $notbefore_claim,
             "exp" => $expire_claim,
             "data" => array(
-                "id" => $id,
-                "firstname" => $firstname,
-                "lastname" => $lastname,
+                "id" => $user_id,
+//                "firstname" => $firstname,
+  //              "lastname" => $lastname,
                 "email" => $this->email
         ));
 

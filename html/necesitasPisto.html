@@ -709,7 +709,7 @@
 										</p> 
 								  	</div>-->
 								  	<div role="tabpanel" class="tab-pane fade in active" id="buzz">
-								  		<div id="calculadoraResponsive" class="col-md-6 col-xs-12">
+								  		<div id="calculadoraResponsive" class="col-md-6 col-xs-12 calculate">
 											<label for="rangoDinero">¿Cuanto dinero quierés prestar?</label>
 											<input type="range" min="1" max="10000" value="5000" class="slider" id="rangoDinero">
 												<br>
@@ -717,16 +717,16 @@
 											<input type="range" min="1" max="24" value="12" class="slider" id="rangoTiempo">
 												<div style="padding-top: 10px;">
 													<div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
-														<h6>DINERO</h6><h4>$<span id="dinero"></span></h4>
+														<h6>DINERO</h6><h4>$<span id="dinero" style=" font-family: Arial, Helvetica, sans-serif;"></span></h4>
 													</div>
 													<div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
-														<h6>TIEMPO</h6><h4><span id="tiempo"></span></h4>
+														<h6>TIEMPO</h6><h4><span id="tiempo" style=" font-family: Arial, Helvetica, sans-serif;"></span></h4>
 													</div>
 													<div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
-														<h6>IVA</h6><h4>$200</h4>
+														<h6>IVA</h6><h4><span id="iva" style=" font-family: Arial, Helvetica, sans-serif;"></span></h4>
 													</div>
 													<div class="col-md-3 col-xs-3" style="border-style: solid; padding: 5px;">
-														<h6>Cuota Mensual</h6><h4>$<span id="tiempo">70</span></h4>
+														<h6>Cuota Mensual</h6><h4>$<span id="cuota" style=" font-family: Arial, Helvetica, sans-serif;">70</span></h4>
 													</div>
 												</div>
 										</div>
@@ -1093,20 +1093,69 @@
 			x.addListener(myFunction) ;// Attach listener function on state changes
   		</script>
   		<script>
+  			 function decimalAdjust(type, value, exp) {
+    // Si el exp no está definido o es cero...
+    if (typeof exp === 'undefined' || +exp === 0) {
+      return Math[type](value);
+    }
+    value = +value;
+    exp = +exp;
+    // Si el valor no es un número o el exp no es un entero...
+    if (isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
+      return NaN;
+    }
+    // Shift
+    value = value.toString().split('e');
+    value = Math[type](+(value[0] + 'e' + (value[1] ? (+value[1] - exp) : -exp)));
+    // Shift back
+    value = value.toString().split('e');
+    return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
+  }
+    // Decimal round
+  if (!Math.round10) {
+    Math.round10 = function(value, exp) {
+      return decimalAdjust('round', value, exp);
+    };
+  }
+
+
+
+  		//---------------------------------------------------	
 			var rangoDinero = document.getElementById("rangoDinero");
 			var dinero = document.getElementById("dinero");
+			var iva = document.getElementById("iva");
 			dinero.innerHTML = rangoDinero.value;
-
+			var iva_calculo=0;
+			var rangoValue;
+			iva.innerHTML=Math.round10(rangoDinero.value * 0.13, -2);
 			rangoDinero.oninput = function() {
 			  dinero.innerHTML = this.value;
+		//	 iva.innerHTML = parseFloat(Math.round(this.value * 0.13)).toFixed(2);
+		 iva.innerHTML = Math.round10(this.value * 0.13, -2);
+		  iva_calculo=Math.round10(this.value * 0.13, -2);
+		  rangoValue=this.value;
 			}
 
 			var rangoTiempo = document.getElementById("rangoTiempo");
 			var tiempo = document.getElementById("tiempo");
+			var cuota = document.getElementById("cuota");
 			tiempo.innerHTML = rangoTiempo.value;
+			var numerador=0;
+			var denominador=0;
+			var indice=0;
+			indice =Math.pow(1+0.0476,-(rangoTiempo.value));
+			numerador=(0.0476)*(parseInt(rangoDinero.value)+parseFloat(iva_calculo));
+			denominador =1-parseFloat(indice);
+			cuota.innerHTML = Math.round10((numerador/denominador),-2);
+			//cuota.innerHTML=(rangoDinero.value+iva_calculo)/((1-Math.pow((1+0.0476),rangoTiempo.value))/0.0476);
 
 			rangoTiempo.oninput = function() {
 			  tiempo.innerHTML = this.value;
+			  indice =Math.pow(1+0.0476,-(this.value));
+			 // cuota.innerHTML=(rangoDinero.value+iva_calculo)/((1-Math.pow((1+0.0476),-(this.value)))/0.0476);
+			 numerador=(0.0476)*(parseInt(rangoValue)+parseFloat(iva_calculo));
+			denominador =1-parseFloat(indice);
+			cuota.innerHTML = Math.round10((numerador/denominador),-2);
 			}
 		</script>
 	</body>
