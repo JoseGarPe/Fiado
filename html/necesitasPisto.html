@@ -1102,6 +1102,7 @@
 			var iva_calculo=0;
 			var rangoValue;
 			iva.innerHTML=Math.round10(rangoDinero.value * 0.13, -2);
+		  iva_calculo=Math.round10(rangoDinero.value * 0.13, -2);
 			rangoDinero.oninput = function() {
 			  dinero.innerHTML = this.value;
 		//	 iva.innerHTML = parseFloat(Math.round(this.value * 0.13)).toFixed(2);
@@ -1117,17 +1118,17 @@
 			var numerador=0;
 			var denominador=0;
 			var indice=0;
-			indice =Math.pow(1+0.0476,-(rangoTiempo.value));
-			numerador=(0.0476)*(parseInt(rangoDinero.value)+parseFloat(iva_calculo));
+			indice =Math.pow(1+0.0416,-(rangoTiempo.value));
+			numerador=(0.0416)*(parseInt(rangoDinero.value)+parseFloat(iva_calculo));
 			denominador =1-parseFloat(indice);
 			cuota.innerHTML = Math.round10((numerador/denominador),-2);
 			//cuota.innerHTML=(rangoDinero.value+iva_calculo)/((1-Math.pow((1+0.0476),rangoTiempo.value))/0.0476);
 
 			rangoTiempo.oninput = function() {
 			  tiempo.innerHTML = this.value;
-			  indice =Math.pow(1+0.0476,-(this.value));
+			  indice =Math.pow(1+0.0416,-(this.value));
 			 // cuota.innerHTML=(rangoDinero.value+iva_calculo)/((1-Math.pow((1+0.0476),-(this.value)))/0.0476);
-			 numerador=(0.0476)*(parseInt(rangoValue)+parseFloat(iva_calculo));
+			 numerador=(0.0416)*(parseInt(rangoValue)+parseFloat(iva_calculo));
 			denominador =1-parseFloat(indice);
 			cuota.innerHTML = Math.round10((numerador/denominador),-2);
 			}

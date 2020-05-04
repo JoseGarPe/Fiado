@@ -2064,13 +2064,27 @@ border-radius:14px;
 padding-left: 45px;
 padding-right: 45px;
 font-size: 20px;
+    margin-top: -25px;
+}
+.btn-img{
+  width: 30%;
 }
 .stl-sli{
   margin-left: 215px;
 }
+
+  .img-celular{
+    margin-top: 210px; 
+    margin-left:40px;
+     height:600px;
+  }
+  .img-titulo{
+    margin-left: 15px;
+  }
 @media screen and (max-width:640px) and (min-width:450px) {
 .text-slider{
   font-size: 35px;
+  height: 75px;
 }
   .btn-slider{
     margin-left: 0px;
@@ -2082,34 +2096,60 @@ padding-right: 25px;
   .stl-sli{
     margin-left: 25px;
     margin-top: 5px;
+    padding-top: 60px;
   }
   .box-slider{
     height: 600px;
+  }
+  .btn-img{
+    width: 50%;
+  }
+  .img-titulo{
+    width: auto;
+    height: auto;
+  }
+  .img-celular{
+    margin-top: 266px; 
+    width: auto;
+    height: 200px;
   }
 }
 @media screen and (max-width:450px) and (min-width:300px) {
 .text-slider{
   font-size: 35px;
+  height: 75px;
 }
   .btn-slider{
     margin-left: 0px;
     font-size:18px;
-    margin-top: -25px;
+   
 padding-left: 25px;
 padding-right: 25px;
   }
   .stl-sli{
     margin-left: 26px;
     margin-top: 5px;
+    padding-top: 60px;
   }
 
   .box-slider{
     height: 600px;
   }
+  .btn-img{
+    width: 50%;
+  }
+
+  .img-celular{
+    margin-top: 286px; 
+    width: auto;
+    height: 200px;
+  }
+
 }
 @media screen and (max-width:800px) and (min-width:650px) {
 .text-slider{
   font-size: 35px;
+  height: 75px;
 }
   .btn-slider{
     margin-left: 0px;
@@ -2122,13 +2162,63 @@ padding-right: 25px;
   .stl-sli{
     margin-left: 25px;
     margin-top: 5px;
+    padding-top: 40px;
   }
 
   .box-slider{
 
     height: 600px;
   }
+  .btn-img{
+    width: 50%;
   }
+
+  .img-celular{
+    margin-top: 166px; 
+    width: auto;
+    height: 400px;
+  }
+
+  }
+
+  @media screen and (max-width:370px) and (min-width:200px) {
+.text-slider{
+  font-size: 35px;
+  height: 75px;
+}
+  .btn-slider{
+    margin-left: 0px;
+    font-size: 15px;
+    margin-top: -45px;
+
+padding-left: 15px;
+padding-right: 15px;
+  }
+  .stl-sli{
+    margin-left: 25px;
+    margin-top: 5px;
+    padding-top: 60px;
+  }
+  .stl-sli .img-titulo{
+    /*font-size: 40px;*/
+    width: 200px; 
+    margin-left: 5px;
+     }
+
+  .box-slider{
+
+    height: 600px;
+  }
+  .btn-img{
+    width: 50%;
+  }
+  .img-celular{
+    width:300px;
+    height: 160px;
+   margin-top:280px;
+  }
+  }
+
   .factss{
     background: #f8f8f8;
     padding-top: 20px;
