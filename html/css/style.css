@@ -2081,14 +2081,23 @@ font-size: 20px;
   .img-titulo{
     margin-left: 15px;
   }
+
+  .submenu{
+    margin-left: -82px;
+  }
+
 @media screen and (max-width:640px) and (min-width:450px) {
 .text-slider{
   font-size: 35px;
   height: 75px;
 }
+.submenu{
+  margin-left: auto;
+}
   .btn-slider{
     margin-left: 0px;
     font-size: 18px;
+}
 padding-left: 25px;
 padding-right: 25px;
     margin-top: -25px;
@@ -2118,6 +2127,9 @@ padding-right: 25px;
 .text-slider{
   font-size: 35px;
   height: 75px;
+}
+.submenu{
+  margin-left: auto;
 }
   .btn-slider{
     margin-left: 0px;
@@ -2159,6 +2171,9 @@ padding-right: 25px;
 padding-left: 25px;
 padding-right: 25px;
   }
+.submenu{
+  margin-left: auto;
+}
   .stl-sli{
     margin-left: 25px;
     margin-top: 5px;
@@ -2186,6 +2201,9 @@ padding-right: 25px;
   font-size: 35px;
   height: 75px;
 }
+.submenu{
+  margin-left: auto;
+}
   .btn-slider{
     margin-left: 0px;
     font-size: 15px;
@@ -2205,6 +2223,9 @@ padding-right: 15px;
     margin-left: 5px;
      }
 
+.submenu{
+  margin-left: auto;
+}
   .box-slider{
 
     height: 600px;
@@ -2225,4 +2246,15 @@ padding-right: 15px;
   }
   .calculate{
     font-family: Arial, Helvetica, sans-serif;
+  }
+  /*-------------------------*/
+  .contenedor_chill{
+    margin-top: 25px;
+-webkit-box-shadow: 0px 0px 16px 7px rgba(0,0,0,0.09);
+-moz-box-shadow: 0px 0px 16px 7px rgba(0,0,0,0.09);
+box-shadow: 0px 0px 16px 7px rgba(0,0,0,0.09);
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+
   }
