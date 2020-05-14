@@ -1,4 +1,4 @@
-	@media screen and (max-width:350px) and (min-width:300px) {
+@media screen and (max-width:350px) and (min-width:300px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -15,10 +15,6 @@
 			  	width: 100%;
 			  	height: 600px;
 			  }
-			/*  #sliderIndex img{
-			  	width: auto;
-			  	height: auto;
-			  }*/
 
 			  #contenedores{
 			  	padding-left: 40px;
@@ -37,8 +33,27 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }
-			}
-			@media screen and (max-width:400px) and (min-width:350px) {
+
+			  #contenidoValores{
+			  	width: 100%;
+			  	margin-left: 13px;
+			  }	
+
+			  #valor1 #valor2 #valor3 #valor4{
+			  	width: 80%;
+			  }
+
+			  #contenidoValores h6 {
+			  	font-size: 15px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 60%;
+			  }
+}
+
+@media screen and (max-width:400px) and (min-width:350px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -55,10 +70,6 @@
 			  	width: 100%;
 			  	height: 600px;
 			  }
-			/*  #sliderIndex img{
-			  	width: auto;
-			  	height: auto;
-			  }*/
 
 			  #contenedores{
 			  	padding-left: 40px;
@@ -77,8 +88,27 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }
-			}
-			@media screen and (max-width:450px) and (min-width:400px) {
+
+			  #contenidoValores{
+			  	width: 100%;
+			  	margin-left: 13px;
+			  }	
+
+			  #valor1 #valor2 #valor3 #valor4{
+			  	width: 60%;
+			  }
+
+			  #contenidoValores h6 {
+			  	font-size: 15px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 50%;
+			  }
+}
+
+@media screen and (max-width:450px) and (min-width:400px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -95,10 +125,6 @@
 			  	width: 100%;
 			  	height: 600px;
 			  }
-			/*  #sliderIndex img{
-			  	width: auto;
-			  	height: auto;
-			  }*/
 			  #contenedores{
 			  	padding-left: 40px;
 			  }
@@ -116,9 +142,27 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }
-			}
 
-			@media screen and (max-width:500px) and (min-width:450px) {
+			  #contenidoValores{
+			  	width: 80%;
+			  	margin-left: 13%;
+			  }	
+
+			  #valor1, #valor2, #valor3, #valor4{
+			  	margin-top: 20px;
+			  }
+
+			  #contenidoValores h6 {
+			  	font-size: 15px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 60%;
+			  }
+}
+
+@media screen and (max-width:500px) and (min-width:450px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -135,10 +179,6 @@
 			  	width: 100%;
 			  	height: 700px;
 			  }
-			/*  #sliderIndex img{
-			  	width: auto;
-			  	height: auto;
-			  }*/
 
 			  #contenedores{
 			  	padding-left: 40px;
@@ -156,8 +196,26 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }
-			}
-			@media screen and (max-width:550px) and (min-width:500px) {
+			  #contenidoValores{
+			  	width: 80%;
+			  	margin-left: 13%;
+			  }	
+
+			  #valor1, #valor2, #valor3, #valor4{
+			  	margin-top: 20px;
+			  }
+
+			  #contenidoValores h6 {
+			  	font-size: 17px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 60%;
+			  }
+}
+
+@media screen and (max-width:550px) and (min-width:500px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -174,10 +232,6 @@
 			  	width: 100%;
 			  	height: 600px;
 			  }
-			/*  #sliderIndex img{
-			  	width: auto;
-			  	height: auto;
-			  }*/
 
 			  #contenedores{
 			  	padding-left: 40px;
@@ -195,8 +249,26 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }
-			}
-			@media screen and (max-width:640px) and (min-width:550px) {
+			  #contenidoValores{
+			  	width: 80%;
+			  	margin-left: 13%;
+			  }	
+
+			  #valor1, #valor2, #valor3, #valor4{
+			  	margin-top: 20px;
+			  }
+
+			  #contenidoValores h6 {
+			  	font-size: 17px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 60%;
+			  }
+}
+
+@media screen and (max-width:640px) and (min-width:550px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -234,8 +306,30 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }
-			}
-			@media screen and (max-width:700px) and (min-width:640px) {
+
+			  #contenidoValores{
+			  	width: 100%;
+			  	margin-left: 3%;
+			  }	
+
+			  #valor1, #valor2, #valor3, #valor4{
+			  	width: 45%;
+			  	float: left;
+			  	height: 300px;
+			  	margin-top: 20px;
+			  }
+
+			  #contenidoValores h6 {
+			  	font-size: 17px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 60%;
+			  }
+}
+
+@media screen and (max-width:700px) and (min-width:640px) {
 			  /* reglas CSS */
 				 #logo{
 				  	width: 130px;
@@ -271,8 +365,29 @@
 				  	width: 100%;
 				  	padding-top: 30px;
 				  }
-			}
-			@media screen and (max-width:750px) and (min-width:700px) {
+				  #contenidoValores{
+				  	width: 100%;
+				  	margin-left: 3%;
+				  }	
+
+				  #valor1, #valor2, #valor3, #valor4{
+				  	width: 45%;
+				  	float: left;
+				  	height: 300px;
+				  	margin-top: 20px;
+				  }
+
+				  #contenidoValores h6 {
+				  	font-size: 17px;
+				  	padding: 20px;
+				  }
+
+				  #contenidoValores img {
+				  	width: 60%;
+				  }
+}
+
+@media screen and (max-width:750px) and (min-width:700px) {
 			  /* reglas CSS */
 				 #logo{
 				  	width: 130px;
@@ -308,8 +423,30 @@
 				  	width: 100%;
 				  	padding-top: 30px;
 				  }
-			}
-			@media screen and (max-width:800px) and (min-width:750px) {
+
+				  #contenidoValores{
+				  	width: 80%;
+				  	margin-left: 16%;
+				  }	
+
+				  #valor1, #valor2, #valor3, #valor4{
+				  	width: 40%;
+				  	float: left;
+				  	height: 300px;
+				  	margin-top: 20px;
+				  }
+
+				  #contenidoValores h6 {
+				  	font-size: 17px;
+				  	padding: 20px;
+				  }
+
+				  #contenidoValores img {
+				  	width: 60%;
+				  }
+}
+
+@media screen and (max-width:800px) and (min-width:750px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 150px;
@@ -351,8 +488,30 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }
-			}
-			@media screen and (max-width:990px) and (min-width:800px) {
+
+			  #contenidoValores{
+			  	width: 80%;
+			  	margin-left: 16%;
+			  }	
+
+			  #valor1, #valor2, #valor3, #valor4{
+			  	width: 40%;
+			  	float: left;
+			  	height: 300px;
+			  	margin-top: 20px;
+			  }
+
+			  #contenidoValores h6 {
+			  	font-size: 17px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 60%;
+			  }
+}
+
+@media screen and (max-width:990px) and (min-width:800px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 150px;
@@ -375,13 +534,9 @@
 			  	width: 100%;
 			  	height: 600px;
 			  }
-			/*  #sliderIndex img{
-			  	width: auto;
-			  	height: auto;
-			  }*/
-			  	#contenedores{
-					padding-left: 40px;
-				}
+			  #contenedores{
+				padding-left: 40px;
+			  }
 			  #imagenCalculadora{
 			  	padding-left: 190px;
 			  	height: 700px;
@@ -394,8 +549,29 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }	
-			}
-			@media screen and (min-width:991px) {
+			  #contenidoValores{
+			  	width: 100%;
+			  	margin-left: 3.7%;
+			  }	
+
+			  #valor1, #valor2, #valor3, #valor4{
+			  	width: 21%;
+			  	float: left;
+			  	height: 300px;
+			  	margin-top: 20px;
+			  }
+
+			  #contenidoValores h6 {
+			  	font-size: 12px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 60%;
+			  }
+}
+
+@media screen and (min-width:991px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 120px;
@@ -432,7 +608,24 @@
 			  	width: 300px;
 			  	height: 550px;
 			  }
-			  #valor1{
-			  	margin-left: 13%;
+			  #contenidoValores{
+			  	width: 100%;
+			  	margin-left: 5%;
+			  }	
+
+			  #valor1, #valor2, #valor3, #valor4{
+			  	width: 20%;
+			  	float: left;
+			  	height: 300px;
+			  	margin-top: 20px;
 			  }
-			}
+
+			  #contenidoValores h6 {
+			  	font-size: 14px;
+			  	padding: 20px;
+			  }
+
+			  #contenidoValores img {
+			  	width: 60%;
+			  }
+}
