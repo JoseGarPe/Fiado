@@ -45,7 +45,6 @@
 
 			  #contenidoValores h6 {
 			  	font-size: 15px;
-			  	padding: 20px;
 			  }
 
 			  #contenidoValores img {
@@ -100,7 +99,6 @@
 
 			  #contenidoValores h6 {
 			  	font-size: 15px;
-			  	padding: 20px;
 			  }
 
 			  #contenidoValores img {
@@ -154,7 +152,6 @@
 
 			  #contenidoValores h6 {
 			  	font-size: 15px;
-			  	padding: 20px;
 			  }
 
 			  #contenidoValores img {
@@ -207,7 +204,6 @@
 
 			  #contenidoValores h6 {
 			  	font-size: 17px;
-			  	padding: 20px;
 			  }
 
 			  #contenidoValores img {
@@ -255,12 +251,11 @@
 			  }	
 
 			  #valor1, #valor2, #valor3, #valor4{
-			  	margin-top: 20px;
+			  	margin-top: 10px;
 			  }
 
 			  #contenidoValores h6 {
-			  	font-size: 17px;
-			  	padding: 20px;
+			  	font-size: 15px;
 			  }
 
 			  #contenidoValores img {
@@ -315,13 +310,12 @@
 			  #valor1, #valor2, #valor3, #valor4{
 			  	width: 45%;
 			  	float: left;
-			  	height: 300px;
+			  	height: 320px;
 			  	margin-top: 20px;
 			  }
 
 			  #contenidoValores h6 {
-			  	font-size: 17px;
-			  	padding: 20px;
+			  	font-size: 15px;
 			  }
 
 			  #contenidoValores img {
@@ -373,13 +367,12 @@
 				  #valor1, #valor2, #valor3, #valor4{
 				  	width: 45%;
 				  	float: left;
-				  	height: 300px;
+				  	height: 330px;
 				  	margin-top: 20px;
 				  }
 
 				  #contenidoValores h6 {
-				  	font-size: 17px;
-				  	padding: 20px;
+				  	font-size: 15px;
 				  }
 
 				  #contenidoValores img {
@@ -425,20 +418,19 @@
 				  }
 
 				  #contenidoValores{
-				  	width: 80%;
-				  	margin-left: 16%;
+				  	width: 100%;
+				  	margin-left: 2.5%;
 				  }	
 
 				  #valor1, #valor2, #valor3, #valor4{
-				  	width: 40%;
+				  	width: 45%;
 				  	float: left;
-				  	height: 300px;
+				  	height: 330px;
 				  	margin-top: 20px;
 				  }
 
 				  #contenidoValores h6 {
-				  	font-size: 17px;
-				  	padding: 20px;
+				  	font-size: 15px;
 				  }
 
 				  #contenidoValores img {
@@ -503,7 +495,6 @@
 
 			  #contenidoValores h6 {
 			  	font-size: 17px;
-			  	padding: 20px;
 			  }
 
 			  #contenidoValores img {
@@ -563,7 +554,6 @@
 
 			  #contenidoValores h6 {
 			  	font-size: 12px;
-			  	padding: 20px;
 			  }
 
 			  #contenidoValores img {
@@ -610,19 +600,18 @@
 			  }
 			  #contenidoValores{
 			  	width: 100%;
-			  	margin-left: 5%;
+			  	margin-left: 6%;
 			  }	
 
 			  #valor1, #valor2, #valor3, #valor4{
 			  	width: 20%;
 			  	float: left;
-			  	height: 300px;
+			  	height: 310px;
 			  	margin-top: 20px;
 			  }
 
 			  #contenidoValores h6 {
 			  	font-size: 14px;
-			  	padding: 20px;
 			  }
 
 			  #contenidoValores img {
