@@ -35,12 +35,13 @@
 			  }
 
 			  #contenidoValores{
-			  	width: 100%;
-			  	margin-left: 13px;
+			  	width: 80%;
+			  	margin-left: 10%;
 			  }	
 
-			  #valor1 #valor2 #valor3 #valor4{
-			  	width: 80%;
+			  #valor1 ,#valor2, #valor3 ,#valor4{
+			  	width: 100%;
+			  	margin-top: 10%;
 			  }
 
 			  #contenidoValores h6 {
@@ -138,12 +139,13 @@
 			  	margin-left: 13px;
 			  }	
 
-			  #valor1 #valor2 #valor3 #valor4{
-			  	width: 60%;
-			  }
+			  #contenidoValores{
+			  	width: 80%;
+			  	margin-left: 10%;
+			  }	
 
-			  #contenidoValores h6 {
-			  	font-size: 15px;
+			  #valor1, #valor2, #valor3, #valor4{
+			  	margin-top: 20px;
 			  }
 
 			  #contenidoValores img {
@@ -1042,7 +1044,7 @@
 
 			  .imagenTexto{
 			  	margin-top: 50px;
-			  	width: 70%;
+			  	width: 60%;
 			  	margin-left: 20%; 
 			  	padding-bottom: 50px;
 			  }
@@ -1066,7 +1068,7 @@
 			  }
 
 			  .imagenMano{
-			  	width: 40%;
+			  	width: 35%;
 			  	position:absolute;
 			  	bottom: 0px;
 			  	right: 0px;
