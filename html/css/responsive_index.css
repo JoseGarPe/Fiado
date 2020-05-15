@@ -20,11 +20,6 @@
 			  	padding-left: 40px;
 			  }
 
-			  #imagenCalculadora{
-			  	padding-left: 30px;
-			  	height: 400px;
-			  }
-
 			  #pruebaNose{
 			  	width: 100%;
 			  	padding-top: 30px;
@@ -96,9 +91,30 @@
 			  	position:absolute;
 			  	bottom: 0px;
 			  }
+
+			  #imagenCalculadora{
+			  	width: 80%;
+			  	margin-left: 10%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 25px;
+			  }
+
+			  .botonContenidoCalculadora{
+			  	width: 100%;
+			  }
+
+			  .botonContenidoCalculadora h2{
+			  	font-size: 22px;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 50%;
+			  }
 }
 
-@media screen and (max-width:400px) and (min-width:350px) {
+@media screen and (max-width:400px) and (min-width:351px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -118,11 +134,6 @@
 
 			  #contenedores{
 			  	padding-left: 40px;
-			  }
-
-			  #imagenCalculadora{
-			  	padding-left: 50px;
-			  	height: 400px;
 			  }
 
 			  #pruebaNose{
@@ -192,9 +203,31 @@
 			  	position:absolute;
 			  	bottom: 0px;
 			  }
+
+			  #imagenCalculadora{
+			  	width: 80%;
+			  	margin-left: 10%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 25px;
+			  	font-size: 18px;
+			  }
+
+			  .botonContenidoCalculadora{
+			  	width: 100%;
+			  }
+
+			  .botonContenidoCalculadora h2{
+			  	font-size: 22px;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 50%;
+			  }
 }
 
-@media screen and (max-width:450px) and (min-width:400px) {
+@media screen and (max-width:450px) and (min-width:401px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -213,11 +246,6 @@
 			  }
 			  #contenedores{
 			  	padding-left: 40px;
-			  }
-
-			  #imagenCalculadora{
-			  	padding-left: 60px;
-			  	height: 500px;
 			  }
 
 			  #pruebaNose{
@@ -285,9 +313,30 @@
 			  	bottom: 0px;
 			  	right: 0px;
 			  }
+
+			  #imagenCalculadora{
+			  	width: 80%;
+			  	margin-left: 3%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 25px;
+			  }
+
+			  .botonContenidoCalculadora{
+			  	width: 100%;
+			  }
+
+			  .botonContenidoCalculadora h2{
+			  	font-size: 22px;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 50%;
+			  }
 }
 
-@media screen and (max-width:500px) and (min-width:450px) {
+@media screen and (max-width:500px) and (min-width:451px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -307,11 +356,6 @@
 
 			  #contenedores{
 			  	padding-left: 40px;
-			  }
-
-			  #imagenCalculadora{
-			  	padding-left: 60px;
-			  	height: 500px;
 			  }
 			  #pruebaNose{
 			  	width: 100%;
@@ -378,9 +422,30 @@
 			  	bottom: 0px;
 			  	right: 0px;
 			  }
+
+			  #imagenCalculadora{
+			  	width: 60%;
+			  	margin-left: 20%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 40px;
+			  }
+
+			  .botonContenidoCalculadora{
+			  	width: 100%;
+			  }
+
+			  .botonContenidoCalculadora h2{
+			  	font-size: 22px;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 40%;
+			  }
 }
 
-@media screen and (max-width:550px) and (min-width:500px) {
+@media screen and (max-width:550px) and (min-width:501px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -400,11 +465,6 @@
 
 			  #contenedores{
 			  	padding-left: 40px;
-			  }
-
-			  #imagenCalculadora{
-			  	padding-left: 110px;
-			  	height: 500px;
 			  }
 			  #pruebaNose{
 			  	width: 100%;
@@ -471,9 +531,30 @@
 			  	bottom: 0px;
 			  	right: 0px;
 			  }
+
+			  #imagenCalculadora{
+			  	width: 60%;
+			  	margin-left: 20%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 40px;
+			  }
+
+			  .botonContenidoCalculadora{
+			  	width: 100%;
+			  }
+
+			  .botonContenidoCalculadora h2{
+			  	font-size: 22px;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 40%;
+			  }
 }
 
-@media screen and (max-width:640px) and (min-width:550px) {
+@media screen and (max-width:640px) and (min-width:551px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 130px;
@@ -499,10 +580,6 @@
 			  	padding-left: 40px;
 			  }
 
-			  #imagenCalculadora{
-			  	padding-left: 130px;
-			  	height: 500px;
-			  }
 			  #pruebaNose{
 			  	width: 100%;
 			  	padding-top: 30px;
@@ -572,9 +649,30 @@
 			  	bottom: 0px;
 			  	right: 0px;
 			  }
+
+			  #imagenCalculadora{
+			  	width: 55%;
+			  	margin-left: 22.5%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 40px;
+			  }
+
+			  .botonContenidoCalculadora{
+			  	width: 100%;
+			  }
+
+			  .botonContenidoCalculadora h2{
+			  	font-size: 22px;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 35%;
+			  }
 }
 
-@media screen and (max-width:700px) and (min-width:640px) {
+@media screen and (max-width:700px) and (min-width:641px) {
 			  /* reglas CSS */
 				 #logo{
 				  	width: 130px;
@@ -597,10 +695,6 @@
 				  }
 				  #contenedores{
 				  	padding-left: 40px;
-				  }
-				  #imagenCalculadora{
-				  	padding-left: 140px;
-				  	height: 650px;
 				  }
 				  #pruebaNose{
 				  	width: 100%;
@@ -669,9 +763,30 @@
 				  	bottom: 0px;
 				  	right: 0px;
 				  }
+
+				  #imagenCalculadora{
+				  	width: 50%;
+				  	margin-left: 25%;
+				  }
+
+				  #contenidoCalculadora{
+				  	margin-top: 40px;
+				  }
+
+				  .botonContenidoCalculadora{
+				  	width: 100%;
+				  }
+
+				  .botonContenidoCalculadora h2{
+				  	font-size: 22px;
+				  }
+
+				  #botonGoogleFinal{
+				  	width: 40%;
+				  }
 }
 
-@media screen and (max-width:750px) and (min-width:700px) {
+@media screen and (max-width:750px) and (min-width:701px) {
 			  /* reglas CSS */
 				 #logo{
 				  	width: 130px;
@@ -694,10 +809,6 @@
 				  }
 				  #contenedores{
 				  	padding-left: 40px;
-				  }
-				  #imagenCalculadora{
-				  	padding-left: 160px;
-				  	height: 650px;
 				  }
 				  #pruebaNose{
 				  	width: 100%;
@@ -767,9 +878,28 @@
 				  	bottom: 0px;
 				  	right: 0px;
 				  }
+
+				  #imagenCalculadora{
+				  	width: 40%;
+				  	margin-left: 30%;
+				  }
+
+				  #contenidoCalculadora{
+				  	margin-top: 40px;
+				  	font-size: 25px;
+				  }
+
+				  .botonContenidoCalculadora h2{
+				  	font-size: 27px;
+				  	padding: 10px 0;
+				  }
+
+				  #botonGoogleFinal{
+				  	width: 40%;
+				  }
 }
 
-@media screen and (max-width:800px) and (min-width:750px) {
+@media screen and (max-width:800px) and (min-width:751px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 150px;
@@ -799,10 +929,6 @@
 			  #contenedores{
 				  	padding-left: 40px;
 				  }
-			  #imagenCalculadora{
-			  	padding-left: 190px;
-			  	height: 650px;
-			  }
 			  #pruebaNose{
 			  	width: 100%;
 			  	padding-top: 30px;
@@ -837,47 +963,66 @@
 			  }
 
 			  .contenidoIzquierdo{
-				  	width: 100%;
-				  }
+			  	width: 100%;
+			  }
 
-				  .contenidoDerecho{
-				  	width: 100%;
-				  }
+			  .contenidoDerecho{
+			  	width: 100%;
+			  }
 
-				  .imagenTexto{
-				  	margin-top: 30px;
-				  	width: 65%;
-				  	margin-left: 15%; 
-				  	padding-bottom: 50px;
-				  }
+			  .imagenTexto{
+			  	margin-top: 30px;
+			  	width: 65%;
+			  	margin-left: 15%; 
+			  	padding-bottom: 50px;
+			  }
 
-				  .botonSlider{
-				  	font-size: 25px;
-				  	background-color: #FFF;
-				  	padding: 15px;
-				  	border-radius: 10px;
-					margin-left: 20%;
-				  }
+			  .botonSlider{
+			  	font-size: 25px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+				margin-left: 20%;
+			  }
 
-				  .botonSlider:hover{
-				  	cursor: pointer;
-				  }
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  }
 
-				  .googlePlay{
-				  	margin-top: 15px;
-				  	margin-left: 23.5%;
-				  	width: 200px;
-				  }
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 23.5%;
+			  	width: 200px;
+			  }
 
-				  .imagenMano{
-				  	width: 45%;
-				  	position:absolute;
-				  	bottom: 0px;
-				  	right: 0px;
-				  }
+			  .imagenMano{
+			  	width: 45%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  	right: 0px;
+			  }
+
+			  #imagenCalculadora{
+			  	width: 40%;
+			  	margin-left: 30%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 40px;
+			  	font-size: 25px;
+			  }
+
+			  .botonContenidoCalculadora h2{
+			  	font-size: 27px;
+			  	padding: 10px 0;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 30%;
+			  }
 }
 
-@media screen and (max-width:990px) and (min-width:800px) {
+@media screen and (max-width:990px) and (min-width:801px) {
 			  /* reglas CSS */
 			  #logo{
 			  	width: 150px;
@@ -902,10 +1047,6 @@
 			  }
 			  #contenedores{
 				padding-left: 40px;
-			  }
-			  #imagenCalculadora{
-			  	padding-left: 190px;
-			  	height: 700px;
 			  }
 			  #pruebaNose{
 			  	width: 100%;
@@ -974,6 +1115,21 @@
 			  	bottom: 0px;
 			  	right: 0px;
 			  }
+
+			  #imagenCalculadora{
+			  	width: 60%;
+			  	margin-left: 20%;
+			  	padding: 2%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 5%;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 30%;
+			  }
+
 }
 
 @media screen and (min-width:991px) {
@@ -1008,11 +1164,6 @@
 			  	width: 100%;
 			  	padding-top: 30px;
 			  }	
-			  #imagenCalculadora{
-			  	margin-left: 200px;
-			  	width: 300px;
-			  	height: 550px;
-			  }
 			  #contenidoValores{
 			  	width: 100%;
 			  	margin-left: 6%;
@@ -1072,5 +1223,19 @@
 			  	position:absolute;
 			  	bottom: 0px;
 			  	right: 0px;
+			  }
+
+			  #imagenCalculadora{
+			  	width: 50%;
+			  	margin-left: 25%;
+			  	padding: 5%;
+			  }
+
+			  #contenidoCalculadora{
+			  	margin-top: 2%;
+			  }
+
+			  #botonGoogleFinal{
+			  	width: 20%;
 			  }
 }
