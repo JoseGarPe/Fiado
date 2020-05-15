@@ -50,6 +50,51 @@
 			  #contenidoValores img {
 			  	width: 60%;
 			  }
+
+			  .contenedorSlider{
+			  	width: 100%;
+			  }
+
+			  .contenidoIzquierdo{
+			  	width: 100%;
+			  }
+
+			  .contenidoDerecho{
+			  	width: 100%;
+			  }
+
+			  .imagenTexto{
+			  	margin-top: 30px;
+			  	height: 50%;
+			  	width: 80%;
+			  	margin-left: 10%; 
+			  	padding-bottom: 50px;
+			  }
+
+			  .botonSlider{
+			  	margin-left: 17%; 
+			  	font-size: 20px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+			  }
+
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  }
+
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 25%;
+			  	width: 150px;
+			  }
+
+			  .imagenMano{
+			  	margin-left: 42%;
+			  	width: 60%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  }
 }
 
 @media screen and (max-width:400px) and (min-width:350px) {
@@ -104,6 +149,47 @@
 			  #contenidoValores img {
 			  	width: 50%;
 			  }
+
+			  .contenidoIzquierdo{
+			  	width: 100%;
+			  }
+
+			  .contenidoDerecho{
+			  	width: 100%;
+			  }
+
+			  .imagenTexto{
+			  	margin-top: 30px;
+			  	width: 80%;
+			  	margin-left: 10%; 
+			  	padding-bottom: 50px;
+			  }
+
+			  .botonSlider{
+			  	margin-left: 25%; 
+			  	font-size: 20px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+			  }
+
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  	border-radius: 10px;
+			  }
+
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 25%;
+			  	width: 200px;
+			  }
+
+			  .imagenMano{
+			  	margin-left: 55%;
+			  	width: 47%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  }
 }
 
 @media screen and (max-width:450px) and (min-width:400px) {
@@ -157,6 +243,46 @@
 			  #contenidoValores img {
 			  	width: 60%;
 			  }
+			  .contenidoIzquierdo{
+			  	width: 100%;
+			  }
+
+			  .contenidoDerecho{
+			  	width: 100%;
+			  }
+
+			  .imagenTexto{
+			  	margin-top: 30px;
+			  	width: 70%;
+			  	margin-left: 15%; 
+			  	padding-bottom: 50px;
+			  }
+
+			  .botonSlider{
+			  	font-size: 20px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+				margin-left: 26%;
+			  }
+
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  }
+
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 33%;
+			  	width: 150px;
+			  }
+
+			  .imagenMano{
+			  	margin-left: 42%;
+			  	width: 50%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  	right: 0px;
+			  }
 }
 
 @media screen and (max-width:500px) and (min-width:450px) {
@@ -209,6 +335,47 @@
 			  #contenidoValores img {
 			  	width: 60%;
 			  }
+
+			  .contenidoIzquierdo{
+			  	width: 100%;
+			  }
+
+			  .contenidoDerecho{
+			  	width: 100%;
+			  }
+
+			  .imagenTexto{
+			  	margin-top: 30px;
+			  	width: 70%;
+			  	margin-left: 15%; 
+			  	padding-bottom: 50px;
+			  }
+
+			  .botonSlider{
+			  	font-size: 20px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+				margin-left: 29%;
+			  }
+
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  }
+
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 35%;
+			  	width: 150px;
+			  }
+
+			  .imagenMano{
+			  	margin-left: 42%;
+			  	width: 45%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  	right: 0px;
+			  }
 }
 
 @media screen and (max-width:550px) and (min-width:500px) {
@@ -260,6 +427,47 @@
 
 			  #contenidoValores img {
 			  	width: 60%;
+			  }
+
+			  .contenidoIzquierdo{
+			  	width: 100%;
+			  }
+
+			  .contenidoDerecho{
+			  	width: 100%;
+			  }
+
+			  .imagenTexto{
+			  	margin-top: 30px;
+			  	width: 70%;
+			  	margin-left: 15%; 
+			  	padding-bottom: 50px;
+			  }
+
+			  .botonSlider{
+			  	font-size: 20px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+				margin-left: 29%;
+			  }
+
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  }
+
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 35%;
+			  	width: 150px;
+			  }
+
+			  .imagenMano{
+			  	margin-left: 42%;
+			  	width: 45%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  	right: 0px;
 			  }
 }
 
@@ -321,6 +529,47 @@
 			  #contenidoValores img {
 			  	width: 60%;
 			  }
+
+			  .contenidoIzquierdo{
+			  	width: 100%;
+			  }
+
+			  .contenidoDerecho{
+			  	width: 100%;
+			  }
+
+			  .imagenTexto{
+			  	margin-top: 30px;
+			  	width: 70%;
+			  	margin-left: 15%; 
+			  	padding-bottom: 50px;
+			  }
+
+			  .botonSlider{
+			  	font-size: 20px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+				margin-left: 29%;
+			  }
+
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  }
+
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 34%;
+			  	width: 150px;
+			  }
+
+			  .imagenMano{
+			  	margin-left: 42%;
+			  	width: 45%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  	right: 0px;
+			  }
 }
 
 @media screen and (max-width:700px) and (min-width:640px) {
@@ -377,6 +626,46 @@
 
 				  #contenidoValores img {
 				  	width: 60%;
+				  }
+
+				  .contenidoIzquierdo{
+				  	width: 100%;
+				  }
+
+				  .contenidoDerecho{
+				  	width: 100%;
+				  }
+
+				  .imagenTexto{
+				  	margin-top: 30px;
+				  	width: 65%;
+				  	margin-left: 15%; 
+				  	padding-bottom: 50px;
+				  }
+
+				  .botonSlider{
+				  	font-size: 25px;
+				  	background-color: #FFF;
+				  	padding: 15px;
+				  	border-radius: 10px;
+					margin-left: 20%;
+				  }
+
+				  .botonSlider:hover{
+				  	cursor: pointer;
+				  }
+
+				  .googlePlay{
+				  	margin-top: 15px;
+				  	margin-left: 23.5%;
+				  	width: 200px;
+				  }
+
+				  .imagenMano{
+				  	width: 45%;
+				  	position:absolute;
+				  	bottom: 0px;
+				  	right: 0px;
 				  }
 }
 
@@ -436,6 +725,46 @@
 				  #contenidoValores img {
 				  	width: 60%;
 				  }
+
+				  .contenidoIzquierdo{
+				  	width: 100%;
+				  }
+
+				  .contenidoDerecho{
+				  	width: 100%;
+				  }
+
+				  .imagenTexto{
+				  	margin-top: 30px;
+				  	width: 65%;
+				  	margin-left: 15%; 
+				  	padding-bottom: 50px;
+				  }
+
+				  .botonSlider{
+				  	font-size: 25px;
+				  	background-color: #FFF;
+				  	padding: 15px;
+				  	border-radius: 10px;
+					margin-left: 20%;
+				  }
+
+				  .botonSlider:hover{
+				  	cursor: pointer;
+				  }
+
+				  .googlePlay{
+				  	margin-top: 15px;
+				  	margin-left: 23.5%;
+				  	width: 200px;
+				  }
+
+				  .imagenMano{
+				  	width: 45%;
+				  	position:absolute;
+				  	bottom: 0px;
+				  	right: 0px;
+				  }
 }
 
 @media screen and (max-width:800px) and (min-width:750px) {
@@ -482,24 +811,68 @@
 			  }
 
 			  #contenidoValores{
-			  	width: 80%;
-			  	margin-left: 16%;
+			  	width: 100%;
+			  	margin-left: 3%;
 			  }	
 
 			  #valor1, #valor2, #valor3, #valor4{
-			  	width: 40%;
+			  	width: 45%;
 			  	float: left;
-			  	height: 300px;
+			  	height: 330px;
 			  	margin-top: 20px;
 			  }
 
+			  #valor3, #valor4{
+			  	margin-top: 30px;
+			  }
+
 			  #contenidoValores h6 {
-			  	font-size: 17px;
+			  	font-size: 15px;
 			  }
 
 			  #contenidoValores img {
 			  	width: 60%;
 			  }
+
+			  .contenidoIzquierdo{
+				  	width: 100%;
+				  }
+
+				  .contenidoDerecho{
+				  	width: 100%;
+				  }
+
+				  .imagenTexto{
+				  	margin-top: 30px;
+				  	width: 65%;
+				  	margin-left: 15%; 
+				  	padding-bottom: 50px;
+				  }
+
+				  .botonSlider{
+				  	font-size: 25px;
+				  	background-color: #FFF;
+				  	padding: 15px;
+				  	border-radius: 10px;
+					margin-left: 20%;
+				  }
+
+				  .botonSlider:hover{
+				  	cursor: pointer;
+				  }
+
+				  .googlePlay{
+				  	margin-top: 15px;
+				  	margin-left: 23.5%;
+				  	width: 200px;
+				  }
+
+				  .imagenMano{
+				  	width: 45%;
+				  	position:absolute;
+				  	bottom: 0px;
+				  	right: 0px;
+				  }
 }
 
 @media screen and (max-width:990px) and (min-width:800px) {
@@ -559,6 +932,46 @@
 			  #contenidoValores img {
 			  	width: 60%;
 			  }
+
+			  .contenidoIzquierdo{
+			  	width: 100%;
+			  }
+
+			  .contenidoDerecho{
+			  	width: 100%;
+			  }
+
+			  .imagenTexto{
+			  	margin-top: 30px;
+			  	width: 50%;
+			  	margin-left: 10%; 
+			  	padding-bottom: 50px;
+			  }
+
+			  .botonSlider{
+			  	font-size: 25px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+				margin-left: 15%;
+			  }
+
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  }
+
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 17%;
+			  	width: 200px;
+			  }
+
+			  .imagenMano{
+			  	width: 50%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  	right: 0px;
+			  }
 }
 
 @media screen and (min-width:991px) {
@@ -616,5 +1029,46 @@
 
 			  #contenidoValores img {
 			  	width: 60%;
+			  }
+
+			  .contenidoIzquierdo{
+			  	width: 50%;
+			  }
+
+			  .contenidoDerecho{
+			  	width: 50%;
+			  	float: left;
+			  }
+
+			  .imagenTexto{
+			  	margin-top: 50px;
+			  	width: 70%;
+			  	margin-left: 20%; 
+			  	padding-bottom: 50px;
+			  }
+
+			  .botonSlider{
+			  	font-size: 25px;
+			  	background-color: #FFF;
+			  	padding: 15px;
+			  	border-radius: 10px;
+				margin-left: 30%;
+			  }
+
+			  .botonSlider:hover{
+			  	cursor: pointer;
+			  }
+
+			  .googlePlay{
+			  	margin-top: 15px;
+			  	margin-left: 34%;
+			  	width: 200px;
+			  }
+
+			  .imagenMano{
+			  	width: 40%;
+			  	position:absolute;
+			  	bottom: 0px;
+			  	right: 0px;
 			  }
 }
