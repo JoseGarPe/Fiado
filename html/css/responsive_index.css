@@ -1130,6 +1130,10 @@
 			  	width: 30%;
 			  }
 
+			.phrase{
+			  font-size: 18px;
+			}
+
 }
 
 @media screen and (min-width:991px) {
@@ -1238,4 +1242,5 @@
 			  #botonGoogleFinal{
 			  	width: 20%;
 			  }
+
 }
