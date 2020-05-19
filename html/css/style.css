@@ -2090,6 +2090,9 @@ font-size: 20px;
     margin-left: -82px;
   }
 
+.phrase{
+  font-size: 28px;
+}
 @media screen and (max-width:640px) and (min-width:450px) {
 .text-slider{
   font-size: 35px;
