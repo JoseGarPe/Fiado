@@ -55,27 +55,28 @@ $authtentication=function() use($app){
 
 //GET Todas las consultas
 
-$app->post('/api/clientes',function(Request $request, Response $response)use($app){
+$app->get('/api/loansR',function(Request $request, Response $response)use($app){
   
+    header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+    header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
     $sql ="SELECT * FROM request";
-    
+    $headers=$request->getHeaders();
     try{
            $db = new db();
             $db = $db->conectDB();
             $result = $db->query($sql);
             if($result->rowCount()>0){
                 $solicitud = $result->fetchAll(PDO::FETCH_OBJ);
-              $solicitud['header']= $arrayName = array('Content-type' => $app->response->headers['Content-type'], 'secret_id'=>$app->response->headers['secret_id']); 
+             // $solicitud['header']= $arrayName = array('Content-type' => $app->response->headers['Content-type'], 'secret_id'=>$app->response->headers['secret_id']); 
              // $solicitud['header']= $app->response->headers['secret_id'] ;
               //  $solicitud['header']=$headers['Content-type'];
                 $respon = array();
-                $respon['status']=200;
                 $respon['error']='false';
                 $respon['message']='Datos Solicitudes';
-                $respon['token']= bin2hex(openssl_random_pseudo_bytes(8));
                 $respon['request']=$solicitud;
           
-                echo json_encode($respon);
+                echo $response->withJson($respon,201);
             }else{
                 echo json_encode("No existen solicitudes en la Base");
             }
@@ -96,6 +97,10 @@ $app->post('/api/clientes',function(Request $request, Response $response)use($ap
 //GET una solicitud
 
 $app->get('/api/clientes/{id}', function(Request $request, Response $response){
+
+  header('Access-Control-Allow-Origin: *');
+  header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+  header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
     $id_cliente = $request->getAttribute('id');
     $sql ="SELECT * FROM request WHERE user_id=$id_cliente";
     try{
@@ -506,41 +511,51 @@ $app->get('/api/protected', function(Request $request, Response $response)use($a
 
    echo json_encode($respon);*/
 });
-//*********************** TOKEENS
+//----------------------------------------------------------------------------------------------------------//
+//-------------------------------------- insertar usuario --------------------------------------------------//
+$app->post('/api/user/new', function(Request $request, Response $response){
+    $first_name =$request->getParam('first_name');
+    $last_name = $request->getParam('last_name');
+    $email=$request->getParam('email');
+    $password=$request->getParam('password');
+    $user=$request->getParam('user');
+    $direccion=$request->getParam('direccion');
+    $country=$request->getParam('country');
+    $state=$request->getParam('state');
+    $city=$request->getParam('city');
+    $zip=$request->getParam('zip');
+    $type_user=$request->getParam('type_user');
+   
+   
+    $user_request = new User();
+    $user_request->setFirst_name($first_name);
+    $user_request->setLast_name($last_name);
+    $user_request->setEmail($email);
+    $user_request->setPassword($password);
+    $user_request->setUser($user);
+    $user_request->setDireccion($direccion);
+    $user_request->setCountry($country);
+    $user_request->setState($state);
+    $user_request->setCity($city);
+    $user_request->setZip($zip);
+    $user_request->setType_user($type_user);
+    $data=$user_request->save();
+    $respon=array();
+    //$data['Headers']= $app->response->headers['Content-type'] ;
+    //$app->response->setStatus(201);
+        if (!empty($data)) {
+            $respon['success']='true';
+            $respon['data']=$data;
 
-/**
- * Realiza la conexion curl para comprobar si el token es valido en la api para el scope solicitado
- * $token - Token a comprobar
- * $scope - permisos para el usuario. Cada metodo de nuestra api va a tener su propio scope: en este caso los posibles valores son "usuarios", "usuario", "mensajes", "mensaje"
- */
-function curlCheckToken($token_value, $scope = null) {
+           echo $response->withJson($respon,201);  //imprime un json con status 200: OK CREATED
+        }
+   // echoResponse(200,$respon);
 
-    $ch = curl_init();
-    //Url al servidor Oauth
-    curl_setopt($ch, CURLOPT_URL, "http://localhost/oauth-demo/response.php");
-    curl_setopt($ch, CURLOPT_HEADER, 0);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, 'access_token=' . $token_value . '&scope=' . urlencode($scope));
-    //Json response
-    $raw_data = curl_exec($ch);
-    curl_close($ch);
+   echo json_encode($data);
+});
 
-    $data = json_decode($raw_data);
-    /**
-     * Procesamos la respuesta de curlhttp://localhost/api-slimframework/listado/
-     * Si en el array devuelto se encuentra la clave success con valor true es que hemos tenido exito
-     * Si no, mostramos los errores que nos devuelve la api
-     */
-    if (isset($data->success) AND $data->success == true) {
+//----------------------------------------------------------------------------------------------------------//
 
-        return true;
-    }
-    else {
-
-        echo $raw_data;
-    }
-}
 
 
 ?>

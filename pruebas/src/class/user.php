@@ -7,6 +7,19 @@ class User
     private $client_id;
     private $client_secret;
     private $token;
+    private $first_name;
+    private $last_name;
+    private $email;
+    private $password;
+    private $user;
+    private $direccion;
+    private $country;
+    private $state;
+    private $city;
+    private $zip;
+    private $created;
+    private $modified;
+    
     
     public function __construct()
 {
@@ -15,6 +28,18 @@ class User
         $this->client_id = "";
         $this->client_secret = "";
         $this->token = "";
+        $this->first_name= "";
+        $this->last_name= "";
+        $this->email= "";
+        $this->password= "";
+        $this->user= "";
+        $this->direccion= "";
+        $this->country= "";
+        $this->state= "";
+        $this->city= "";
+        $this->zip= "";
+        $this->created= "";
+        $this->modified= "";
 
 }
 
@@ -67,6 +92,86 @@ class User
     public function setPassword($password) {
         $this->password = $password;
     }
+    public function getUser() {
+        return $this->user;
+    }
+
+    public function setUser($user) {
+        $this->user = $user;
+    }
+
+    public function getDireccion() {
+        return $this->direccion;
+    }
+
+    public function setDireccion($direccion) {
+        $this->direccion = $direccion;
+    }
+
+    public function getCountry() {
+        return $this->country;
+    }
+
+    public function setCountry($country) {
+        $this->country = $country;
+    }
+    public function getState() {
+        return $this->state;
+    }
+
+    public function setState($state) {
+        $this->state = $state;
+    }
+    public function getCity() {
+        return $this->city;
+    }
+
+    public function setCity($city) {
+        $this->city = $city;
+    }
+    public function getZip() {
+        return $this->zip;
+    }
+
+    public function setZip($zip) {
+        $this->zip = $zip;
+    }
+
+    public function getCreated() {
+        return $this->created;
+    }
+
+    public function setCreated($created) {
+        $this->created = $created;
+    }
+    public function getModified() {
+        return $this->modified;
+    }
+
+    public function setModified($modified) {
+        $this->modified = $modified;
+    }
+
+    
+    public function getType_user() {
+        return $this->type_user;
+    }
+
+    public function setType_user($type_user) {
+        $this->type_user = $type_user;
+    }
+    public function getUser_status() {
+        return $this->user_status;
+    }
+
+    public function setUser_status($user_status) {
+        $this->user_status = $user_status;
+    }
+
+
+
+
+
 
 
  /*
@@ -149,4 +254,44 @@ class User
             return json_encode($respon);
          }
     }
-}
+    // ----------------------------------------------------------------------------------------------------------------------//
+    // ----------------------------------------------------------------------------------------------------------------------//
+    // ------------------------------------------------INSERT USERS----------------------------------------------------------//
+    // ----------------------------------------------------------------------------------------------------------------------//
+    // ----------------------------------------------------------------------------------------------------------------------//
+    public function save(){
+        $sql ="INSERT INTO `users`(`id`, `first_name`, `last_name`, `email`, `password`, `user`, `direccion`, `country`, `state`, `city`, `zip`, `id_type_user`) VALUES(null, :first_name, :last_name, :email, :pass, :user,:direccion, :country, :states, :city, :zip , :id_type_user)";
+        try {
+            $db = new db();
+            $db = $db->conectDB();
+            $result = $db->prepare($sql);
+            $result->bindParam(':first_name',$this->first_name);
+            $result->bindParam(':last_name',$this->last_name);
+            $result->bindParam(':email',$this->email);
+            $result->bindParam(':pass',$this->password);
+            $result->bindParam(':user',$this->user);
+            $result->bindParam(':direccion',$this->direccion);
+            $result->bindParam(':country',$this->country);
+            $result->bindParam(':states',$this->state);
+            $result->bindParam(':city',$this->city);
+            $result->bindParam(':zip',$this->zip);
+            $result->bindParam(':id_typo_user',$this->id_typo_user);
+            $result->execute();
+            if($result->rowCount() >0){
+                $data = array();
+                $data['status']='201';
+                $data['message']='User successfully created';
+                return $data;
+            }else{
+                $data = array();
+                $data['status']='400';
+                $data['message']='User not created';
+                return $data;
+            }
+        }catch(PDOException $e){
+            $app->status(400);
+            echo '{ "error": {"text":'.$e->getMessage().'}}';
+        }
+    }
+
+}//end class
