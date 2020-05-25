@@ -19,6 +19,7 @@ class User
     private $zip;
     private $created;
     private $modified;
+    private $type_user;
     
     
     public function __construct()
@@ -40,6 +41,8 @@ class User
         $this->zip= "";
         $this->created= "";
         $this->modified= "";
+        $this->type_user= "";
+        $this->user_status ="";
 
 }
 
@@ -64,6 +67,23 @@ class User
         return $this->client_secret;
     }
 
+    
+    public function getFirst_name() {
+        return $this->first_name;
+    }
+
+    public function setFirst_name($first_name) {
+        $this->first_name = $first_name;
+    }
+
+    
+    public function getLast_name() {
+        return $this->last_name;
+    }
+
+    public function setLast_name($last_name) {
+        $this->last_name = $last_name;
+    }
     public function setClient_secret($requestid) {
     /*	$pass = hash("sha256", $requestid);
         $this->client_secret = $pass;*/
@@ -90,7 +110,8 @@ class User
     }
 
     public function setPassword($password) {
-        $this->password = $password;
+        $this->password = hash("sha256", $password);
+        //$this->password =  $password;
     }
     public function getUser() {
         return $this->user;
@@ -275,7 +296,7 @@ class User
             $result->bindParam(':states',$this->state);
             $result->bindParam(':city',$this->city);
             $result->bindParam(':zip',$this->zip);
-            $result->bindParam(':id_typo_user',$this->id_typo_user);
+            $result->bindParam(':id_type_user',$this->type_user);
             $result->execute();
             if($result->rowCount() >0){
                 $data = array();

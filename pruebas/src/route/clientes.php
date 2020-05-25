@@ -551,7 +551,7 @@ $app->post('/api/user/new', function(Request $request, Response $response){
         }
    // echoResponse(200,$respon);
 
-   echo json_encode($data);
+  // echo json_encode($data);
 });
 
 //----------------------------------------------------------------------------------------------------------//
