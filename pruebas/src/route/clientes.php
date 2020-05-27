@@ -514,41 +514,337 @@ $app->get('/api/protected', function(Request $request, Response $response)use($a
 //----------------------------------------------------------------------------------------------------------//
 //-------------------------------------- insertar usuario --------------------------------------------------//
 $app->post('/api/user/new', function(Request $request, Response $response){
-    $first_name =$request->getParam('first_name');
-    $last_name = $request->getParam('last_name');
-    $email=$request->getParam('email');
-    $password=$request->getParam('password');
-    $user=$request->getParam('user');
-    $direccion=$request->getParam('direccion');
-    $country=$request->getParam('country');
-    $state=$request->getParam('state');
-    $city=$request->getParam('city');
-    $zip=$request->getParam('zip');
-    $type_user=$request->getParam('type_user');
-   
-   
-    $user_request = new User();
-    $user_request->setFirst_name($first_name);
-    $user_request->setLast_name($last_name);
-    $user_request->setEmail($email);
-    $user_request->setPassword($password);
-    $user_request->setUser($user);
-    $user_request->setDireccion($direccion);
-    $user_request->setCountry($country);
-    $user_request->setState($state);
-    $user_request->setCity($city);
-    $user_request->setZip($zip);
-    $user_request->setType_user($type_user);
-    $data=$user_request->save();
-    $respon=array();
-    //$data['Headers']= $app->response->headers['Content-type'] ;
-    //$app->response->setStatus(201);
-        if (!empty($data)) {
-            $respon['success']='true';
-            $respon['data']=$data;
+    if ($request->getParam('first_name') !=null){
+        $first_name =$request->getParam('first_name');
+        if ($request->getParam('last_name') !=null){
+            $last_name =$request->getParam('last_name');
+            if ($request->getParam('email') !=null){
+                $email =$request->getParam('email');
+                if ($request->getParam('password') !=null){
+                    $password =$request->getParam('password');
+                    if ($request->getParam('user') !=null){
+                        $user =$request->getParam('user');
+                        if ($request->getParam('direccion') !=null){
+                            $direccion =$request->getParam('direccion');
+                            if ($request->getParam('country') !=null){
+                                $country =$request->getParam('country');
+                                if ($request->getParam('state') !=null){
+                                    $state =$request->getParam('state');
+                                    if ($request->getParam('city') !=null){
+                                        $city =$request->getParam('city');
+                                        if ($request->getParam('zip') !=null){
+                                            $zip =$request->getParam('zip');
+                                            if ($request->getParam('type_user') !=null){
+                                                $type_user =$request->getParam('type_user');
 
-           echo $response->withJson($respon,201);  //imprime un json con status 200: OK CREATED
+                                                try {
+                                                       
+                                                    $user_request = new User();
+                                                    $user_request->setFirst_name($first_name);
+                                                    $user_request->setLast_name($last_name);
+                                                    $user_request->setEmail($email);
+                                                    $user_request->setPassword($password);
+                                                    $user_request->setUser($user);
+                                                    $user_request->setDireccion($direccion);
+                                                    $user_request->setCountry($country);
+                                                    $user_request->setState($state);
+                                                    $user_request->setCity($city);
+                                                    $user_request->setZip($zip);
+                                                    $user_request->setType_user($type_user);
+                                                    $data=$user_request->save();
+                                                    $respon=array();
+                                                    //$data['Headers']= $app->response->headers['Content-type'] ;
+                                                    //$app->response->setStatus(201);
+                                                        if (!empty($data)) {
+                                                            http_response_code(200);
+                                                            $respon['success']='true';
+                                                            $respon['data']=$data;
+                                                            echo json_encode($respon);
+                                                     //   echo $response->withJson($respon,201);  //imprime un json con status 200: OK CREATED
+                                                        }
+                                                }catch (Exception $e){
+                                  
+                                                http_response_code(401);
+                                  
+                                               $respon= array(
+                                                    "message" => "Access denied.",
+                                                    "error" => $e->getMessage(),
+                                                    "key"=>$authHeader
+                                  
+                                                );
+                                             echo $response->withJson($respon,401);
+                                           
+                                                 }
+                                            }else{
+                                                http_response_code(400);
+                                                $respon = array();
+                                                $respon['status']=400;
+                                                $respon['error']='true';
+                                                $respon['message']='Failed to receive request';
+                                                echo json_encode($respon);
+                                        
+                                            }
+                                        }else{
+                                            http_response_code(400);
+                                            $respon = array();
+                                            $respon['status']=400;
+                                            $respon['error']='true';
+                                            $respon['message']='Failed to receive request';
+                                            echo json_encode($respon);
+                                    
+                                        }
+                                    }else{
+                                        http_response_code(400);
+                                        $respon = array();
+                                        $respon['status']=400;
+                                        $respon['error']='true';
+                                        $respon['message']='Failed to receive request';
+                                        echo json_encode($respon);
+                                
+                                    }
+                                }else{
+                                    http_response_code(400);
+                                    $respon = array();
+                                    $respon['status']=400;
+                                    $respon['error']='true';
+                                    $respon['message']='Failed to receive request';
+                                    echo json_encode($respon);
+                            
+                                }
+                            }else{
+                                http_response_code(400);
+                                $respon = array();
+                                $respon['status']=400;
+                                $respon['error']='true';
+                                $respon['message']='Failed to receive request';
+                                echo json_encode($respon);
+                        
+                            }
+                        }else{
+                            http_response_code(400);
+                            $respon = array();
+                            $respon['status']=400;
+                            $respon['error']='true';
+                            $respon['message']='Failed to receive request';
+                            echo json_encode($respon);
+                    
+                        }
+                    }else{
+                        http_response_code(400);
+                        $respon = array();
+                        $respon['status']=400;
+                        $respon['error']='true';
+                        $respon['message']='Failed to receive request';
+                        echo json_encode($respon);
+                
+                    }
+                }else{
+                    http_response_code(400);
+                    $respon = array();
+                    $respon['status']=400;
+                    $respon['error']='true';
+                    $respon['message']='Failed to receive request';
+                    echo json_encode($respon);
+            
+                }
+            }else{
+                http_response_code(400);
+                $respon = array();
+                $respon['status']=400;
+                $respon['error']='true';
+                $respon['message']='Failed to receive request';
+                echo json_encode($respon);
+        
+            }
+        }else{
+            http_response_code(400);
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Failed to receive request';
+            echo json_encode($respon);
+    
         }
+    }else{
+        http_response_code(400);
+        $respon = array();
+        $respon['status']=400;
+        $respon['error']='true';
+        $respon['message']='Failed to receive request';
+        echo json_encode($respon);
+
+    }
+
+   // echoResponse(200,$respon);
+
+  // echo json_encode($data);
+});
+
+//----------------------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------------------//
+//-------------------------------------- insertar producer --------------------------------------------------//
+$app->post('/api/producer/new', function(Request $request, Response $response){
+    if ($request->getParam('first_name') !=null){
+        $first_name =$request->getParam('first_name');
+        if ($request->getParam('last_name') !=null){
+            $last_name =$request->getParam('last_name');
+            if ($request->getParam('email') !=null){
+                $email =$request->getParam('email');
+                if ($request->getParam('password') !=null){
+                    $password =$request->getParam('password');
+                    if ($request->getParam('user') !=null){
+                        $user =$request->getParam('user');
+                        if ($request->getParam('direccion') !=null){
+                            $direccion =$request->getParam('direccion');
+                            if ($request->getParam('country') !=null){
+                                $country =$request->getParam('country');
+                                if ($request->getParam('state') !=null){
+                                    $state =$request->getParam('state');
+                                    if ($request->getParam('city') !=null){
+                                        $city =$request->getParam('city');
+                                        if ($request->getParam('zip') !=null){
+                                            $zip =$request->getParam('zip');
+                                            if ($request->getParam('id_type_prod') !=null){
+                                                $id_type_prod =$request->getParam('id_type_prod');
+
+                                                try {
+                                                       
+                                                    $user_request = new Producer();
+                                                    $user_request->setFirst_name($first_name);
+                                                    $user_request->setLast_name($last_name);
+                                                    $user_request->setEmail($email);
+                                                    $user_request->setPassword($password);
+                                                    $user_request->setUser($user);
+                                                    $user_request->setDireccion($direccion);
+                                                    $user_request->setCountry($country);
+                                                    $user_request->setState($state);
+                                                    $user_request->setCity($city);
+                                                    $user_request->setZip($zip);
+                                                    $user_request->setId_type_prod($id_type_prod);
+                                                    $data=$user_request->save();
+                                                    $respon=array();
+                                                    //$data['Headers']= $app->response->headers['Content-type'] ;
+                                                    //$app->response->setStatus(201);
+                                                        if (!empty($data)) {
+                                                            http_response_code(200);
+                                                            $respon['success']='true';
+                                                            $respon['data']=$data;
+                                                            echo json_encode($respon);
+                                                     //   echo $response->withJson($respon,201);  //imprime un json con status 200: OK CREATED
+                                                        }
+                                                }catch (Exception $e){
+                                  
+                                                http_response_code(401);
+                                  
+                                               $respon= array(
+                                                    "message" => "Access denied.",
+                                                    "error" => $e->getMessage(),
+                                                    "key"=>$authHeader
+                                  
+                                                );
+                                             echo $response->withJson($respon,401);
+                                           
+                                                 }
+                                            }else{
+                                                http_response_code(400);
+                                                $respon = array();
+                                                $respon['status']=400;
+                                                $respon['error']='true';
+                                                $respon['message']='Failed to receive request';
+                                                echo json_encode($respon);
+                                        
+                                            }
+                                        }else{
+                                            http_response_code(400);
+                                            $respon = array();
+                                            $respon['status']=400;
+                                            $respon['error']='true';
+                                            $respon['message']='Failed to receive request';
+                                            echo json_encode($respon);
+                                    
+                                        }
+                                    }else{
+                                        http_response_code(400);
+                                        $respon = array();
+                                        $respon['status']=400;
+                                        $respon['error']='true';
+                                        $respon['message']='Failed to receive request';
+                                        echo json_encode($respon);
+                                
+                                    }
+                                }else{
+                                    http_response_code(400);
+                                    $respon = array();
+                                    $respon['status']=400;
+                                    $respon['error']='true';
+                                    $respon['message']='Failed to receive request';
+                                    echo json_encode($respon);
+                            
+                                }
+                            }else{
+                                http_response_code(400);
+                                $respon = array();
+                                $respon['status']=400;
+                                $respon['error']='true';
+                                $respon['message']='Failed to receive request';
+                                echo json_encode($respon);
+                        
+                            }
+                        }else{
+                            http_response_code(400);
+                            $respon = array();
+                            $respon['status']=400;
+                            $respon['error']='true';
+                            $respon['message']='Failed to receive request';
+                            echo json_encode($respon);
+                    
+                        }
+                    }else{
+                        http_response_code(400);
+                        $respon = array();
+                        $respon['status']=400;
+                        $respon['error']='true';
+                        $respon['message']='Failed to receive request';
+                        echo json_encode($respon);
+                
+                    }
+                }else{
+                    http_response_code(400);
+                    $respon = array();
+                    $respon['status']=400;
+                    $respon['error']='true';
+                    $respon['message']='Failed to receive request';
+                    echo json_encode($respon);
+            
+                }
+            }else{
+                http_response_code(400);
+                $respon = array();
+                $respon['status']=400;
+                $respon['error']='true';
+                $respon['message']='Failed to receive request';
+                echo json_encode($respon);
+        
+            }
+        }else{
+            http_response_code(400);
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Failed to receive request';
+            echo json_encode($respon);
+    
+        }
+    }else{
+        http_response_code(400);
+        $respon = array();
+        $respon['status']=400;
+        $respon['error']='true';
+        $respon['message']='Failed to receive request';
+        echo json_encode($respon);
+
+    }
+
    // echoResponse(200,$respon);
 
   // echo json_encode($data);
