@@ -8,7 +8,14 @@ $app = new \Slim\App;
 
     $app->response->headers['Content-type'] ='application/json';
     $app->response->headers['secret_id'] ='user';
-
+    header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+    header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+    $method = $_SERVER['REQUEST_METHOD'];
+    if($method == "OPTIONS") {
+        die();
+    }
  function echoResponse($status_code, $response) {
 $app = new \Slim\App;
 // Http response code
@@ -52,6 +59,64 @@ $authtentication=function() use($app){
 
 
 
+// GET TIPOS DE PRODUCTORES 
+$app->get('/api/type_prod',function(Request $request, Response $response)use($app){
+    try {
+                                                       
+        $user_request = new Producer();
+        $data=$user_request->selectAll_type_prod();
+        $respon=array();
+        //$data['Headers']= $app->response->headers['Content-type'] ;
+        //$app->response->setStatus(201);
+            if (!empty($data)) {
+                http_response_code(200);
+                $respon['success']='true';
+                $respon['data']=$data;
+                echo json_encode($respon);
+         //   echo $response->withJson($respon,201);  //imprime un json con status 200: OK CREATED
+            }
+    }catch (Exception $e){
+
+    http_response_code(401);
+
+   $respon= array(
+        "message" => "Access denied.",
+        "error" => $e->getMessage()
+    );
+    echo json_encode($respon);
+ //echo $response->withJson($respon,401);
+
+     }
+});
+// GET TIPOS DE Usuarios
+$app->get('/api/type_user',function(Request $request, Response $response)use($app){
+    try {
+                                                       
+        $user_request = new User();
+        $data=$user_request->selectAll_type_user();
+        $respon=array();
+        //$data['Headers']= $app->response->headers['Content-type'] ;
+        //$app->response->setStatus(201);
+            if (!empty($data)) {
+                http_response_code(200);
+                $respon['success']='true';
+                $respon['data']=$data;
+                echo json_encode($respon);
+         //   echo $response->withJson($respon,201);  //imprime un json con status 200: OK CREATED
+            }
+    }catch (Exception $e){
+
+    http_response_code(401);
+
+   $respon= array(
+        "message" => "Access denied.",
+        "error" => $e->getMessage()
+    );
+    echo json_encode($respon);
+ //echo $response->withJson($respon,401);
+
+     }
+});
 
 //GET Todas las consultas
 

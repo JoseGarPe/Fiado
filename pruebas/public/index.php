@@ -11,6 +11,7 @@ OAuth2\Autoloader::register();*/
 require '../src/config/db.php';
 require '../src/class/producer_response.php';
 require '../src/class/user.php';
+require '../src/class/producer.php';
 //require 'server.php';
 //$app = AppFactory::create();
 $app = new \Slim\App;

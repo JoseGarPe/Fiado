@@ -314,5 +314,38 @@ class User
             echo '{ "error": {"text":'.$e->getMessage().'}}';
         }
     }
+//-----------------------------------------------------------//
 
+public function selectAll_type_user(){
+    $sql ="SELECT * FROM type_user";
+    try{
+           $db = new db();
+            $db = $db->conectDB();
+            $result = $db->query($sql);
+            if($result->rowCount()>0){
+                $solicitud = $result->fetchAll(PDO::FETCH_OBJ);
+                $respon = array();
+                $respon['error']='false';
+                $respon['message']='Tipo de Usuarios';
+                $respon['request']=$solicitud;
+                return $respon;
+            }else{
+                $respon = array();
+                $respon['error']='True';
+                $respon['message']='Tipo de Usuarios No creados';
+                $respon['request']='Not Found';
+                return $respon;
+            }
+            $result = null;
+            $db=null;
+       
+    }catch(PDOException $e){
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Ocurrio un error al consultar';
+            $respon['request']=$e.getMessage();
+            echo json_encode($respon);
+    }
+}
 }//end class

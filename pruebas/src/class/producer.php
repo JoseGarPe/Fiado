@@ -1,5 +1,4 @@
 <?php
-<?php 
 class Producer
 {
     private $id_user;
@@ -214,11 +213,26 @@ public function setUser_status($user_status) {
 
 public function save(){
     $sql_user ="INSERT INTO `users`(`id`, `first_name`, `last_name`, `email`, `password`, `user`, `direccion`, `country`, `state`, `city`, `zip`, `id_type_user`) VALUES(null, :first_name, :last_name, :email, :pass, :user,:direccion, :country, :states, :city, :zip , :id_type_user)";
-    $sql_last_user="SELECT * FROM users ORDER BY id_user DESC LIMIT 1";
-    $sql_producer= "INSERT INTO `producer`(`user_id_prod`, `id_type_prod`, `id_user`, `amount_fund`, `retenido`) VALUES(NULL,:id_type_prod,:id_user,0.00,0.00)";
+    $sql_last_user="SELECT * FROM users ORDER BY id DESC LIMIT 1";
+    $sql_type="SELECT * FROM `type_user` WHERE `type_user` ='Productor' OR `type_user`='productor'";
+    $sql_producer= "INSERT INTO `producer`(`user_id_prod`, `id_type_prod`, `id_user`) VALUES(NULL,:id_type_prod,:id_user)";
     try {
         $db = new db();
         $db = $db->conectDB();
+        //extraer tipo promotor
+        $result_type = $db->query($sql_type); 
+        $tu = $result_type->fetchAll(PDO::FETCH_OBJ);
+                  
+                    if($result_type->rowCount()>0){
+                          foreach ($tu as $value1) {
+                        $user_type=$value1->id_type_user;
+                        }
+                    }else{
+                        $data = array();
+                        $data['status']='400';
+                        $data['message']='User Type "Productor" do not Create';
+                        return $data;
+                    }
         $result = $db->prepare($sql_user);
         $result->bindParam(':first_name',$this->first_name);
         $result->bindParam(':last_name',$this->last_name);
@@ -230,7 +244,7 @@ public function save(){
         $result->bindParam(':states',$this->state);
         $result->bindParam(':city',$this->city);
         $result->bindParam(':zip',$this->zip);
-        $result->bindParam(':id_type_user',$this->type_user);
+        $result->bindParam(':id_type_user',$user_type);
         $result->execute();
         if($result->rowCount() >0){
             $result_user = $db->query($sql_last_user);
@@ -238,11 +252,12 @@ public function save(){
                 if($result_user->rowCount()>0){
                     $productor = $result_user->fetchAll(PDO::FETCH_OBJ);
                     foreach ($productor as $value) {
-                        $user_register=$value->user_id;
+                        $user_register=$value->id;
                     }
                     $result_prod = $db->prepare($sql_producer);
                     $result_prod->bindParam(':id_type_prod',$this->id_type_prod);
                     $result_prod->bindParam(':id_user',$user_register);
+                    $result_prod->execute();
                     if ($result_prod->rowCount()>0) {
                         $data = array();
                         $data['status']='201';
@@ -251,7 +266,7 @@ public function save(){
                     }else{
                         $data = array();
                         $data['status']='400';
-                        $data['message']='User not created';
+                        $data['message']='User not created'.$this->id_type_prod;
                         return $data;
                     }
                 }else{
@@ -265,11 +280,42 @@ public function save(){
             return $data;
         }
     }catch(PDOException $e){
-        $app->status(400);
         echo '{ "error": {"text":'.$e->getMessage().'}}';
     }
 }
-
+//---------------------------------------------------------------------------//
+public function selectAll_type_prod(){
+    $sql ="SELECT * FROM type_producer";
+    try{
+           $db = new db();
+            $db = $db->conectDB();
+            $result = $db->query($sql);
+            if($result->rowCount()>0){
+                $solicitud = $result->fetchAll(PDO::FETCH_OBJ);
+                $respon = array();
+                $respon['error']='false';
+                $respon['message']='Tipo de Productores';
+                $respon['request']=$solicitud;
+                return $respon;
+            }else{
+                $respon = array();
+                $respon['error']='True';
+                $respon['message']='Tipo de Productores No creados';
+                $respon['request']='Not Found';
+                return $respon;
+            }
+            $result = null;
+            $db=null;
+       
+    }catch(PDOException $e){
+            $respon = array();
+            $respon['status']=400;
+            $respon['error']='true';
+            $respon['message']='Ocurrio un error al consultar';
+            $respon['request']=$e.getMessage();
+            echo json_encode($respon);
+    }
+}
   
 
 }//end class producer
