@@ -16,6 +16,125 @@ $app = new \Slim\App;
     if($method == "OPTIONS") {
         die();
     }
+    function jwt_token($client_secret, $id_secret){
+        
+    //client_secret & client_id 
+    // desarrollador;
+   $client_dev='4ba4e43af92ba04145ed3b987b3d238ec2fe3d39a4d1a5a29e85c89113aed745';
+   $id_dev='725e5a219d91686cee29d5734d835d8b35745e880f718fbeda30064a66d1a9aa';
+   // Aplaudo
+   $client_appl='613cda37ef3c7be55a607a697e6389eaa0ed86c6eed804574d360fe45b1896b6';
+   $id_appl='7e26e8e19f60c97a9e0b57fe7567e757894f691ac1c430e23eded80b47c0531b';
+   // Usuario normal
+   $client_user='198146354625538ee717c0b50db16adbf51dc7aa708a3821e65af4b6546409da';
+   $id_user='d278e71ded2f4fe6b00e3125373fe280b1f4de389b3d01aa94972990b616f3fd';
+   //-----------------------------------------------------------------------------//
+        if ($client_secret==$client_dev && $id_secret==$id_dev) {
+                    
+            $secret_key = "fiado_productores_2020";
+            //     $issuer_claim = "chiltex"; // this can be the servername
+            //     $audience_claim = "fia2";
+                 $issuedat_claim = time(); // issued at
+                 $notbefore_claim = $issuedat_claim + 10; //not before in seconds
+                 $expire_claim = $issuedat_claim + 600; // expire time in seconds
+                 $token = array(
+            //         "iss" => $issuer_claim,
+              //       "aud" => $audience_claim,
+                     "iat" => $issuedat_claim,
+                     "nbf" => $notbefore_claim,
+                     "exp" => $expire_claim,
+                     "data" => array(
+                         "id_secret" => $id_secret,
+                         "client_secret" => $client_secret
+                 ));
+         
+                 http_response_code(200);
+         
+                 $jwt = JWT::encode($token, $secret_key);
+           
+           
+            $respon=array();
+            http_response_code(200);
+            $respon['error']='false';
+            $respon['message']='User was succesfully registered.';
+            $respon['token']=$jwt;
+           // echoResponse(200,$respon);
+        
+           return json_encode($respon);
+                }
+                elseif($client_secret==$client_appl && $id_secret==$id_appl){
+                          
+            $secret_key = "fiado_productores_2020";
+            //     $issuer_claim = "chiltex"; // this can be the servername
+            //     $audience_claim = "fia2";
+                 $issuedat_claim = time(); // issued at
+                 $notbefore_claim = $issuedat_claim + 10; //not before in seconds
+                 $expire_claim = $issuedat_claim + 600; // expire time in seconds
+                 $token = array(
+            //         "iss" => $issuer_claim,
+              //       "aud" => $audience_claim,
+                     "iat" => $issuedat_claim,
+                     "nbf" => $notbefore_claim,
+                     "exp" => $expire_claim,
+                     "data" => array(
+                         "id_secret" => $id_secret,
+                         "client_secret" => $client_secret
+                 ));
+         
+                 http_response_code(200);
+         
+                 $jwt = JWT::encode($token, $secret_key);
+                        $respon=array();
+                        http_response_code(200);
+                        $respon['error']='false';
+                        $respon['message']='User was succesfully registered.';
+                        $respon['token']=$jwt;
+                    // echoResponse(200,$respon);
+        
+                    return json_encode($respon);
+                }
+                elseif ($client_secret==$client_user && $id_secret==$id_user) {             
+                    $secret_key = "fiado_productores_2020";
+                    //     $issuer_claim = "chiltex"; // this can be the servername
+                    //     $audience_claim = "fia2";
+                         $issuedat_claim = time(); // issued at
+                         $notbefore_claim = $issuedat_claim + 10; //not before in seconds
+                         $expire_claim = $issuedat_claim + 600; // expire time in seconds
+                         $token = array(
+                    //         "iss" => $issuer_claim,
+                      //       "aud" => $audience_claim,
+                             "iat" => $issuedat_claim,
+                             "nbf" => $notbefore_claim,
+                             "exp" => $expire_claim,
+                             "data" => array(
+                                 "id_secret" => $id_secret,
+                                 "client_secret" => $client_secret
+                         ));
+                 
+                         http_response_code(200);
+                 
+                         $jwt = JWT::encode($token, $secret_key);
+                                $respon=array();
+                                http_response_code(200);
+                                $respon['error']='false';
+                                $respon['message']='User was succesfully registered.';
+                                $respon['token']=$jwt;
+                            // echoResponse(200,$respon);
+                
+                            return json_encode($respon);
+                   
+                }
+                else{
+                    $respon=array();
+                    http_response_code(400);
+                    $respon['error']='true';
+                    $respon['message']='Invalid credentials.';
+                // echoResponse(200,$respon);
+        
+                return json_encode($respon);
+                }
+        
+    }
  function echoResponse($status_code, $response) {
 $app = new \Slim\App;
 // Http response code
@@ -278,21 +397,18 @@ $app->post('/api/loans', function(Request $request, Response $response){
     if (isset($headers['HTTP_AUTHORIZATION']) || $headers['HTTP_AUTHORIZATION'] != NULL) {
       
     $authHeader=$headers['HTTP_AUTHORIZATION'];
-        $jwt=$authHeader[0];
+    
+    $arr=explode(" ",$authHeader[0]);
+    $jwt=$arr[1];  
+    //  $jwt=$authHeader[0];
            $secret_key = "fiado_productores_2020";
               try {
-
-
                   $decoded = JWT::decode($jwt, $secret_key, array('HS256'));
-
                   // Access is granted. Add code of the operation here 
-
                   /*echo json_encode(array(
                       "message" => "Access granted:"
                   ));*/
-
-
-                            //query mysql
+                 //query mysql
                             $sql ="INSERT INTO `request`(`request_id`, `user_id`, `initial_amount`, `total_installments`, `interest_rate`, `installment_amount`, `reason`, `status`) VALUES(null,:user_id,:initial_amount,:total_installments,:interest_rate,:installment_amount,:reason,:status)";
                             try{
                                 $db = new db();
@@ -410,8 +526,6 @@ $app->put('/api/request/update/{id}', function(Request $request, Response $respo
     }
 });
 
-
-
 //PUT ELIMINAR solicitud
 
 $app->delete('/api/clientes/delete/{id}', function(Request $request, Response $response){
@@ -478,7 +592,7 @@ $app->post('/api/producerContribution/new', function(Request $request, Response 
 });
 
 //*--------------------------LOGIN-----------------**/
-$app->post('/api/token', function(Request $request, Response $response){
+$app->post('/api/login', function(Request $request, Response $response){
     $email=$request->getParam('email');
     $password = $request->getParam('password');
    
@@ -498,10 +612,44 @@ $app->post('/api/token', function(Request $request, Response $response){
    echo json_encode($respon);
 });
 //*--------------------------LOGIN-----------------**/
+$app->post('/api/jwt/token', function(Request $request, Response $response){
+    if ($request->getParam('client_secret')!=null) {
+        $client_secret=$request->getParam('client_secret');
+        if ($request->getParam('id_secret')!=null) {
+            $id_secret= $request->getParam('id_secret');
+            // VALIDAR SI CLIENT_SECRET Y ID_SECRET SON CORRECTOS
+            try {
+               echo jwt_token($client_secret,$id_secret);
+            } catch (Exception $e){
+                http_response_code(401);
+               $respon= array(
+                    "message" => "Access denied.",
+                    "error" => $e->getMessage()
+                );
+             echo $response->withJson($respon,401);
+            }
+            // END VALIDACION
+        }else{
+            $respon=array();
+            http_response_code(400);
+            $respon['error']='true';
+            $respon['message']='Invalid credentials, id_secret not found';
+            // echoResponse(200,$respon);
+            echo json_encode($respon);
+        }
+    }else{
+        
+        $respon=array();
+        http_response_code(400);
+        $respon['error']='true';
+        $respon['message']='Invalid credentials, client_secret not found';
+        // echoResponse(200,$respon);
+        echo json_encode($respon);
+    }
+ });
+//*--------------------------VALIDAR TOKEN-----------------**/
 $app->get('/api/protected', function(Request $request, Response $response)use($app){
-  
-
-   
+ 
  /*  
     $user = new User();
     $user->setEmail($email);
