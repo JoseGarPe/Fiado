@@ -283,7 +283,7 @@ public function save(){
         echo '{ "error": {"text":'.$e->getMessage().'}}';
     }
 }
-//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------// 0
 public function selectAll_type_prod(){
     $sql ="SELECT * FROM type_producer";
     try{
