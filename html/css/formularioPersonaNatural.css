@@ -198,3 +198,23 @@ select.list-dt:focus {
     width: 100%;
     object-fit: cover
 }
+
+.custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #FF5100;
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Typo_Round_Regular_Demo ;
+}
+
+.custom-button:hover {
+  background-color: #00b28f;
+}
+
+.custom-text {
+  margin-left: 10px;
+  font-family: Typo_Round_Regular_Demo ;
+  color: #aaa;
+}

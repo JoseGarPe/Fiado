@@ -829,12 +829,34 @@
 															<!-- AQUI EMPIEZA LA QUINTA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
 								                            <fieldset>
 								                                <div class="form-card">
-								                                    <h2 class="naranja" align="left">
-																		Documentación
-																	</h2>
+								                                	<div class="form-group row" style="margin-right: 100px;">
+																	    <h2 class="naranja" align="left">
+																			Documentación
+																		</h2>
+																	</div>
 																	<h3 class="naranja" align="left">
 																		Perfil del Cliente - Persona Natural
 																	</h3>
+																	<div class="form-group row">
+																		<input type="file" id="dui-file" style="visibility: hidden;">
+																		<button type="button" id="dui-button" class="custom-button">Sube la imagen de tu Dui</button>
+																		<span id="dui-text" class="custom-text">No ha ingresado su Dui</span>
+																	</div>
+																	<div class="form-group row">
+																		<input type="file" id="nit-file" style="visibility: hidden;">
+																		<button type="button" id="nit-button" class="custom-button">Sube la imagen de tu Nit</button>
+																		<span id="nit-text" class="custom-text">No ha ingresado su Nit</span>
+																	</div>
+																	<div class="form-group row">
+																		<input type="file" id="tIVA-file" style="visibility: hidden;">
+																		<button type="button" id="tIVA-button" class="custom-button">Sube la imagen de tu tarjeta de IVA</button>
+																		<span id="tIVA-text" class="custom-text">No ha ingresado su tarjeta de IVA</span>
+																	</div>
+																	<div class="form-group row">
+																		<input type="file" id="luzAgua-file" style="visibility: hidden;">
+																		<button type="button" id="luzAgua-button" class="custom-button">Sube la imagen de su recibo de Luz y Agua</button>
+																		<span id="luzAgua-text" class="custom-text">No ha ingresado su recibo de Luz y Agua</span>
+																	</div>
 								                                </div>
 								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
 								                                <input type="button" name="make_payment" class="next action-button" value="Finalizar" />
@@ -959,7 +981,6 @@
 	    <script src="js/twitterFetcher_min.js"></script>
 	    <!-- Custom Script -->
 	    <script src="js/scripts.js"></script>
-	    <script src="js/validaciones/personaNormal/personaNatural.js"></script>
 	    <script src="js/formularioPersonaNatural.js"></script>
 	</body>
 </html>
