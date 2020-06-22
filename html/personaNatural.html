@@ -354,6 +354,8 @@
 			  }	
 			}
 		</style>
+		<link rel="stylesheet" type="text/css" href="css/formularioPersonaNatural.css">
+		<script src="https://kit.fontawesome.com/77bffef6cd.js" crossorigin="anonymous"></script>
 	</head>
 	<body id="page-top">
 		<div id="st-container" class="st-container">
@@ -378,7 +380,7 @@
 							<div class="col-md-3">
 								<div class="col-md-12">
 									<div style="background-color: black; width: 100%;">
-										asdsadsa
+											Registro Usuario
 									</div>
 								</div>
 							</div>
@@ -386,514 +388,498 @@
 							<!-- ////////////////////////////////////////////////// -->
 							<!-- AQUI EMPIEZA EL CONTENIDO PARA REALIZAR EL LOGIN -->
 							<div class="col-md-9">
-								<!-- AQUI EMPIEZA LA PRIMERA PARTE, DATOS GENERALES -->
-								<div class="col-md-12" id="primeraFase">
-									<h2 class="naranja">Perfil del Cliente - Personal Natural</h2>
-									<form autocomplete="off">
-										<div class="form-group row">
-										    <label for="nombreCompleto" class="col-sm-3 col-form-label">Nombre y Apellido</label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="correo" class="col-sm-3 col-form-label">Correo electrónico</label>
-										    <div class="col-sm-9">
-										    	<input type="email" class="form-control" id="correo" name="correo">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="telefono" class="col-sm-3 col-form-label">Teléfono</label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="telefono" name="telefono">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="domicilio" class="col-sm-3 col-form-label">Domicilio</label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="domicilio" name="domicilio">
-										    </div>
-										</div>
-										<div class="form-group row">
-											<div class="row col-md-6">
-												<label for="departamento" class="col-sm-4 col-form-label">
-													Departamento
-												</label>
-												<div class="col-sm-8" id="departamento" name="departamento">
-											    	<select class="form-control">
-														<option>Default select</option>
-													</select>
-											    </div>	
-											</div>
-											<div class="row col-md-6">
-												<label for="municipio" class="col-sm-4 col-form-label">
-													Municipio
-												</label>
-												<div class="col-sm-8" id="municipio" name="municipio">
-											    	<select class="form-control">
-														<option>Default select</option>
-													</select>
-											    </div>	
-											</div>
-										</div>
-										<div class="form-group row">
-										    <label for="fechaNacimiento" class="col-sm-4 col-form-label">
-										    	Fecha Nacimiento
-											</label>
-										    <div class="col-sm-6">
-										    	<input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="actividadEconomica" class="col-sm-4 col-form-label">
-										    	Actividad economica
-											</label>
-										    <div class="col-sm-6">
-										    	<select class="form-control" id="actividadEconomica" name="actividadEconomica">
-													<option>Default select</option>
-												</select>
-										    </div>
-										</div>
-										<div class="form-group row">
-											<div class="row col-md-6">
-												<label for="departamento" class="col-sm-4 col-form-label">
-													Número de DUI
-												</label>
-												<div class="col-sm-8" id="departamento" name="departamento">
-											    	<input type="text" class="form-control" id="numeroDui" name="numeroDui">
-											    </div>	
-											</div>
-											<div class="row col-md-6">
-												<label for="municipio" class="col-sm-4 col-form-label">
-													Número de NIT
-												</label>
-												<div class="col-sm-8" id="municipio" name="municipio">
-											    	<input type="text" class="form-control" id="numeroNit" name="numeroNit">
-											    </div>	
-											</div>
-										</div>
-										<div class="form-group row">
-										    <label for="actividadEconomica" class="col-sm-4 col-form-label">
-										    	Proveniencia de los fondos
-											</label>
-										    <div class="col-sm-6">
-										    	<select class="form-control" id="actividadEconomica" name="actividadEconomica">
-													<option>Default select</option>
-												</select>
-										    </div>
-										</div>
-										<br>
-										<div class="row">
-											<div class="col-sm-8">
-												<div class="progress">
-													<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-											</div>
-											<div class="col-sm-4">
-												<input readonly class="btn btn-primary" value="NEXT" name="FASE1" id="FASE1" style="width: 100%;">
-											</div>
-										</div>
-									</form>
-								</div>
-								<!-- AQUI TERMINA LA PRIMERA PARTE, DATOS GENERALES -->
-								<!-- ////////////////////////////////////////////// -->
-								<!-- AQUI EMPIEZA LA SEGUNDA PARTE, DATOS DEL PEPS -->
-								<div class="col-md-12" id="segundaFase" style="display: none;">
-									<h3 class="naranja" align="center">Identificación de personas expuestas politicamente [PEPs]</h3>
-									<form autocomplete="off">
-										<h3 class="naranja" align="left">Personal Natural</h3>
-										<div class="form-group row">
-										    <label for="nombreCompleto" class="col-sm-8 col-form-label">
-										    	Es Ud o está relacionado a una Persona Expuesta Públicamente [PEPs]
-										    </label>
-										    <div class="col-sm-4">
-										    	<div class="col-sm-12">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	Soy PEP
-													  	</label>
-													</div>
-										    	</div>
-										    	<div class="col-sm-12">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	Estoy relacionado a un PEP
-													  	</label>
-													</div>
-										    	</div>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="informacionPEP" class="col-sm-8 col-form-label">
-										    	Si Ud es PEP, ¿Cuál es la Institución y el cargo ocupado ?
-										    </label>
-										    <div class="col-sm-9">
-										    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="informacionPEP" class="col-sm-12 col-form-label">
-										    	Si Ud está relacionado a un PEP, completar la siguiente información de las Personas Expuestas Públicamente [PEPs]
-										    </label>
-										    <div class="col-sm-4">
-										    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Nombre:">
-										    </div>
-										    <div class="col-sm-4">
-										    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Institución y cargo ocupado">
-										    </div>
-										    <div class="col-sm-4">
-										    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Relación">
-										    </div>
-										</div>
-										<br>
-										<div class="row">
-											<div class="col-sm-8">
-												<div class="progress">
-													<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-											</div>
-											<div class="col-sm-4">
-												<input readonly class="btn btn-primary" value="NEXT" name="FASE2" id="FASE2" style="width: 100%;">
-											</div>
-										</div>
-									</form>
-								</div>
-								<!-- AQUI TERMINA LA SEGUNDA PARTE, DATOS DEL PEPS -->
-								<!-- ////////////////////////////////////////////// -->
-								<!-- AQUI EMPIEZA LA TERCERA PARTE, DATOS DEL FUNCIONARIO -->
-								<div class="col-md-12" id="terceraFase" style="display: none;">
-									<h3 style="font-size: 22px;" class="naranja" align="center">Regulación sujetos obligados según ley contra el lavado de dinero y operación</h3>
-									<h5 align="center">[Responder únicamente si la persona natural ó empresa es sujeto obligado de acuerdo al Art 12 de la Ley contra el Lavado de Dinero y de Activos]</h5>
-									<form autocomplete="off">
-										<div class="form-group row">
-										    <h5 for="nombreCompleto" class="col-sm-8 col-form-label">
-										    	La empresa cuenta con un funcionario responsable de las medidas de prevención del Lavado de Dinero y Activos/Financiación del Terrorismo ?
-										    </h5>
-										    <div class="col-sm-4">
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>Si</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>No</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    </div>
-										</div>
-										<h3 style="font-size: 22px;" class="naranja" align="center">
-											Información del funcionario
-										</h3>
-										<div class="form-group row">
-										    <label for="denominaciónSocial" class="col-sm-4 col-form-label">
-										    	Tu nombre ó denominación social :
-										    </label>
-										    <div class="col-sm-8">
-										    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="correoFuncionario" class="col-sm-3 col-form-label">
-										    	Correo electrónico:
-										    </label>
-										    <div class="col-sm-9">
-										    	<input type="email" class="form-control" id="correoFuncionario" name="correoFuncionario" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="telefonoFuncionario" class="col-sm-2 col-form-label">
-										    	Teléfono:
-										    </label>
-										    <div class="col-sm-10">
-										    	<input type="text" class="form-control" id="telefonoFuncionario" name="telefonoFuncionario" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="domicilioFuncionario" class="col-sm-2 col-form-label">
-										    	Domicilio:
-										    </label>
-										    <div class="col-sm-10">
-										    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="domicilioFuncionario" class="col-sm-1 col-form-label">
-										    	Dui:
-										    </label>
-										    <div class="col-sm-2">
-										    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
-										    	¿Está acreditado ante la Unidad de Investigación Financiera? Si su respuesta es sí, no contestar las demás preguntas
-										    </h4>
-										    <div class="col-sm-4">
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>Si</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>No</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
-										    	¿Cuenta con Manual de prevención del Lavado de Dinero y Financiamiento del Terrorismo?
-										    </h4>
-										    <div class="col-sm-4">
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>Si</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>No</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
-										    	¿Cuenta con un Plan de Capacitación anual en materia de prevención del lavado de Dinero y Financiamiento del Terrorismo?
-										    </h4>
-										    <div class="col-sm-4">
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>Si</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>No</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
-										    	¿Cuenta con un sistema de Monitoreo de operaciones y reportes a la Unidad de Investigación Financiera?
-										    </h4>
-										    <div class="col-sm-4">
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>Si</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    	<div class="col-sm-6">
-										    		<div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-													  	<label class="form-check-label" for="defaultCheck1">
-													    	<h4>No</h4>
-													  	</label>
-													</div>
-										    	</div>
-										    </div>
-										</div>
-										<br>
-										<div class="row">
-											<div class="col-sm-8">
-												<div class="progress">
-													<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-											</div>
-											<div class="col-sm-4">
-												<input readonly class="btn btn-primary" value="NEXT" name="FASE3" id="FASE3" style="width: 100%;">
-											</div>
-										</div>
-									</form>
-								</div>
-								<!-- AQUI TERMINA LA TERCERA PARTE, DATOS DEL FUNCIONARIO -->
-								<!-- ////////////////////////////////////////////// -->
-								<!-- AQUI EMPIEZA LA CUARTA PARTE, DATOS DE LA PERSONA BENEFICIARIA -->
-								<div class="col-md-12" id="cuartaFase" style="display: none;">
-									<h2 class="naranja" align="center">
-										Persona beneficiaria
-									</h2>
-									<h5 align="center">
-										Datos para casos fortuidos el designado o beneficiario de la cuenta
-									</h5>
-									<form autocomplete="off">
-										<h3 style="font-size: 22px;" class="naranja" align="left">
-											Beneficiario 1:
-										</h3>
-										<div class="form-group row">
-										    <label for="denominaciónSocial" class="col-sm-3 col-form-label">
-										    	Nombre completo :
-										    </label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="telefonoFuncionario" class="col-sm-1 col-form-label">
-										    	Teléfono:
-										    </label>
-										    <div class="col-sm-10">
-										    	<input type="text" class="form-control" id="telefonoFuncionario" name="telefonoFuncionario" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="domicilioFuncionario" class="col-sm-1 col-form-label">
-										    	Domicilio:
-										    </label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="denominaciónSocial" class="col-sm-3 col-form-label">
-										    	Nacionalidad :
-										    </label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <div class="col-sm-6">
-										    	<label for="domicilioFuncionario" class="col-sm-2 col-form-label">
-											    	Dui:
-											    </label>
-											    <div class="col-sm-10">
-											    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-											    </div>
-										    </div>
-										    <div class="col-sm-6">
-										    	<label for="domicilioFuncionario" class="col-sm-6 col-form-label">
-											    	% de Participación:
-											    </label>
-											    <div class="col-sm-6">
-											    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-											    </div>
-										    </div>
-										</div>
-										<h3 style="font-size: 22px;" class="naranja" align="left">
-											Beneficiario 2:
-										</h3>
-										<div class="form-group row">
-										    <label for="denominaciónSocial" class="col-sm-3 col-form-label">
-										    	Nombre completo :
-										    </label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="telefonoFuncionario" class="col-sm-1 col-form-label">
-										    	Teléfono:
-										    </label>
-										    <div class="col-sm-10">
-										    	<input type="text" class="form-control" id="telefonoFuncionario" name="telefonoFuncionario" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="domicilioFuncionario" class="col-sm-1 col-form-label">
-										    	Domicilio:
-										    </label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <label for="denominaciónSocial" class="col-sm-3 col-form-label">
-										    	Nacionalidad :
-										    </label>
-										    <div class="col-sm-9">
-										    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
-										    </div>
-										</div>
-										<div class="form-group row">
-										    <div class="col-sm-6">
-										    	<label for="domicilioFuncionario" class="col-sm-2 col-form-label">
-											    	Dui:
-											    </label>
-											    <div class="col-sm-10">
-											    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-											    </div>
-										    </div>
-										    <div class="col-sm-6">
-										    	<label for="domicilioFuncionario" class="col-sm-6 col-form-label">
-											    	% de Participación:
-											    </label>
-											    <div class="col-sm-6">
-											    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-											    </div>
-										    </div>
-										</div>
-										<br>
-										<div class="row">
-											<div class="col-sm-8">
-												<div class="progress">
-													<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-												</div>
-											</div>
-											<div class="col-sm-4">
-												<input readonly class="btn btn-primary" value="NEXT" name="FASE4" id="FASE4" style="width: 100%;">
-											</div>
-										</div>
-									</form>
-								</div>
-								<!-- AQUI TERMINA LA CUARTA PARTE, DATOS DE LA PERSONA BENEFICIARIA -->
-								<!-- ////////////////////////////////////////////// -->
-								<!-- AQUI EMPIEZA LA QUINTA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
-								<div class="col-md-12" id="quintaFase" style="display: none;">
-									<h2 class="naranja" align="left">
-										Documentación
-									</h2>
-									<h3 class="naranja" align="left">
-										Perfil del Cliente - Persona Natural
-									</h3>
-									<form autocomplete="off">
+								<div class="container-fluid" id="grad1">
+								    <div class="row justify-content-center mt-0">
+								        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+								            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+								                <div class="row">
+								                    <div class="col-md-12 mx-0">
+								                        <form id="msform" autocomplete="off">
+								                            <!-- progressbar -->
+								                            <ul id="progressbar">
+								                                <li class="active" id="PASO1"><strong>Paso 1</strong></li>
+								                                <li id="PASO2"><strong>Paso 2</strong></li>
+								                                <li id="PASO3"><strong>Paso 3</strong></li>
+								                                <li id="PASO4"><strong>Paso 4</strong></li>
+								                                <li id="PASO5"><strong>Final</strong></li>
+								                            </ul>
+								                            <!-- AQUI EMPIEZA LA PRIMERA PARTE, DATOS GENERALES -->
+								                            <fieldset>
+								                                <div class="form-card">
+								                                	<h2 class="naranja">Perfil del Cliente - Personal Natural</h2>
+								                                    <div class="form-group row">
+																	    <label for="nombreCompleto" class="col-sm-3 col-form-label">Nombre y Apellido</label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="correo" class="col-sm-3 col-form-label">Correo electrónico</label>
+																	    <div class="col-sm-9">
+																	    	<input type="email" class="form-control" id="correo" name="correo">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="telefono" class="col-sm-3 col-form-label">Teléfono</label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="telefono" name="telefono">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="domicilio" class="col-sm-3 col-form-label">Domicilio</label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="domicilio" name="domicilio">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																		<div class="col-sm-6" style="padding: 0;">
+																			<label for="departamento" class="col-sm-4 col-form-label">
+																				Departamento
+																			</label>
+																			<div class="col-sm-8" id="departamento" name="departamento">
+																		    	<select class="form-control">
+																					<option>Default select</option>
+																				</select>
+																		    </div>	
+																		</div>
+																		<div class="col-sm-6" style="padding: 0;">
+																			<label for="municipio" class="col-sm-4 col-form-label">
+																				Municipio
+																			</label>
+																			<div class="col-sm-8" id="municipio" name="municipio">
+																		    	<select class="form-control">
+																					<option>Default select</option>
+																				</select>
+																		    </div>	
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="fechaNacimiento" class="col-sm-4 col-form-label">
+																	    	Fecha Nacimiento
+																		</label>
+																	    <div class="col-sm-6">
+																	    	<input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="actividadEconomica" class="col-sm-4 col-form-label">
+																	    	Actividad economica
+																		</label>
+																	    <div class="col-sm-6">
+																	    	<select class="form-control" id="actividadEconomica" name="actividadEconomica">
+																				<option>Default select</option>
+																			</select>
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																		<div class="col-md-6" style="padding: 0;">
+																			<label for="departamento" class="col-sm-5 col-form-label">
+																				Número de DUI
+																			</label>
+																			<div class="col-sm-7" id="departamento" name="departamento">
+																		    	<input type="text" class="form-control" id="numeroDui" name="numeroDui">
+																		    </div>	
+																		</div>
+																		<div class="col-md-6" style="padding: 0;">
+																			<label for="municipio" class="col-sm-5 col-form-label">
+																				Número de NIT
+																			</label>
+																			<div class="col-sm-7" id="municipio" name="municipio">
+																		    	<input type="text" class="form-control" id="numeroNit" name="numeroNit">
+																		    </div>	
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="actividadEconomica" class="col-sm-4 col-form-label">
+																	    	Proveniencia de los fondos
+																		</label>
+																	    <div class="col-sm-6">
+																	    	<select class="form-control" id="actividadEconomica" name="actividadEconomica">
+																				<option>Default select</option>
+																			</select>
+																	    </div>
+																	</div>
+								                                </div> 
+								                                <input type="button" name="next" class="next action-button" value="Siguiente" />
+								                            </fieldset>
+								                            <!-- AQUI TERMINA LA PRIMERA PARTE, DATOS GENERALES -->
+															<!-- ////////////////////////////////////////////// -->
+															<!-- AQUI EMPIEZA LA SEGUNDA PARTE, DATOS DEL PEPS -->
+								                            <fieldset>
+								                                <div class="form-card">
+								                                	<h3 class="naranja" align="center">Identificación de personas expuestas politicamente [PEPs]</h3>
+								                                    <h4 class="naranja" align="left">
+								                                    	Personal Natural
+								                                    </h4>
+																	<div class="form-group row">
+																	    <label for="nombreCompleto" class="col-sm-7 col-form-label">
+																	    	Es Ud o está relacionado a una Persona Expuesta Públicamente [PEPs]
+																	    </label>
+																	    <div class="col-sm-5">
+																	    	<div class="col-sm-12">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	Soy PEP
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    	<div class="col-sm-12">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	Estoy relacionado a un PEP
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="informacionPEP" class="col-sm-8 col-form-label">
+																	    	Si Ud es PEP, ¿Cuál es la Institución y el cargo ocupado ?
+																	    </label>
+																	    <div class="col-sm-9">
+																	    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="informacionPEP" class="col-sm-12 col-form-label">
+																	    	Si Ud está relacionado a un PEP, completar la siguiente información de las Personas Expuestas Públicamente [PEPs]
+																	    </label>
+																	    <div class="col-sm-4">
+																	    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Nombre:">
+																	    </div>
+																	    <div class="col-sm-4">
+																	    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Institución y cargo ocupado">
+																	    </div>
+																	    <div class="col-sm-4">
+																	    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Relación">
+																	    </div>
+																	</div>
+								                                </div> 
+								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
+								                                <input type="button" name="next" class="next action-button" value="Siguiente" />
+								                            </fieldset>
+								                            <!-- AQUI TERMINA LA SEGUNDA PARTE, DATOS DEL PEPS -->
+															<!-- ////////////////////////////////////////////// -->
+															<!-- AQUI EMPIEZA LA TERCERA PARTE, DATOS DEL FUNCIONARIO -->
+								                            <fieldset>
+								                                <div class="form-card">
+								                                    <h3 style="font-size: 20px;" class="naranja" align="center">Regulación sujetos obligados según ley contra el lavado de dinero y operación</h3>
+																	<h5 align="center">[Responder únicamente si la persona natural ó empresa es sujeto obligado de acuerdo al Art 12 de la Ley contra el Lavado de Dinero y de Activos]</h5>
+																	<div class="form-group row">
+																	    <label for="denominaciónSocial" class="col-sm-4 col-form-label">
+																	    	Tu nombre ó denominación social :
+																	    </label>
+																	    <div class="col-sm-8">
+																	    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="correoFuncionario" class="col-sm-3 col-form-label">
+																	    	Correo electrónico:
+																	    </label>
+																	    <div class="col-sm-9">
+																	    	<input type="email" class="form-control" id="correoFuncionario" name="correoFuncionario" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="telefonoFuncionario" class="col-sm-2 col-form-label">
+																	    	Teléfono:
+																	    </label>
+																	    <div class="col-sm-10">
+																	    	<input type="text" class="form-control" id="telefonoFuncionario" name="telefonoFuncionario" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="domicilioFuncionario" class="col-sm-2 col-form-label">
+																	    	Domicilio:
+																	    </label>
+																	    <div class="col-sm-10">
+																	    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="domicilioFuncionario" class="col-sm-2 col-form-label">
+																	    	Dui:
+																	    </label>
+																	    <div class="col-sm-4">
+																	    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
+																	    	¿Está acreditado ante la Unidad de Investigación Financiera? Si su respuesta es sí, no contestar las demás preguntas
+																	    </h4>
+																	    <div class="col-sm-4">
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	<h4>Si</h4>
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	<h4>No</h4>
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
+																	    	¿Cuenta con Manual de prevención del Lavado de Dinero y Financiamiento del Terrorismo?
+																	    </h4>
+																	    <div class="col-sm-4">
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	<h4>Si</h4>
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	<h4>No</h4>
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
+																	    	¿Cuenta con un Plan de Capacitación anual en materia de prevención del lavado de Dinero y Financiamiento del Terrorismo?
+																	    </h4>
+																	    <div class="col-sm-4">
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	<h4>Si</h4>
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	<h4>No</h4>
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
+																	    	¿Cuenta con un sistema de Monitoreo de operaciones y reportes a la Unidad de Investigación Financiera?
+																	    </h4>
+																	    <div class="col-sm-4">
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	<h4>Si</h4>
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	<h4>No</h4>
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    </div>
+																	</div>
+								                                </div> 
+								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
+								                                <input type="button" name="make_payment" class="next action-button" value="Siguiente" />
+								                            </fieldset>
+								                            <!-- AQUI TERMINA LA TERCERA PARTE, DATOS DEL FUNCIONARIO -->
+															<!-- ////////////////////////////////////////////// -->
+															<!-- AQUI EMPIEZA LA CUARTA PARTE, DATOS DE LA PERSONA BENEFICIARIA -->
+								                            <fieldset>
+								                                <div class="form-card">
+								                                    <h2 class="naranja" align="center">
+																		Persona beneficiaria
+																	</h2>
+																	<h5 align="center">
+																		Datos para casos fortuidos el designado o beneficiario de la cuenta
+																	</h5>
+																	<h3 style="font-size: 22px;" class="naranja" align="left">
+																		Beneficiario 1:
+																	</h3>
+																	<div class="form-group row">
+																	    <label for="denominaciónSocial" class="col-sm-3 col-form-label">
+																	    	Nombre completo :
+																	    </label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="telefonoFuncionario" class="col-sm-1 col-form-label">
+																	    	Teléfono:
+																	    </label>
+																	    <div class="col-sm-10">
+																	    	<input type="text" class="form-control" id="telefonoFuncionario" name="telefonoFuncionario" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="domicilioFuncionario" class="col-sm-1 col-form-label">
+																	    	Domicilio:
+																	    </label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="denominaciónSocial" class="col-sm-3 col-form-label">
+																	    	Nacionalidad :
+																	    </label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <div class="col-sm-6" style="padding: 0;">
+																	    	<label for="domicilioFuncionario" class="col-sm-2 col-form-label">
+																		    	Dui:
+																		    </label>
+																		    <div class="col-sm-10">
+																		    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
+																		    </div>
+																	    </div>
+																	    <div class="col-sm-6" style="padding: 0;">
+																	    	<label for="domicilioFuncionario" class="col-sm-6 col-form-label">
+																		    	% de Participación:
+																		    </label>
+																		    <div class="col-sm-6">
+																		    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
+																		    </div>
+																	    </div>
+																	</div>
+																	<h3 style="font-size: 22px;" class="naranja" align="left">
+																		Beneficiario 2:
+																	</h3>
+																	<div class="form-group row">
+																	    <label for="denominaciónSocial" class="col-sm-3 col-form-label">
+																	    	Nombre completo :
+																	    </label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="telefonoFuncionario" class="col-sm-1 col-form-label">
+																	    	Teléfono:
+																	    </label>
+																	    <div class="col-sm-10">
+																	    	<input type="text" class="form-control" id="telefonoFuncionario" name="telefonoFuncionario" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="domicilioFuncionario" class="col-sm-1 col-form-label">
+																	    	Domicilio:
+																	    </label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="denominaciónSocial" class="col-sm-3 col-form-label">
+																	    	Nacionalidad :
+																	    </label>
+																	    <div class="col-sm-9">
+																	    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <div class="col-sm-6" style="padding: 0;">
+																	    	<label for="domicilioFuncionario" class="col-sm-2 col-form-label">
+																		    	Dui:
+																		    </label>
+																		    <div class="col-sm-10">
+																		    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
+																		    </div>
+																	    </div>
+																	    <div class="col-sm-6" style="padding: 0;">
+																	    	<label for="domicilioFuncionario" class="col-sm-6 col-form-label">
+																		    	% de Participación:
+																		    </label>
+																		    <div class="col-sm-6">
+																		    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
+																		    </div>
+																	    </div>
+																	</div>
+																	<div class="form-group row text-center">
+																		 <div class="col-md-6 col-sm-6 col-xs-12">
+									                                      <canvas id='canvasCliente' width="350" height="155" style='border: 1px solid #CCC;'>
+									                                              <p>Tu navegador no soporta canvas</p>
+									                                          </canvas>
 
-										<br>
-										<div class="row">
-											<div class="col-sm-8">
-												<div class="progress">
-													<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-												</div>
-											</div>
-											<div class="col-sm-4">
-												<input readonly class="btn btn-primary" value="TERMINAR" name="FASE5" id="FASE5" style="width: 100%;">
-											</div>
-										</div>
-									</form>
+									                                      <input type='hidden' name='imagenC' id='imagenC' />
+
+									                                   </div>
+																	</div>
+
+								                                </div> 
+								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
+								                                <input type="button" name="make_payment" class="next action-button" value="Siguiente" />
+								                            </fieldset>
+								                            <!-- AQUI TERMINA LA CUARTA PARTE, DATOS DE LA PERSONA BENEFICIARIA -->
+															<!-- ////////////////////////////////////////////// -->
+															<!-- AQUI EMPIEZA LA QUINTA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
+								                            <fieldset>
+								                                <div class="form-card">
+								                                	<div class="form-group row" style="margin-right: 100px;">
+																	    <h2 class="naranja" align="left">
+																			Documentación
+																		</h2>
+																	</div>
+																	<h3 class="naranja" align="left">
+																		Perfil del Cliente - Persona Natural
+																	</h3>
+																	<div class="form-group row">
+																		<input type="file" id="dui-file" style="visibility: hidden;">
+																		<button type="button" id="dui-button" class="custom-button">Sube la imagen de tu Dui</button>
+																		<span id="dui-text" class="custom-text">No ha ingresado su Dui</span>
+																	</div>
+																	<div class="form-group row">
+																		<input type="file" id="nit-file" style="visibility: hidden;">
+																		<button type="button" id="nit-button" class="custom-button">Sube la imagen de tu Nit</button>
+																		<span id="nit-text" class="custom-text">No ha ingresado su Nit</span>
+																	</div>
+																	<div class="form-group row">
+																		<input type="file" id="tIVA-file" style="visibility: hidden;">
+																		<button type="button" id="tIVA-button" class="custom-button">Sube la imagen de tu tarjeta de IVA</button>
+																		<span id="tIVA-text" class="custom-text">No ha ingresado su tarjeta de IVA</span>
+																	</div>
+																	<div class="form-group row">
+																		<input type="file" id="luzAgua-file" style="visibility: hidden;">
+																		<button type="button" id="luzAgua-button" class="custom-button">Sube la imagen de su recibo de Luz y Agua</button>
+																		<span id="luzAgua-text" class="custom-text">No ha ingresado su recibo de Luz y Agua</span>
+																	</div>
+								                                </div>
+								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
+								                                <input type="button" name="make_payment" class="next action-button" value="Finalizar" />
+								                            </fieldset>
+								                            <!-- AQUI TERMINA LA QUINTA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
+								                        </form>
+								                    </div>
+								                </div>
+								            </div>
+								        </div>
+								    </div>
 								</div>
-								<!-- AQUI TERMINA LA QUINTA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
 							</div>
 							<!-- AQUI TERMINA EL CONTENIDO PARA REALIZAR EL LOGIN -->
 						</div>
@@ -1006,6 +992,136 @@
 	    <script src="js/twitterFetcher_min.js"></script>
 	    <!-- Custom Script -->
 	    <script src="js/scripts.js"></script>
-	    <script src="js/validaciones/personaNormal/personaNatural.js"></script>
+	    <script src="js/formularioPersonaNatural.js"></script>
+
+	    <!-- CANVAS-->
+
+<script type="text/javascript">
+    /* Variables de Configuracion */
+    var idCanvas='canvasCliente';
+    var idForm='demo-form2';
+    var inputImagen='imagenC';
+
+    var estiloDelCursor='crosshair';
+    var colorDelTrazo='#555';
+    var colorDeFondo='#fff';
+    var grosorDelTrazo=2;
+
+    /* Variables necesarias */
+    var contexto=null;
+    var valX=0;
+    var valY=0;
+    var flag=false;
+    var imagen=document.getElementById(inputImagen); 
+    var anchoCanvas=document.getElementById(idCanvas).offsetWidth;
+    var altoCanvas=document.getElementById(idCanvas).offsetHeight;
+    var pizarraCanvas=document.getElementById(idCanvas);
+     
+
+    /* Esperamos el evento load */
+    window.addEventListener('load',IniciarDibujo,false);
+
+    function IniciarDibujo(){
+      /* Creamos la pizarra */
+      pizarraCanvas.style.cursor=estiloDelCursor;
+      contexto=pizarraCanvas.getContext('2d');
+      contexto.fillStyle=colorDeFondo;
+
+      contexto.font = "bold 22px sans-serif";
+        // Fuente para el texto
+      contexto.fillText("hola",50,50);
+      contexto.fillRect(0,0,anchoCanvas,altoCanvas);
+      contexto.strokeStyle=colorDelTrazo;
+      contexto.lineWidth=grosorDelTrazo;
+      contexto.lineJoin='round';
+      contexto.lineCap='round';
+      /* Capturamos los diferentes eventos */
+      pizarraCanvas.addEventListener('mousedown',MouseDown,false);// Click pc
+      pizarraCanvas.addEventListener('mouseup',MouseUp,false);// fin click pc
+      pizarraCanvas.addEventListener('mousemove',MouseMove,false);// arrastrar pc
+
+      pizarraCanvas.addEventListener('touchstart',TouchStart,false);// tocar pantalla tactil
+      pizarraCanvas.addEventListener('touchmove',TouchMove,false);// arrastras pantalla tactil
+      pizarraCanvas.addEventListener('touchend',TouchEnd,false);// fin tocar pantalla dentro de la pizarra
+      pizarraCanvas.addEventListener('touchleave',TouchEnd,false);// fin tocar pantalla fuera de la pizarra
+
+    }
+
+    function MouseDown(e){
+      flag=true;
+      contexto.beginPath();
+      valX=e.pageX-posicionX(pizarraCanvas); valY=e.pageY-posicionY(pizarraCanvas);
+      contexto.moveTo(valX,valY);
+    }
+
+    function MouseUp(e){
+      contexto.closePath();
+      flag=false;
+    }
+
+    function MouseMove(e){
+      if(flag){
+        contexto.beginPath();
+        contexto.moveTo(valX,valY);
+        valX=e.pageX-posicionX(pizarraCanvas); valY=e.pageY-posicionY(pizarraCanvas);
+        contexto.lineTo(valX,valY);
+        contexto.closePath();
+        contexto.stroke();
+      }
+    }
+
+    function TouchMove(e){
+      e.preventDefault();
+      if (e.targetTouches.length == 1) { 
+        var touch = e.targetTouches[0]; 
+        MouseMove(touch);
+      }
+    }
+
+    function TouchStart(e){
+      if (e.targetTouches.length == 1) { 
+        var touch = e.targetTouches[0]; 
+        MouseDown(touch);
+      }
+    }
+
+    function TouchEnd(e){
+      if (e.targetTouches.length == 1) { 
+        var touch = e.targetTouches[0]; 
+        MouseUp(touch);
+      }
+    }
+
+    function posicionY(obj) {
+      var valor = obj.offsetTop;
+      if (obj.offsetParent) valor += posicionY(obj.offsetParent);
+      return valor;
+    }
+
+    function posicionX(obj) {
+      var valor = obj.offsetLeft;
+      if (obj.offsetParent) valor += posicionX(obj.offsetParent);
+      return valor;
+    }
+
+    /* Limpiar pizarra */
+    function LimpiarTrazado(){
+      contexto=document.getElementById(idCanvas).getContext('2d');
+      contexto.fillStyle=colorDeFondo;
+      contexto.fillRect(0,0,anchoCanvas,altoCanvas);
+    }
+    function LimpiarTrazado2(){
+      contexto2=document.getElementById(idCanvas2).getContext('2d');
+      contexto2.fillStyle=colorDeFondo;
+      contexto2.fillRect(0,0,anchoCanvas2,altoCanvas2);
+    }
+
+    /* Enviar el trazado */
+    function GuardarTrazado(){
+      imagen.value=document.getElementById(idCanvas).toDataURL('image/png');
+      imagen2.value=document.getElementById(idCanvas2).toDataURL('image/png');
+      document.forms[idForm].submit();
+    }
+</script>
 	</body>
 </html>
