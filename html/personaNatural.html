@@ -436,9 +436,8 @@
 																			<label for="departamento" class="col-sm-4 col-form-label">
 																				Departamento
 																			</label>
-																			<div class="col-sm-8" id="departamento" name="departamento">
-																		    	<select class="form-control">
-																					<option>Default select</option>
+																			<div class="col-sm-8">
+																		    	<select class="form-control departamento" id="departamento" name="departamento">
 																				</select>
 																		    </div>	
 																		</div>
@@ -446,9 +445,9 @@
 																			<label for="municipio" class="col-sm-4 col-form-label">
 																				Municipio
 																			</label>
-																			<div class="col-sm-8" id="municipio" name="municipio">
-																		    	<select class="form-control">
-																					<option>Default select</option>
+																			<div class="col-sm-8">
+																		    	<select class="form-control municipio" id="municipio" name="municipio">
+																					<option value="0">Selecciona departamento</option>
 																				</select>
 																		    </div>	
 																		</div>
@@ -481,20 +480,20 @@
 																		    </div>	
 																		</div>
 																		<div class="col-md-6" style="padding: 0;">
-																			<label for="municipio" class="col-sm-5 col-form-label">
+																			<label for="numeroNit" class="col-sm-5 col-form-label">
 																				Número de NIT
 																			</label>
-																			<div class="col-sm-7" id="municipio" name="municipio">
+																			<div class="col-sm-7">
 																		    	<input type="text" class="form-control" id="numeroNit" name="numeroNit">
 																		    </div>	
 																		</div>
 																	</div>
 																	<div class="form-group row">
-																	    <label for="actividadEconomica" class="col-sm-4 col-form-label">
+																	    <label for="provenienciaFondos" class="col-sm-4 col-form-label">
 																	    	Proveniencia de los fondos
 																		</label>
 																	    <div class="col-sm-6">
-																	    	<select class="form-control" id="actividadEconomica" name="actividadEconomica">
+																	    	<select class="form-control" id="provenienciaFondos" name="provenienciaFondos">
 																				<option>Default select</option>
 																			</select>
 																	    </div>
@@ -993,7 +992,7 @@
 	    <!-- Custom Script -->
 	    <script src="js/scripts.js"></script>
 	    <script src="js/formularioPersonaNatural.js"></script>
-
+	    <script src="js/departamentosYMunicipio.js"></script>
 	    <!-- CANVAS-->
 
 <script type="text/javascript">
