@@ -109,7 +109,7 @@ select.list-dt:focus {
 #progressbar li {
     list-style-type: none;
     font-size: 12px;
-    width: 16%;
+    width: 14%;
     float: left;
     position: relative
 }
@@ -136,10 +136,15 @@ select.list-dt:focus {
 
 #progressbar #PASO5:before {
     font-family: FontAwesome;
-    content: "\f00c";
+    content: "\f21b";
 }
 
 #progressbar #PASO6:before {
+    font-family: FontAwesome;
+    content: "\f968";
+}
+
+#progressbar #PASO7:before {
     font-family: FontAwesome;
     content: "\f00c";
 }
@@ -204,13 +209,14 @@ select.list-dt:focus {
 }
 
 .custom-button {
-  padding: 10px;
+  padding: 7px;
   color: white;
   background-color: #FF5100;
   border: 1px solid #000;
   border-radius: 10px;
   cursor: pointer;
   font-family: Typo_Round_Regular_Demo ;
+  font-size: 16px;
 }
 
 .custom-button:hover {

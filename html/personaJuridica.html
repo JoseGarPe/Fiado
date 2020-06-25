@@ -387,7 +387,8 @@
 								                                <li id="PASO3"><strong>Paso 3</strong></li>
 								                                <li id="PASO4"><strong>Paso 4</strong></li>
 								                                <li id="PASO5"><strong>Paso 5</strong></li>
-								                                <li id="PASO6"><strong>Final</strong></li>
+								                                <li id="PASO6"><strong>Paso 6</strong></li>
+								                                <li id="PASO7"><strong>Final</strong></li>
 								                            </ul>
 								                            <!-- AQUI EMPIEZA LA PRIMERA PARTE, DATOS GENERALES -->
 								                            <fieldset>
@@ -563,12 +564,12 @@
 																	<div class="form-group row">
 																		<label for="provenienciaFondos" class="col-sm-4 col-form-label">
 																				Proveniencia de los fondos
-																			</label>
-																			<div class="col-sm-8">
-																		    	<select class="form-control" id="provenienciaFondos" name="provenienciaFondos">
-																					<option>Default select</option>
+																		</label>
+																		<div class="col-sm-8">
+																		   	<select class="form-control" id="provenienciaFondos" name="provenienciaFondos">
+																				<option>Default select</option>
 																				</select>
-																		    </div>
+																		</div>
 																	</div>
 								                                </div> 
 								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
@@ -610,7 +611,7 @@
 																			</div>
 																		</div>
 																	    <div class="form-group row">
-																	    	<div class="table-responsive-sm">
+																	    	<div class="table-responsive">
 																	    		<table class="table" style="text-align: left;">
 																					<thead>
 																				    	<tr>
@@ -685,7 +686,7 @@
 																			</div>
 																		</div>
 																	    <div class="form-group row">
-																	    	<div class="table-responsive-sm">
+																	    	<div class="table-responsive">
 																	    		<table class="table" style="text-align: left;">
 																					<thead>
 																				    	<tr>
@@ -734,61 +735,216 @@
 								                            </fieldset>
 								                            <!-- AQUI TERMINA LA TERCERA PARTE, DATOS DE ACCIONISTAS Y ORGANO DE ADMINISTRACION -->
 															<!-- ////////////////////////////////////////////// -->
-															<!-- AQUI EMPIEZA LA TERCERA PARTE, DATOS DEL FUNCIONARIO -->
+															<!-- AQUI EMPIEZA LA CUARTA PARTE, PERSONAS EXPUESTAS POLITICAMENTE -->
 								                            <fieldset>
 								                                <div class="form-card">
-								                                    <h3 style="font-size: 20px;" class="naranja" align="center">Regulación sujetos obligados según ley contra el lavado de dinero y operación</h3>
+								                                    <h3 class="naranja" align="center">Identificación de personas expuestas politicamente</h3>
+																	<div class="form-group row">
+																		<div class="col-sm-12 col-md-8">
+																			<input type="text" class="form-control" id="nitRP" name="nitRP" placeholder="Nombres del PEP Accionista o socio:">	
+																		</div>
+																		<div class="col-sm-12 col-md-4">
+																			<input type="text" class="form-control" id="nitRP" name="nitRP" placeholder="Participación :">
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																		<div class="col-sm-12 col-md-8">
+																			<input type="text" class="form-control" id="nitRP" name="nitRP" placeholder="Nombres de la persona Jurídica:">	
+																		</div>
+																		<div class="col-sm-12 col-md-4">
+																			<input type="text" class="form-control" id="nitRP" name="nitRP" placeholder="Puesto :">
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																		<div class="col-sm-12 col-md-4">
+																			<input type="text" class="form-control" id="nitRP" name="nitRP" placeholder="Clase de la persona Jurídica :">	
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																		<div class="col-sm-12 col-md-6" style="padding: 0;">
+																			<div class="col-sm-8 col-md-8">
+																				<h4>Ejerce o hace ejercicio que lo cataloguen como una Persona Expuesta Políticamente :</h4>
+																			</div>
+																			<div class="col-sm-4 col-md-4">
+																				<select class="form-control">
+																					<option>Selecciona...</option>
+																					<option>Sí</option>
+																					<option>No</option>
+																				</select>
+																			</div>	
+																		</div>
+																		<div class="col-sm-12 col-md-6" style="padding: 0;">
+																			<div class="col-sm-8 col-md-8">
+																				<h4>Tiene o ha tenido familiar con cargo político</h4>	
+																			</div>
+																			<div class="col-sm-4 col-md-4">
+																				<select class="form-control">
+																					<option>Selecciona...</option>
+																					<option>Sí</option>
+																					<option>No</option>
+																				</select>
+																			</div>	
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																		<div class="col-sm-12 col-md-6" style="padding: 0;">
+																			<div class="col-sm-12 col-md-6">
+																				<h4>Periodo  de gestión desde</h4>
+																			</div>
+																			<div class="col-sm-12 col-md-6">
+																				<input type="date" class="form-control" id="nitRP" name="nitRP" placeholder="Clase de la persona Jurídica :">
+																			</div>	
+																		</div>
+																		<div class="col-sm-12 col-md-6" style="padding: 0;">
+																			<div class="col-sm-12 col-md-2">
+																				<h4 align="center">hasta</h4>
+																			</div>
+																			<div class="col-sm-12 col-md-6">
+																				<input type="date" class="form-control" id="nitRP" name="nitRP" placeholder="Clase de la persona Jurídica :">
+																			</div>	
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																		<div class="col-sm-12 col-md-6">
+																			<input type="button" name="next" class="action-button" value="Agregar" />
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																	    	<div class="table-responsive">
+																	    		<table class="table table-bordered" style="text-align: left;">
+																					<thead>
+																				    	<tr>
+																				      		<th scope="col">Nombre del PEP, Accionista o socio</th>
+																				      		<th scope="col">% de Partición</th>
+																				      		<th scope="col">Nombre Persona Juridica</th>
+																				      		<th scope="col">Puesto</th>
+																				      		<th scope="col">Clase de persona Juridica</th>
+																				      		<th scope="col">Acción</th>
+																				    	</tr>
+																				  	</thead>
+																				  	<tbody>
+																					    <tr>
+																					      <th>Vladimir Ernesto Moreno Quijano</th>
+																					      <td>10%</td>
+																					      <td>*PERSONA*</td>
+																					      <td>JEFE</td>
+																					      <td>JEFE</td>
+																					      <td><i style="color: red; cursor: pointer;" class="fas fa-trash-alt"></i></td>
+																					    </tr>
+																					    <tr>
+																					      <th>Vladimir Ernesto Moreno Quijano</th>
+																					      <td>10%</td>
+																					      <td>*PERSONA*</td>
+																					      <td>JEFE</td>
+																					      <td>JEFE</td>
+																					      <td><i style="color: red; cursor: pointer;" class="fas fa-trash-alt"></i></td>
+																					    </tr>
+																					</tbody>
+																				</table>
+																	    	</div>
+																	</div>
+								                                </div> 
+								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
+								                                <input type="button" name="make_payment" class="next action-button" value="Siguiente" />
+								                            </fieldset>
+								                            <!-- AQUI TERMINA LA CUARTA PARTE, DATOS DEL FUNCIONARIO -->
+															<!-- ////////////////////////////////////////////// -->
+															<!-- AQUI EMPIEZA LA QUINTA PARTE, DATOS DEL PEP -->
+															<fieldset>
+								                                <div class="form-card">
+								                                    <h4 class="naranja" align="left">
+								                                    	Personal Jurídica
+								                                    </h4>
+																	<div class="form-group row">
+																	    <label for="nombreCompleto" class="col-sm-7 col-form-label">
+																	    	La sociedad está relacionado a una Persona Expuesta Públicamente [PEPs]
+																	    </label>
+																	    <div class="col-sm-5">
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	Sí
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    	<div class="col-sm-6">
+																	    		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																				  	<label class="form-check-label" for="defaultCheck1">
+																				    	No
+																				  	</label>
+																				</div>
+																	    	</div>
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="informacionPEP" class="col-sm-12 col-form-label">
+																	    	Si su respuesta es sí, completar la siguiente información de las Personas Expuesta Publicamente a la sociedad
+																	    </label>
+																	    <div class="col-sm-4">
+																	    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Nombre:">
+																	    </div>
+																	    <div class="col-sm-4">
+																	    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Institución y cargo ocupado">
+																	    </div>
+																	    <div class="col-sm-4">
+																	    	<input type="email" class="form-control" id="informacionPEP" name="informacionPEP" autocomplete="off" placeholder="Relación">
+																	    </div>
+																	</div>
+																	<h3 class="naranja" align="center">
+								                                    	Entrevista
+								                                    </h3>
+								                                    <div class="form-group row">
+																		<label for="provenienciaFondos" class="col-sm-4 col-form-label">
+																			Calificación de la entidad :
+																		</label>
+																		<div class="col-sm-4">
+																		   	<select class="form-control" id="provenienciaFondos" name="provenienciaFondos">
+																				<option>Selecciona...</option>
+																				<option>Micro</option>
+																				<option>Pequeña</option>
+																				<option>Mediana</option>
+																				<option>Grande</option>
+																			</select>
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="correoJuridico" class="col-sm-4 col-form-label">Nivel de ingresos aproximado mensual</label>
+																	    <div class="col-sm-4">
+																	    	<input type="text" class="form-control" id="correoJuridico" name="correoJuridico">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="correoJuridico" class="col-sm-4 col-form-label">¿Cuantos años tiene de ejercer la entidad?</label>
+																	    <div class="col-sm-4">
+																	    	<input type="text" class="form-control" id="correoJuridico" name="correoJuridico">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="correoJuridico" class="col-sm-6 col-form-label">¿Cuál es el propósito del uso de la cuenta/operación/servicio ?</label>
+																	    <div class="col-sm-6">
+																	    	<input type="text" class="form-control" id="correoJuridico" name="correoJuridico">
+																	    </div>
+																	</div>
+																	<div class="form-group row">
+																	    <label for="correoJuridico" class="col-sm-6 col-form-label">¿Cuál es la procedencia de los fondos que se manejarán en las operaciones ?</label>
+																	    <div class="col-sm-6">
+																	    	<input type="text" class="form-control" id="correoJuridico" name="correoJuridico">
+																	    </div>
+																	</div>
+																	<h3 style="font-size: 20px;" class="naranja" align="center">Regulación sujetos obligados según ley contra el lavado de dinero y operación</h3>
 																	<h5 align="center">[Responder únicamente si la persona natural ó empresa es sujeto obligado de acuerdo al Art 12 de la Ley contra el Lavado de Dinero y de Activos]</h5>
 																	<div class="form-group row">
-																	    <label for="denominaciónSocial" class="col-sm-4 col-form-label">
-																	    	Tu nombre ó denominación social :
+																	    <label for="nombreCompleto" class="col-sm-7 col-form-label">
+																	    	La empresa cuenta con un funcionario responsable de las medidas de prevención del Lavado de Dinero y Activos/ Financiación del Terrorismo ?
 																	    </label>
-																	    <div class="col-sm-8">
-																	    	<input type="text" class="form-control" id="denominaciónSocial" name="denominaciónSocial" autocomplete="off">
-																	    </div>
-																	</div>
-																	<div class="form-group row">
-																	    <label for="correoFuncionario" class="col-sm-3 col-form-label">
-																	    	Correo electrónico:
-																	    </label>
-																	    <div class="col-sm-9">
-																	    	<input type="email" class="form-control" id="correoFuncionario" name="correoFuncionario" autocomplete="off">
-																	    </div>
-																	</div>
-																	<div class="form-group row">
-																	    <label for="telefonoFuncionario" class="col-sm-2 col-form-label">
-																	    	Teléfono:
-																	    </label>
-																	    <div class="col-sm-10">
-																	    	<input type="text" class="form-control" id="telefonoFuncionario" name="telefonoFuncionario" autocomplete="off">
-																	    </div>
-																	</div>
-																	<div class="form-group row">
-																	    <label for="domicilioFuncionario" class="col-sm-2 col-form-label">
-																	    	Domicilio:
-																	    </label>
-																	    <div class="col-sm-10">
-																	    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-																	    </div>
-																	</div>
-																	<div class="form-group row">
-																	    <label for="domicilioFuncionario" class="col-sm-2 col-form-label">
-																	    	Dui:
-																	    </label>
-																	    <div class="col-sm-4">
-																	    	<input type="text" class="form-control" id="domicilioFuncionario" name="domicilioFuncionario" autocomplete="off">
-																	    </div>
-																	</div>
-																	<div class="form-group row">
-																	    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
-																	    	¿Está acreditado ante la Unidad de Investigación Financiera? Si su respuesta es sí, no contestar las demás preguntas
-																	    </h4>
-																	    <div class="col-sm-4">
+																	    <div class="col-sm-5">
 																	    	<div class="col-sm-6">
 																	    		<div class="form-check">
-																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+																					<input class="form-check-input" type="checkbox" id="defaultCheck1">
 																				  	<label class="form-check-label" for="defaultCheck1">
-																				    	<h4>Si</h4>
+																				    	Sí
 																				  	</label>
 																				</div>
 																	    	</div>
@@ -796,76 +952,7 @@
 																	    		<div class="form-check">
 																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 																				  	<label class="form-check-label" for="defaultCheck1">
-																				    	<h4>No</h4>
-																				  	</label>
-																				</div>
-																	    	</div>
-																	    </div>
-																	</div>
-																	<div class="form-group row">
-																	    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
-																	    	¿Cuenta con Manual de prevención del Lavado de Dinero y Financiamiento del Terrorismo?
-																	    </h4>
-																	    <div class="col-sm-4">
-																	    	<div class="col-sm-6">
-																	    		<div class="form-check">
-																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-																				  	<label class="form-check-label" for="defaultCheck1">
-																				    	<h4>Si</h4>
-																				  	</label>
-																				</div>
-																	    	</div>
-																	    	<div class="col-sm-6">
-																	    		<div class="form-check">
-																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-																				  	<label class="form-check-label" for="defaultCheck1">
-																				    	<h4>No</h4>
-																				  	</label>
-																				</div>
-																	    	</div>
-																	    </div>
-																	</div>
-																	<div class="form-group row">
-																	    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
-																	    	¿Cuenta con un Plan de Capacitación anual en materia de prevención del lavado de Dinero y Financiamiento del Terrorismo?
-																	    </h4>
-																	    <div class="col-sm-4">
-																	    	<div class="col-sm-6">
-																	    		<div class="form-check">
-																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-																				  	<label class="form-check-label" for="defaultCheck1">
-																				    	<h4>Si</h4>
-																				  	</label>
-																				</div>
-																	    	</div>
-																	    	<div class="col-sm-6">
-																	    		<div class="form-check">
-																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-																				  	<label class="form-check-label" for="defaultCheck1">
-																				    	<h4>No</h4>
-																				  	</label>
-																				</div>
-																	    	</div>
-																	    </div>
-																	</div>
-																	<div class="form-group row">
-																	    <h4 for="nombreCompleto" class="col-sm-8 col-form-label">
-																	    	¿Cuenta con un sistema de Monitoreo de operaciones y reportes a la Unidad de Investigación Financiera?
-																	    </h4>
-																	    <div class="col-sm-4">
-																	    	<div class="col-sm-6">
-																	    		<div class="form-check">
-																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-																				  	<label class="form-check-label" for="defaultCheck1">
-																				    	<h4>Si</h4>
-																				  	</label>
-																				</div>
-																	    	</div>
-																	    	<div class="col-sm-6">
-																	    		<div class="form-check">
-																					<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-																				  	<label class="form-check-label" for="defaultCheck1">
-																				    	<h4>No</h4>
+																				    	No
 																				  	</label>
 																				</div>
 																	    	</div>
@@ -873,11 +960,11 @@
 																	</div>
 								                                </div> 
 								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
-								                                <input type="button" name="make_payment" class="next action-button" value="Siguiente" />
+								                                <input type="button" name="next" class="next action-button" value="Siguiente" />
 								                            </fieldset>
-								                            <!-- AQUI TERMINA LA TERCERA PARTE, DATOS DEL FUNCIONARIO -->
+															<!-- AQUI TERMINA LA QUINTA PARTE, DATOS DEL PEP -->
 															<!-- ////////////////////////////////////////////// -->
-															<!-- AQUI EMPIEZA LA CUARTA PARTE, DATOS DE LA PERSONA BENEFICIARIA -->
+															<!-- AQUI EMPIEZA LA SEXTA PARTE, DATOS DE LA PERSONA BENEFICIARIA -->
 								                            <fieldset>
 								                                <div class="form-card">
 								                                    <h2 class="naranja" align="center">
@@ -1007,9 +1094,9 @@
 								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
 								                                <input type="button" name="make_payment" class="next action-button" value="Siguiente" />
 								                            </fieldset>
-								                            <!-- AQUI TERMINA LA CUARTA PARTE, DATOS DE LA PERSONA BENEFICIARIA -->
+								                            <!-- AQUI TERMINA LA SEXTA PARTE, DATOS DE LA PERSONA BENEFICIARIA -->
 															<!-- ////////////////////////////////////////////// -->
-															<!-- AQUI EMPIEZA LA QUINTA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
+															<!-- AQUI EMPIEZA LA SEPTIMA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
 								                            <fieldset>
 								                                <div class="form-card">
 								                                	<div class="form-group row" style="margin-right: 100px;">
@@ -1018,33 +1105,43 @@
 																		</h2>
 																	</div>
 																	<h3 class="naranja" align="left">
-																		Perfil del Cliente - Persona Natural
+																		Perfil del Cliente - Persona Jurídica
 																	</h3>
 																	<div class="form-group row">
 																		<input type="file" id="dui-file" style="visibility: hidden;">
-																		<button type="button" id="dui-button" class="custom-button">Sube la imagen de tu Dui</button>
-																		<span id="dui-text" class="custom-text">No ha ingresado su Dui</span>
+																		<button type="button" id="dui-button" class="custom-button">Copia de DUI y NIT [ambos lados]</button>
+																		<span id="dui-text" class="custom-text">No ha ingresado ningun archivo</span>
 																	</div>
 																	<div class="form-group row">
 																		<input type="file" id="nit-file" style="visibility: hidden;">
-																		<button type="button" id="nit-button" class="custom-button">Sube la imagen de tu Nit</button>
-																		<span id="nit-text" class="custom-text">No ha ingresado su Nit</span>
+																		<button type="button" id="nit-button" class="custom-button">Escritura pública de Constitución y modificaciones si las hubieren</button>
+																		<span id="nit-text" class="custom-text">No ha ingresado ningun archivo</span>
 																	</div>
 																	<div class="form-group row">
 																		<input type="file" id="tIVA-file" style="visibility: hidden;">
-																		<button type="button" id="tIVA-button" class="custom-button">Sube la imagen de tu tarjeta de IVA</button>
-																		<span id="tIVA-text" class="custom-text">No ha ingresado su tarjeta de IVA</span>
+																		<button type="button" id="tIVA-button" class="custom-button">Copia de Credencial de RP vigente</button>
+																		<span id="tIVA-text" class="custom-text">No ha ingresado ningun archivo</span>
 																	</div>
 																	<div class="form-group row">
 																		<input type="file" id="luzAgua-file" style="visibility: hidden;">
-																		<button type="button" id="luzAgua-button" class="custom-button">Sube la imagen de su recibo de Luz y Agua</button>
-																		<span id="luzAgua-text" class="custom-text">No ha ingresado su recibo de Luz y Agua</span>
+																		<button type="button" id="luzAgua-button" class="custom-button">Copia de Nit y Registro Fiscal de la Sociedad</button>
+																		<span id="luzAgua-text" class="custom-text">No ha ingresado ningun archivo</span>
+																	</div>
+																	<div class="form-group row">
+																		<input type="file" id="tIVA-file" style="visibility: hidden;">
+																		<button type="button" id="tIVA-button" class="custom-button">Punto de acta de Junta Directiva, General ó Accionistas</button>
+																		<span id="tIVA-text" class="custom-text">No ha ingresado ningun archivo</span>
+																	</div>
+																	<div class="form-group row">
+																		<input type="file" id="luzAgua-file" style="visibility: hidden;">
+																		<button type="button" id="luzAgua-button" class="custom-button">Recibo de luz</button>
+																		<span id="luzAgua-text" class="custom-text">No ha ingresado ningun archivo</span>
 																	</div>
 								                                </div>
 								                                <input type="button" name="previous" class="previous action-button-previous" value="Anterior" /> 
 								                                <input type="button" name="make_payment" class="next action-button" value="Finalizar" />
 								                            </fieldset>
-								                            <!-- AQUI TERMINA LA QUINTA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
+								                            <!-- AQUI TERMINA LA SEPTIMA Y ULTIMA PARTE, DOCUMENTACIÓN REQUERIDA -->
 								                        </form>
 								                    </div>
 								                </div>
@@ -1164,8 +1261,8 @@
 	    <script src="js/twitterFetcher_min.js"></script>
 	    <!-- Custom Script -->
 	    <script src="js/scripts.js"></script>
-	    <script src="js/formularioPersonaNatural.js"></script>
-
+	    <script src="js/formularioPersonaJuridico.js"></script>
+	    <script src="js/jquery.dataTables.min.js"></script>
 	    <!-- CANVAS-->
 
 <script type="text/javascript">
