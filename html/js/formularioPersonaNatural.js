@@ -87,10 +87,19 @@ duiArchivo.addEventListener("change", function() {
     textoDui.innerHTML = duiArchivo.value.match(
       /[\/\\]([\w\d\s\.\-\(\)]+)$/
     )[1];
+    document.getElementById("textoDui").innerHTML = "Documento ingresado";
+    document.getElementById("textoDui").style.color = "#51DF3E";
+    setTimeout(function(){tooltipDui()},900);
   } else {
     textoDui.innerHTML = "No has ingresado tu Dui.";
   }
 });
+
+function tooltipDui(){
+  $("#textoDui").attr('title','Si deseas cambiar el archivo, vuelve a dar click');
+  $("#textoDui").tooltip('show');
+  setTimeout(function(){$("#textoDui").tooltip('hide')},2500);
+}
 
 const archivoNit = document.getElementById("nit-file");
 const botonNit = document.getElementById("nit-button");
@@ -105,10 +114,19 @@ archivoNit.addEventListener("change", function() {
     textoNit.innerHTML = archivoNit.value.match(
       /[\/\\]([\w\d\s\.\-\(\)]+)$/
     )[1];
+    document.getElementById("textoNit").innerHTML = "Documento ingresado";
+    document.getElementById("textoNit").style.color = "#51DF3E";
+    setTimeout(function(){tooltipNit()},900);
   } else {
     textoNit.innerHTML = "No has ingresado tu Nit.";
   }
 });
+
+function tooltipNit(){
+  $("#textoNit").attr('title','Si deseas cambiar el archivo, vuelve a dar click');
+  $("#textoNit").tooltip('show');
+  setTimeout(function(){$("#textoNit").tooltip('hide')},2500);
+}
 
 const archivotIVA = document.getElementById("tIVA-file");
 const botontIVA = document.getElementById("tIVA-button");
@@ -123,10 +141,19 @@ archivotIVA.addEventListener("change", function() {
     textotIVA.innerHTML = archivotIVA.value.match(
       /[\/\\]([\w\d\s\.\-\(\)]+)$/
     )[1];
+    document.getElementById("textoIva").innerHTML = "Documento ingresado";
+    document.getElementById("textoIva").style.color = "#51DF3E";
+    setTimeout(function(){tooltipIva()},900);
   } else {
     textotIVA.innerHTML = "No has ingresado tu tarjeta de IVA.";
   }
 });
+
+function tooltipIva(){
+  $("#textoIva").attr('title','Si deseas cambiar el archivo, vuelve a dar click');
+  $("#textoIva").tooltip('show');
+  setTimeout(function(){$("#textoIva").tooltip('hide')},2500);
+}
 
 const archivoluzAgua = document.getElementById("luzAgua-file");
 const botonluzAgua = document.getElementById("luzAgua-button");
@@ -141,7 +168,16 @@ archivoluzAgua.addEventListener("change", function() {
     textoluzAgua.innerHTML = archivoluzAgua.value.match(
       /[\/\\]([\w\d\s\.\-\(\)]+)$/
     )[1];
+    document.getElementById("textoRecibo").innerHTML = "Documento ingresado";
+    document.getElementById("textoRecibo").style.color = "#51DF3E";
+    setTimeout(function(){tooltipRecibo()},900);
   } else {
     textoluzAgua.innerHTML = "No has ingresado tu recibo de agua y luz.";
   }
 });
+
+function tooltipRecibo(){
+  $("#textoRecibo").attr('title','Si deseas cambiar el archivo, vuelve a dar click');
+  $("#textoRecibo").tooltip('show');
+  setTimeout(function(){$("#textoRecibo").tooltip('hide')},2500);
+}

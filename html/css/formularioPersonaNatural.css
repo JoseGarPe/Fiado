@@ -212,6 +212,19 @@ select.list-dt:focus {
   background-color: #00b28f;
 }
 
+.custom-button2 {
+  font-family: Typo_Round_Regular_Demo ; 
+  color: #606676;
+  margin-left: 10px;
+}
+
+.subrayado{
+    cursor: pointer;
+    font-family: Typo_Round_Regular_Demo ; 
+    color: #FF5100;
+    padding-left: 2px;
+}
+
 .custom-text {
   margin-left: 10px;
   font-family: Typo_Round_Regular_Demo ;
