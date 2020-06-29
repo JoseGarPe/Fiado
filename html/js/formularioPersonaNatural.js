@@ -181,3 +181,291 @@ function tooltipRecibo(){
   $("#textoRecibo").tooltip('show');
   setTimeout(function(){$("#textoRecibo").tooltip('hide')},2500);
 }
+
+/*
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+/*
+  PRIMER PASO
+*/
+document.getElementById("nombreCompleto").addEventListener("keypress", soloLetras, false);
+document.getElementById("telefono").addEventListener("keypress", soloTelefono, false);
+document.getElementById("numeroDui").addEventListener("keypress", soloDui, false);
+document.getElementById("numeroNit").addEventListener("keypress", soloNit, false);
+
+function soloNumeros(e){
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    //Usando la definición del DOM level 2, "return" NO funciona.
+    e.preventDefault();
+  }
+}
+
+function soloLetras(e){
+  var key = window.event ? e.which : e.keyCode;
+  if ((key < 65 || key > 122) && key != 32) {
+    e.preventDefault();
+  }
+}
+
+function soloTelefono(e){
+  valor = document.getElementById("telefono").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 9) {
+      if (valor.match(/^\d{4}$/)) {
+        nuevoValor = valor+"-";
+        console.log(nuevoValor);
+        document.getElementById("telefono").value = nuevoValor;
+      }else{
+        document.getElementById("telefono").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+function soloDui(e){
+  valor = document.getElementById("numeroDui").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 10) {
+      if (valor.match(/^\d{8}$/)) {
+        nuevoValor = valor+"-";
+        document.getElementById("numeroDui").value = nuevoValor;
+      }else{
+        document.getElementById("numeroDui").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+function soloNit(e){
+  valor = document.getElementById("numeroNit").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 16) {
+      if (valor.match(/^\d{4}$/)) {
+        nuevoValor = valor+"-";
+        console.log(nuevoValor);
+        document.getElementById("numeroNit").value = nuevoValor;
+      }else if (valor.match(/^\d{4}\-\d{6}$/)) {
+        nuevoValor = valor+"-";
+        console.log(nuevoValor);
+        document.getElementById("numeroNit").value = nuevoValor;
+      }else if (valor.match(/^\d{4}\-\d{6}\-\d{3}$/)) {
+        nuevoValor = valor+"-";
+        document.getElementById("numeroNit").value = nuevoValor;
+      }else{
+        document.getElementById("numeroNit").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+/*
+  FIN PRIMER PASO
+*/
+/*
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+/*
+  SEGUNDO PASO
+*/
+document.getElementById("informacionPEP").addEventListener("keypress", soloLetrasPaso2, false);
+document.getElementById("nombreRelacionPEP").addEventListener("keypress", soloLetrasPaso2, false);
+document.getElementById("cargoRelacionPEP").addEventListener("keypress", soloLetrasPaso2, false);
+document.getElementById("relacionPEP").addEventListener("keypress", soloLetrasPaso2, false);
+
+function soloLetrasPaso2(e){
+  var key = window.event ? e.which : e.keyCode;
+  if ((key < 65 || key > 122) && key != 32) {
+    e.preventDefault();
+  }
+}
+
+/*
+  FIN SEGUNDO PASO
+*/
+/*
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+/*
+  TERCER PASO
+*/
+document.getElementById("denominaciónSocial").addEventListener("keypress", soloLetrasPaso3, false);
+document.getElementById("telefonoFuncionario").addEventListener("keypress", soloTelefonoPaso3, false);
+document.getElementById("duiFuncionario").addEventListener("keypress", soloDuiPaso3, false);
+
+function soloLetrasPaso3(e){
+  var key = window.event ? e.which : e.keyCode;
+  if ((key < 65 || key > 122) && key != 32) {
+    e.preventDefault();
+  }
+}
+
+function soloTelefonoPaso3(e){
+  valor = document.getElementById("telefonoFuncionario").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 9) {
+      if (valor.match(/^\d{4}$/)) {
+        nuevoValor = valor+"-";
+        console.log(nuevoValor);
+        document.getElementById("telefonoFuncionario").value = nuevoValor;
+      }else{
+        document.getElementById("telefonoFuncionario").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+function soloDuiPaso3(e){
+  valor = document.getElementById("duiFuncionario").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 10) {
+      if (valor.match(/^\d{8}$/)) {
+        nuevoValor = valor+"-";
+        document.getElementById("duiFuncionario").value = nuevoValor;
+      }else{
+        document.getElementById("duiFuncionario").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+/*
+  FIN TERCER PASO
+*/
+/*
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+/*
+  CUARTO PASO
+*/
+
+//BENEFICIARIO 1
+document.getElementById("nombreBeneficiario1").addEventListener("keypress", soloLetrasPaso4, false);
+document.getElementById("telefonoBeneficiario1").addEventListener("keypress", soloTelefonoPaso41, false);
+document.getElementById("nacionalidadBeneficiario1").addEventListener("keypress", soloLetrasPaso4, false);
+document.getElementById("duiBeneficiario1").addEventListener("keypress", soloDuiPaso41, false);
+document.getElementById("participacionBeneficiario1").addEventListener("keypress", soloNumeros, false);
+//BENEFICIARIO 2
+document.getElementById("nombreBeneficiario2").addEventListener("keypress", soloLetrasPaso4, false);
+document.getElementById("telefonoBeneficiario2").addEventListener("keypress", soloTelefonoPaso42, false);
+document.getElementById("nacionalidadBeneficiario2").addEventListener("keypress", soloLetrasPaso4, false);
+document.getElementById("duiBeneficiario2").addEventListener("keypress", soloDuiPaso42, false);
+document.getElementById("participacionBeneficiario2").addEventListener("keypress", soloNumeros, false);
+
+
+function soloLetrasPaso4(e){
+  var key = window.event ? e.which : e.keyCode;
+  if ((key < 65 || key > 122) && key != 32) {
+    e.preventDefault();
+  }
+}
+
+function soloTelefonoPaso41(e){
+  valor = document.getElementById("telefonoBeneficiario1").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 9) {
+      if (valor.match(/^\d{4}$/)) {
+        nuevoValor = valor+"-";
+        console.log(nuevoValor);
+        document.getElementById("telefonoBeneficiario1").value = nuevoValor;
+      }else{
+        document.getElementById("telefonoBeneficiario1").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+function soloDuiPaso41(e){
+  valor = document.getElementById("duiBeneficiario1").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 10) {
+      if (valor.match(/^\d{8}$/)) {
+        nuevoValor = valor+"-";
+        document.getElementById("duiBeneficiario1").value = nuevoValor;
+      }else{
+        document.getElementById("duiBeneficiario1").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+function soloTelefonoPaso42(e){
+  valor = document.getElementById("telefonoBeneficiario2").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 9) {
+      if (valor.match(/^\d{4}$/)) {
+        nuevoValor = valor+"-";
+        console.log(nuevoValor);
+        document.getElementById("telefonoBeneficiario2").value = nuevoValor;
+      }else{
+        document.getElementById("telefonoBeneficiario2").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+function soloDuiPaso42(e){
+  valor = document.getElementById("duiBeneficiario2").value;
+  var key = window.event ? e.which : e.keyCode;
+  if (key < 48 || key > 57) {
+    e.preventDefault();
+  }else{
+    if (valor.length < 10) {
+      if (valor.match(/^\d{8}$/)) {
+        nuevoValor = valor+"-";
+        document.getElementById("duiBeneficiario2").value = nuevoValor;
+      }else{
+        document.getElementById("duiBeneficiario2").value = valor;
+      }
+    }else{
+      e.preventDefault();
+    }
+  }
+}
+
+/*
+  FIN CUARTO PASO
+*/
+/*
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+*/
