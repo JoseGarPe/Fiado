@@ -7,7 +7,8 @@ $comentario_usuario=$_POST['comentario'];
 
 
 //Recipiente
-$to = 'josue.garpe96@gmail.com';
+//$to = 'josue.garpe96@gmail.com';
+$to = 'v-10000@hotmail.com';
 
 //remitente del correo
 $from = 'jhosuegarciastarkand@gmail.com';
