@@ -378,12 +378,15 @@
 							</div>
 							<!-- AQUI VA EL ICONO SEGÚN EL MOCK UP -->
 							<div class="col-md-3">
-								<div class="col-md-12">
+								<div class="col-xs-12">
 									<div style="/*background-color: black; */width: 100%;">
 										<center><img class="img-responsive box-iconss-min" src="img/Iconos/iconosNuevos/iconos-usua1.png" width="180px" height="120px" alt=""></center>
 									</div>
-
-									<center><label style="font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;" ><strong>Ten a la mano estos documentos</strong></label></center>
+	
+								</div>
+							</div>
+							<div class="col-md-9">
+								<center><label style="font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;" ><strong>Ten a la mano estos documentos</strong></label></center>
 									<ul style="font-size: 13px; padding: 20px;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;" class="box-iconss">
 										<li>DUI</li>
 										<li>NIT</li>
@@ -391,12 +394,14 @@
 										<li>Recibos de Agua y Luz, hasta la fecha</li>
 										<li>Tarjeta de contribuyente (IVA)</li>
 									</ul>
-								</div>
 							</div>
+						</div><br><br>
+						<div class="row">
+							
 							<!-- AQUI TERMINA EL ESPACIO DEL ICONO SEGÚN EL MOCK UP -->
 							<!-- ////////////////////////////////////////////////// -->
 							<!-- AQUI EMPIEZA EL CONTENIDO PARA REALIZAR EL LOGIN -->
-							<div class="col-md-9">
+							<div class="col-md-12">
 								<div class="container-fluid" id="grad1">
 								    <div class="row justify-content-center mt-0">
 								        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -419,25 +424,25 @@
 								                                    <div class="form-group row">
 																	    <label for="nombreCompleto" class="col-sm-3 col-form-label">Nombre y Apellido</label>
 																	    <div class="col-sm-9">
-																	    	<input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto">
+																	    	<input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
 																	    <label for="correo" class="col-sm-3 col-form-label">Correo electrónico</label>
 																	    <div class="col-sm-9">
-																	    	<input type="email" class="form-control" id="correo" name="correo">
+																	    	<input type="email" class="form-control" id="correo" name="correo" required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
 																	    <label for="telefono" class="col-sm-3 col-form-label">Teléfono</label>
 																	    <div class="col-sm-9">
-																	    	<input type="text" class="form-control" id="telefono" name="telefono">
+																	    	<input type="text" class="form-control" id="telefono" name="telefono" required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
 																	    <label for="domicilio" class="col-sm-3 col-form-label">Domicilio</label>
 																	    <div class="col-sm-9">
-																	    	<input type="text" class="form-control" id="domicilio" name="domicilio">
+																	    	<input type="text" class="form-control" id="domicilio" name="domicilio" required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
@@ -446,7 +451,7 @@
 																				Departamento
 																			</label>
 																			<div class="col-sm-8">
-																		    	<select class="form-control departamento" id="departamento" name="departamento">
+																		    	<select class="form-control departamento" id="departamento" name="departamento" required>
 																				</select>
 																		    </div>	
 																		</div>
@@ -455,7 +460,7 @@
 																				Municipio
 																			</label>
 																			<div class="col-sm-8">
-																		    	<select class="form-control municipio" id="municipio" name="municipio">
+																		    	<select class="form-control municipio" id="municipio" name="municipio" required>
 																					<option value="0">Selecciona departamento</option>
 																				</select>
 																		    </div>	
@@ -466,7 +471,7 @@
 																	    	Fecha Nacimiento
 																		</label>
 																	    <div class="col-sm-6">
-																	    	<input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+																	    	<input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
@@ -474,7 +479,7 @@
 																	    	Actividad economica
 																		</label>
 																	    <div class="col-sm-6">
-																	    	<select class="form-control" id="actividadEconomica" name="actividadEconomica">
+																	    	<select class="form-control" id="actividadEconomica" name="actividadEconomica" required>
 																				<option>Default select</option>
 																			</select>
 																	    </div>
@@ -485,7 +490,7 @@
 																				Número de DUI
 																			</label>
 																			<div class="col-sm-7">
-																		    	<input type="text" class="form-control" id="numeroDui" name="numeroDui">
+																		    	<input type="text" class="form-control" id="numeroDui" name="numeroDui" required>
 																		    </div>	
 																		</div>
 																		<div class="col-md-6" style="padding: 0;">
@@ -493,7 +498,7 @@
 																				Número de NIT
 																			</label>
 																			<div class="col-sm-7">
-																		    	<input type="text" class="form-control" id="numeroNit" name="numeroNit">
+																		    	<input type="text" class="form-control" id="numeroNit" name="numeroNit" required>
 																		    </div>	
 																		</div>
 																	</div>
@@ -502,7 +507,7 @@
 																	    	Proveniencia de los fondos
 																		</label>
 																	    <div class="col-sm-6">
-																	    	<select class="form-control" id="provenienciaFondos" name="provenienciaFondos">
+																	    	<select class="form-control" id="provenienciaFondos" name="provenienciaFondos" required>
 																				<option>Default select</option>
 																			</select>
 																	    </div>
@@ -753,7 +758,7 @@
 																	    	Nombre completo :
 																	    </label>
 																	    <div class="col-sm-9">
-																	    	<input type="text" class="form-control" id="nombreBeneficiario1" name="nombreBeneficiario1" autocomplete="off">
+																	    	<input type="text" class="form-control" id="nombreBeneficiario1" name="nombreBeneficiario1" autocomplete="off"  required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
@@ -761,7 +766,7 @@
 																	    	Teléfono:
 																	    </label>
 																	    <div class="col-sm-10">
-																	    	<input type="text" class="form-control" id="telefonoBeneficiario1" name="telefonoBeneficiario1" autocomplete="off">
+																	    	<input type="text" class="form-control" id="telefonoBeneficiario1" name="telefonoBeneficiario1" autocomplete="off"  required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
@@ -769,7 +774,7 @@
 																	    	Domicilio:
 																	    </label>
 																	    <div class="col-sm-9">
-																	    	<input type="text" class="form-control" id="domicilioBeneficiario1" name="domicilioBeneficiario1" autocomplete="off">
+																	    	<input type="text" class="form-control" id="domicilioBeneficiario1" name="domicilioBeneficiario1" autocomplete="off"  required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
@@ -777,7 +782,7 @@
 																	    	Nacionalidad :
 																	    </label>
 																	    <div class="col-sm-9">
-																	    	<input type="text" class="form-control" id="nacionalidadBeneficiario1" name="nacionalidadBeneficiario1" autocomplete="off">
+																	    	<input type="text" class="form-control" id="nacionalidadBeneficiario1" name="nacionalidadBeneficiario1" autocomplete="off" required>
 																	    </div>
 																	</div>
 																	<div class="form-group row">
@@ -786,7 +791,7 @@
 																		    	Dui:
 																		    </label>
 																		    <div class="col-sm-10">
-																		    	<input type="text" class="form-control" id="duiBeneficiario1" name="duiBeneficiario1" autocomplete="off">
+																		    	<input type="text" class="form-control" id="duiBeneficiario1" name="duiBeneficiario1" autocomplete="off" required>
 																		    </div>
 																	    </div>
 																	    <div class="col-sm-6" style="padding: 0;">
@@ -794,7 +799,7 @@
 																		    	% de Participación:
 																		    </label>
 																		    <div class="col-sm-6">
-																		    	<input type="text" class="form-control" id="participacionBeneficiario1" name="participacionBeneficiario1" autocomplete="off">
+																		    	<input type="text" class="form-control" id="participacionBeneficiario1" name="participacionBeneficiario1" autocomplete="off" required>
 																		    </div>
 																	    </div>
 																	</div>
@@ -852,13 +857,14 @@
 																	    </div>
 																	</div>
 																	<div class="form-group row text-center">
+																		<div class="col-md-3"></div>
 																		 <div class="col-md-6 col-sm-6 col-xs-12">
-									                                      <canvas id='canvasCliente' width="350" height="155" style='border: 1px solid #CCC;'>
+									                                      <canvas id='canvasCliente' width="350" height="155" style='border: 1px solid #CC711D;'>
 									                                              <p>Tu navegador no soporta canvas</p>
 									                                          </canvas>
 
 									                                      <input type='hidden' name='imagenC' id='imagenC' />
-
+									                                      <label>Nombre y Firma</label>
 									                                   </div>
 																	</div>
 

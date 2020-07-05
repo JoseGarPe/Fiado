@@ -884,15 +884,15 @@
 						<div class="row">
 							<div class="col-md-12">
 								<div class="col-md-2" id="imagen">
-									<div class="box-iconss">
-										<center><img class="img-responsive box-iconss-min" src="img/Iconos/iconos-usua1.png" width="80px" height="60px" alt=""></center>
+									<div class="">
+										<center><img class="img-responsive box-iconss-min" src="img/Iconos/iconos-usua1.png" width="100px" height="80px" alt=""></center>
 										<br>
 									</div>
 								</div>
 								<div class="col-md-8 col-md-offset-2" id="contenedorInformacion">
 									<div class="col-md-3" id="informacion">
 										<div class="box-iconss-min"> 
-											<p style="border-style: solid; width: 100px; border-radius: 20px; padding: 10px; text-align: center;">
+											<p style="border-style: solid; width: 100px; border-radius: 20px; padding: 10px; text-align: center;background-color: #5CF7D1; color:white;">
 												$1,000
 											</p>
 										</div>
@@ -900,7 +900,7 @@
 									</div>
 									<div class="col-md-3" id="informacion2">
 										<div class="box-iconss-min"> 
-											<p style="border-style: solid; width: 100px; border-radius: 20px; padding: 10px; text-align: center;"> 
+											<p style="border-style: solid; width: 100px; border-radius: 20px; padding: 10px; text-align: center;background-color: #5CF7D1;color:white;"> 
 												130
 											</p>
 										</div>
@@ -908,7 +908,7 @@
 									</div>
 									<div class="col-md-3" id="informacion3">
 										<div class="box-iconss-min"> 
-											<p style="border-style: solid; width: 100px; border-radius: 20px; padding: 10px; text-align: center;">
+											<p style="border-style: solid; width: 100px; border-radius: 20px; padding: 10px; text-align: center;background-color: #5CF7D1;color:white;">
 												18,50%
 											</p>
 										</div>
@@ -916,7 +916,7 @@
 									</div>
 									<div class="col-md-3" id="informacion4">
 										<div class="box-iconss-min"> 
-											<p style="border-style: solid; width: 100px; border-radius: 20px; padding: 10px; text-align: center;">
+											<p style="border-style: solid; width: 100px; border-radius: 20px; padding: 10px; text-align: center;background-color: #5CF7D1;color:white;">
 												$123,050
 											</p>
 										</div>
@@ -937,15 +937,15 @@
 								    </a>
 								  </li>
 								<li class="nav-item">
-								    <a id="prestar" class="nav-link" href="#buzz" role="tab" data-toggle="tab" style="padding-top: 12px; padding-bottom: 12px; padding-right: 10px;">
-			                    		<span>PRESTAR AHORA</span>
-			                    	</a>
-								</li>
-								<li class="nav-item">
 								    <a id="historial" class="nav-link" href="#references" role="tab" data-toggle="tab" style="padding-top: 11px; padding-bottom: 11px;">
 			                    		<span>HISTORIAL DE PRESTAMO</span>
 			                    	</a>
 								 </li>
+							<!---->	<li class="nav-item">
+								    <a id="prestar" class="nav-link" href="#buzz" role="tab" data-toggle="tab" style="padding-top: 12px; padding-bottom: 12px; padding-right: 10px;">
+			                    		<span>Historial movimientos</span>
+			                    	</a>
+								</li>
 							</ul>
 							<div class="container">
 								<!-- Tab panes -->
@@ -1115,15 +1115,50 @@
 											</div>
 										</div>
 								  	</div>
-								  	<div role="tabpanel" class="tab-pane fade" id="buzz">
+								  <!---->	<div role="tabpanel" class="tab-pane fade" id="buzz">
+										<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+Ingreso
+  </button>
+
 								  		<div class="table-responsive">
 								  			<table class="table">
 											    <thead>
 											      <tr>
-											        <th>Monto a prestar</th>
-											        <th>Calificacion</th>
-											        <th>Plazo</th>
+											        <th>Fecha</th>
+											        <th>Concepto</th>
+											        <th>Ingreso</th>
+											        <th>Egreso</th>
+											        <th>Total</th>
+											      </tr>
+											    </thead>
+											    <tbody>
+											      <tr>
+											        <td><label>03/07/2020</label></td>
+											        <td>Ingreso de capital</td>
+											        <td>$500</td>
+											        <td></td>
+											        <td>$1,700</td>
+											      </tr>
+											      <tr>
+											        <td><label>03/07/2020</label></td>
+											        <td>Ingreso de capital</td>
+											        <td></td>
+											        <td>$500</td>
+											        <td>$500</td>
+											      </tr>
+											    </tbody>
+											  </table>
+								  		</div>
+								  	</div>
+								  	<div role="tabpanel" class="tab-pane fade" id="references">
+								  	<div class="table-responsive">
+								  			<table class="table">
+											    <thead>
+											      <tr>
 											        <th>Monto</th>
+											        <th>Plazo</th>
+											        <th>Calificacion</th>
 											        <th>Destino</th>
 											        <th>Usuario</th>
 											        <th>Fondeo</th>
@@ -1131,10 +1166,9 @@
 											    </thead>
 											    <tbody>
 											      <tr>
-											        <td><input type="text" name="nose"></td>
-											        <td>A+</td>
-											        <td>36 MESES</td>
 											        <td>$1,700</td>
+											        <td>36 MESES</td>
+											        <td>A+</td>
 											        <td>consolidar deudas</td>
 											        <td>Juan Sol</td>
 											        <td>
@@ -1142,10 +1176,9 @@
 													</td>
 											      </tr>
 											      <tr>
-											        <td><input type="text" name="nose"></td>
-											        <td>A+</td>
-											        <td>36 MESES</td>
 											        <td>$1,700</td>
+											        <td>36 MESES</td>
+											        <td>A+</td>
 											        <td>consolidar deudas</td>
 											        <td>Juan Sol</td>
 											        <td>
@@ -1153,10 +1186,9 @@
 													</td>
 											      </tr>
 											      <tr>
-											        <td><input type="text" name="nose"></td>
-											        <td>A+</td>
-											        <td>36 MESES</td>
 											        <td>$1,700</td>
+											        <td>36 MESES</td>
+											        <td>A+</td>
 											        <td>consolidar deudas</td>
 											        <td>Juan Sol</td>
 											        <td>
@@ -1167,18 +1199,6 @@
 											  </table>
 								  		</div>
 								  	</div>
-								  	<div role="tabpanel" class="tab-pane fade" id="references">
-								  		<p align="justify">AQUI IRIA LO DE "HISTORIAL DE PRESTAMO", *(ESPARANDO INFORMACION)*
-								  			Lorem Ipsum is simply dummy text of the printing
-											and typesetting industry. Lorem Ipsum has been
-											the industry's standard dummy text ever since the
-											1500s, when an unknown printer took a galley of
-											type and scrambled it to make a type specimen
-											book. It has survived not only five centuries, but
-											also the leap into electronic typesetting, remaining
-											essentially unchanged. It was popularised in the
-								  		</p> 
-								  	</div>
 								</div>
 							</div>	
                     	</div>
@@ -1186,12 +1206,12 @@
 					<br>
 
 			        <!-- footer-widget-section start -->
-			        <section class="footer-widget-section section-padding">
+			       <section class="footer-widget-section" style="padding-top: 70px;">
 			        	<div class="container">
 			        		<div class="row">
 			        			<div class="col-md-3 col-sm-4">
 			        				<div class="footer-widget">
-			        					<h3>¿ Que es Fiado ?</h3>
+			        					<h3>¿ Qué es Fiado ?</h3>
 										<p>¿Cómo funciona?</p>
 										<p>Preguntas precuentes</p>
 										<p>Contáctanos</p>
@@ -1220,7 +1240,7 @@
 			        				<div class="footer-widget">
 			        					<img src="img/footer_logo.png" height="50px" width="auto">
 			        					<p>Aviso de privacidad</p>
-										<p>Terminos y condiciones</p>
+										<p>Términos y condiciones</p>
 										<ul class="social-links list-inline">
 						  					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 						  					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -1230,13 +1250,13 @@
 			        				</div><!-- /.footer-widget -->
 			        			</div><!-- /.col-md-4 -->
 			        		</div><!-- /.row -->
+			        		<div class="col-md-12" style="margin-top: 15px;">
+				        		<p style="font-size: 18px; padding-bottom: 0;" align="center">
+				        			Todos los derechos reservados, Fiado 2020
+				        		</p>
+				        	</div>
 			        	</div><!-- /.container -->
-			        	<br>
-			        	<br>
-			        	<div class="col-md-12">
-			        		<p style="font-size: 15px;" align="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-			        	</div>
-			        </section><!-- /.cta-section -->
+			        </section><!-- /.cta-section --><!-- /.cta-section -->
 	    		</div> <!-- .st-content -->
 		    </div> <!-- .st-pusher -->
 			
@@ -1261,6 +1281,59 @@
 				<div class="status-mes"></div>
 			</div>
 		</div>
+		<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <!--form ingreso-->
+		  <form enctype="multipart/form-data" style="padding: 50px;">
+			<div class="form-group">
+				<label for="monto">Ingresa el monto</label>
+				<input type="text" class="form-control" id="monto" name="monto" data-toggle="tooltip" data-placement="bottom" title="Ingresa el monto">
+			  </div>
+			  <div class="form-group">
+				<label for="idTransaccion">Ingresa el Id de transacción</label>
+				<input type="text" class="form-control" id="idTransaccion" name="idTransaccion" data-toggle="tooltip" data-placement="bottom" title="Ingresa el ID de transacción">
+			  </div>
+			  <div class="form-group">
+				<label for="comentario">Ingresa tu comentario</label>
+				<input type="text" class="form-control" id="comentario" name="comentario" data-toggle="tooltip" data-placement="bottom" title="Ingresa tu comentario">
+			  </div>
+			  <div class="custom-file" id="divComprobante" style="height: 40px; border-radius: 5px;">
+				<input type="file" class="custom-file-input" id="comprobante" name="comprobante" data-toggle="tooltip" data-placement="bottom" title="Ingresa el comprobante">
+				  <label class="custom-file-label" for="comprobante">Comprobante</label>
+			</div>
+			<br>
+			  <div class="form-group" style="margin-top: 10px;">
+				  <input type="button" class="btn btn-primary" id="enviar" name="enviar" value="ENVIAR" readonly>
+			  </div>
+			  <div class="form-group" style="margin-top: 10px;">
+				  <input type="button" class="btn btn-primary" id="enviar22" name="enviar22" value="ENVIAR A BASE" readonly>
+			  </div>
+			  <div class="form-group">
+				<label for="TOKEN">MI TOKEN</label>
+				<input type="text" class="form-control" id="TOKEN" name="TOKEN" data-toggle="tooltip" data-placement="bottom" title="MI TOKEN">
+				<input type="hidden" class="form-control" id="id_usuario" name="TOKEN" data-toggle="tooltip" value="1" data-placement="bottom" title="MI TOKEN">
+				<input type="hidden" class="form-control" id="nombre_usuario" name="TOKEN" data-toggle="tooltip" value="Josue Garcia" data-placement="bottom" title="MI TOKEN">
+			  </div>
+		</form>
+		  <!--end form-->
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+		<!---->
 	    <!-- jQuery -->
 	    <script src="js/jquery.js"></script>
 	    <!-- Bootstrap Core JavaScript -->
@@ -1289,6 +1362,8 @@
 	    <script src="js/twitterFetcher_min.js"></script>
 	    <!-- Custom Script -->
 	    <script src="js/scripts.js"></script>
+	    <!-- Api prod js -->
+	    <script src="js/api_prod.js"></script>
   		<script>
 			var rangoDinero = document.getElementById("rangoDinero");
 			var dinero = document.getElementById("dinero");
