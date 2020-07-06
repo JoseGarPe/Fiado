@@ -318,7 +318,7 @@ function datosBase(monto,transaccion,comentario,comprobante) {
   .catch( (err) =>{
       console.log('ERROR: ', err.message);
   } )*/
-/*
+/**/
   $.ajax({
     url: 'http://www.chiltex.net/Api-fia2-dev/public/api/producer/comprobante',
     type: 'post',
@@ -334,15 +334,29 @@ function datosBase(monto,transaccion,comentario,comprobante) {
     processData: false,
     success: function(response) {
       console.log(response);
+      if(response.DATA.recibido=="Si"){
+        enviarCorreo(id_usuario,nombre_usuario,monto,transaccion,comentario);
+      }
     }
-  });*/
+  });
      var contenido = document.querySelector('#contenido')
-  fetch('http://www.chiltex.net/Api-fia2-dev/public/api/producer/comprobante', {
+  /*fetch('http://www.chiltex.net/Api-fia2-dev/public/api/producer/comprobante', {
     method: 'GET',        
     headers: {                             
       'Accept':'application/json',
       'Content-Type':'application/json',
       'Authorization' : token
     }
-    }).then(response => response.json()).then(json => console.log(json));
+    }).then(response => response.json()).then(json => console.log(json));*/
+  }
+
+  function enviarCorreo(id_usuario,nombre_usuario,monto,id_transaccion,comentario){
+    $.ajax({  
+      url:"../class/controllers/comprobante_mailController.php",  
+      method:"POST",
+      data:{id_usuario:id_usuario,nombre_usuario:nombre_usuario,monto:monto,id_transaccion:id_transaccion,comentario:comentario},  
+      success:function(data){    
+setTimeout(location.reload(), 5000);
+      }  
+ });  
   }

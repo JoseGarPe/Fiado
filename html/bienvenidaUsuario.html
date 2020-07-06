@@ -943,7 +943,7 @@
 								 </li>
 							<!---->	<li class="nav-item">
 								    <a id="prestar" class="nav-link" href="#buzz" role="tab" data-toggle="tab" style="padding-top: 12px; padding-bottom: 12px; padding-right: 10px;">
-			                    		<span>Historial movimientos</span>
+			                    		<span>HISTORIAL DE MOVIMIENTOS</span>
 			                    	</a>
 								</li>
 							</ul>
@@ -1116,11 +1116,22 @@
 										</div>
 								  	</div>
 								  <!---->	<div role="tabpanel" class="tab-pane fade" id="buzz">
+		  <!--botones ingreso y egreso-->
+				<div class="container"></div>
+		  			<div class="row">
+						<div class="col-sm-8">col-sm-8</div>
+						<div class="col-sm-4">
 										<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-Ingreso
-  </button>
-
+							<button type="button" class="btn btn-special" data-toggle="modal" data-target="#exampleModal">
+							Ingreso
+							</button>
+							<button type="button" class="btn btn-special" data-toggle="modal" data-target="#exampleModal">
+							Egreso
+							</button>
+						</div>
+					</div>
+				</div> 
+		  <!---->
 								  		<div class="table-responsive">
 								  			<table class="table">
 											    <thead>
@@ -1138,7 +1149,7 @@ Ingreso
 											        <td>Ingreso de capital</td>
 											        <td>$500</td>
 											        <td></td>
-											        <td>$1,700</td>
+											        <td>$1,000</td>
 											      </tr>
 											      <tr>
 											        <td><label>03/07/2020</label></td>
@@ -1282,11 +1293,11 @@ Ingreso
 			</div>
 		</div>
 		<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.7);">
 	<div class="modal-dialog">
 	  <div class="modal-content">
 		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <h5 class="modal-title naranja" id="exampleModalLabel">Formulario Ingreso de Capital</h5>
 		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		  </button>
@@ -1311,24 +1322,76 @@ Ingreso
 				  <label class="custom-file-label" for="comprobante">Comprobante</label>
 			</div>
 			<br>
-			  <div class="form-group" style="margin-top: 10px;">
+			  <!--<div class="form-group" style="margin-top: 10px;">
 				  <input type="button" class="btn btn-primary" id="enviar" name="enviar" value="ENVIAR" readonly>
-			  </div>
-			  <div class="form-group" style="margin-top: 10px;">
-				  <input type="button" class="btn btn-primary" id="enviar22" name="enviar22" value="ENVIAR A BASE" readonly>
-			  </div>
-			  <div class="form-group">
-				<label for="TOKEN">MI TOKEN</label>
-				<input type="text" class="form-control" id="TOKEN" name="TOKEN" data-toggle="tooltip" data-placement="bottom" title="MI TOKEN">
-				<input type="hidden" class="form-control" id="id_usuario" name="TOKEN" data-toggle="tooltip" value="1" data-placement="bottom" title="MI TOKEN">
-				<input type="hidden" class="form-control" id="nombre_usuario" name="TOKEN" data-toggle="tooltip" value="Josue Garcia" data-placement="bottom" title="MI TOKEN">
-			  </div>
+			  </div>-->		
+			  	  <div class="form-group" style="margin-top: 10px;">
+				   </div>
+			  <!--  <div class="form-group">
+				  <label for="TOKEN">MI TOKEN</label>-->
+				  <input type="hidden" class="form-control" id="TOKEN" name="TOKEN" data-toggle="tooltip" data-placement="bottom" title="MI TOKEN">
+				  <input type="hidden" class="form-control" id="id_usuario" name="TOKEN" data-toggle="tooltip" value="1" data-placement="bottom" title="MI TOKEN">
+				  <input type="hidden" class="form-control" id="nombre_usuario" name="TOKEN" data-toggle="tooltip" value="Josue Garcia" data-placement="bottom" title="MI TOKEN">
+			  <!--  </div>-->
 		</form>
 		  <!--end form-->
 		</div>
 		<div class="modal-footer">
 		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		  <button type="button" class="btn btn-primary">Save changes</button>
+		  <input type="button" class="btn btn-special" id="enviar22" name="enviar22" value="Registrar Movimiento" readonly>
+		</div>
+	  </div>
+	</div>
+  </div>
+		<!---->
+				<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title naranja" id="exampleModalLabel">Formulario de Egreso de Capital</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <!--form ingreso-->
+		  <form enctype="multipart/form-data" style="padding: 50px;">
+			<div class="form-group">
+				<label for="monto">Ingresa el monto</label>
+				<input type="text" class="form-control" id="monto" name="monto" data-toggle="tooltip" data-placement="bottom" title="Ingresa el monto">
+			  </div>
+			  <div class="form-group">
+				<label for="idTransaccion">Ingresa el Id de transacción</label>
+				<input type="text" class="form-control" id="idTransaccion" name="idTransaccion" data-toggle="tooltip" data-placement="bottom" title="Ingresa el ID de transacción">
+			  </div>
+			  <div class="form-group">
+				<label for="comentario">Ingresa tu comentario</label>
+				<input type="text" class="form-control" id="comentario" name="comentario" data-toggle="tooltip" data-placement="bottom" title="Ingresa tu comentario">
+			  </div>
+			<!--  <div class="custom-file" id="divComprobante" style="height: 40px; border-radius: 5px;">
+				<input type="file" class="custom-file-input" id="comprobante" name="comprobante" data-toggle="tooltip" data-placement="bottom" title="Ingresa el comprobante">
+				  <label class="custom-file-label" for="comprobante">Comprobante</label>
+			</div>-->
+			<br>
+			  <!--<div class="form-group" style="margin-top: 10px;">
+				  <input type="button" class="btn btn-primary" id="enviar" name="enviar" value="ENVIAR" readonly>
+			  </div>-->		
+			  	  <div class="form-group" style="margin-top: 10px;">
+				   </div>
+			  <!--  <div class="form-group">
+				  <label for="TOKEN">MI TOKEN</label>-->
+				  <input type="hidden" class="form-control" id="TOKEN" name="TOKEN" data-toggle="tooltip" data-placement="bottom" title="MI TOKEN">
+				  <input type="hidden" class="form-control" id="id_usuario" name="TOKEN" data-toggle="tooltip" value="1" data-placement="bottom" title="MI TOKEN">
+				  <input type="hidden" class="form-control" id="nombre_usuario" name="TOKEN" data-toggle="tooltip" value="Josue Garcia" data-placement="bottom" title="MI TOKEN">
+			  <!--  </div>-->
+		</form>
+		  <!--end form-->
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		<!--<input type="button" class="btn btn-special" id="enviar22" name="enviar22" value="Registrar Movimiento" readonly>-->  
+		  <button type="button" class="btn btn-special" data-dismiss="modal">Registrar movimiento</button>
 		</div>
 	  </div>
 	</div>
@@ -1364,7 +1427,7 @@ Ingreso
 	    <script src="js/scripts.js"></script>
 	    <!-- Api prod js -->
 	    <script src="js/api_prod.js"></script>
-  		<script>
+  		<!--<script>
 			var rangoDinero = document.getElementById("rangoDinero");
 			var dinero = document.getElementById("dinero");
 			dinero.innerHTML = rangoDinero.value;
@@ -1380,6 +1443,6 @@ Ingreso
 			rangoTiempo.oninput = function() {
 			  tiempo.innerHTML = this.value;
 			}
-		</script>
+		</script>-->
 	</body>
 </html>

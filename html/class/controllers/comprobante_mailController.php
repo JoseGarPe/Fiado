@@ -1,6 +1,6 @@
 <?php 
 $id_usuario=$_POST['id_usuario'];
-$nombre_usuario=$_POST['nombre'];
+$nombre_usuario=$_POST['nombre_usuario'];
 $monto_usuario=$_POST['monto'];
 $id_transaccion_usuario=$_POST['id_transaccion'];
 $comentario_usuario=$_POST['comentario'];
@@ -8,7 +8,7 @@ $comentario_usuario=$_POST['comentario'];
 
 //Recipiente
 //$to = 'josue.garpe96@gmail.com';
-$to = 'v-10000@hotmail.com';
+$to = 'josue.garpe96@gmail.com,jhosuegarciastarkand@gmail.com';
 
 //remitente del correo
 $from = 'jhosuegarciastarkand@gmail.com';
