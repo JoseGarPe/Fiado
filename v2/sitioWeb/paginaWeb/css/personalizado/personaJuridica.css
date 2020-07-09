@@ -1,0 +1,854 @@
+#msform {
+    text-align: center;
+    position: relative;
+}
+
+#msform fieldset .form-card {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px 30px 40px;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 3% 20px 3%;
+    position: relative
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9E9E9E
+}
+
+#msform .action-button {
+    width: 100px;
+    background: skyblue;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161
+}
+
+select.list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px
+}
+
+select.list-dt:focus {
+    border-bottom: 2px solid skyblue
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #000000
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 14%;
+    float: left;
+    position: relative
+}
+
+#progressbar #PASO1:before {
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+#progressbar #PASO2:before {
+    font-family: FontAwesome;
+    content: "\f508";
+}
+
+#progressbar #PASO3:before {
+    font-family: FontAwesome;
+    content: "\f3d1";
+}
+
+#progressbar #PASO4:before {
+    font-family: FontAwesome;
+    content: "\f500";
+}
+
+#progressbar #PASO5:before {
+    font-family: FontAwesome;
+    content: "\f21b";
+}
+
+#progressbar #PASO6:before {
+    font-family: FontAwesome;
+    content: "\f968";
+}
+
+#progressbar #PASO7:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #FF5100
+}
+
+.radio-group {
+    position: relative;
+    margin-bottom: 25px
+}
+
+.radio {
+    display: inline-block;
+    width: 204;
+    height: 104;
+    border-radius: 0;
+    background: lightblue;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 8px 2px
+}
+
+.radio:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.radio.selected {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.custom-button {
+  padding: 7px;
+  color: white;
+  background-color: #FF5100;
+  border: 1px solid #000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Typo_Round_Regular_Demo ;
+  font-size: 16px;
+}
+
+.custom-button:hover {
+  background-color: #00b28f;
+}
+
+.custom-button2 {
+  font-family: Typo_Round_Regular_Demo ; 
+  color: #606676;
+  margin-left: 10px;
+}
+
+.subrayado{
+    cursor: pointer;
+    font-family: Typo_Round_Regular_Demo ; 
+    color: #FF5100;
+    padding-left: 2px;
+}
+
+.custom-text {
+  margin-left: 10px;
+  font-family: Typo_Round_Regular_Demo ;
+  color: #aaa;
+}
+
+@media screen and (max-width:350px) and (min-width:300px) {
+    
+    #letrasRegistrarse{
+        margin-top: 35%;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 110%;
+    }
+
+    .btn-special{
+        font-size: 24px;
+        padding: 40px 30px;
+        margin-top: 10%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:400px) and (min-width:351px) {
+    
+    #letrasRegistrarse{
+        margin-top: 30%;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 110%;
+    }
+
+    .btn-special{
+        font-size: 24px;
+        padding: 40px 30px;
+        margin-top: 10%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px) and (min-width:401px) {
+    
+    #letrasRegistrarse{
+        margin-top: 25%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 28px;
+        padding: 40px 30px;
+        margin-top: 10%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px) and (min-width:451px) {
+    
+    #letrasRegistrarse{
+        margin-top: 20%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 28px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:550px) and (min-width:501px) {
+    
+    #letrasRegistrarse{
+        margin-top: 20%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+        padding: 0px 5px;
+    }
+
+    .btn-special{
+        font-size: 28px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:551px) {
+    
+    #letrasRegistrarse{
+        margin-top: 20%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 28px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:650px) and (min-width:601px) {
+    
+    #letrasRegistrarse{
+        margin-top: 20%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 28px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:651px) {
+    
+    #letrasRegistrarse{
+        margin-top: 20%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:750px) and (min-width:701px) {
+    
+    #letrasRegistrarse{
+        margin-top: 20%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:751px) {
+    
+    #letrasRegistrarse{
+        margin-top: 22%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:768px) {
+    
+    #letrasRegistrarse{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:850px) and (min-width:801px) {
+    
+    #letrasRegistrarse{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:850px) and (min-width:801px) {
+    
+    #letrasRegistrarse{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:851px) {
+    
+    #letrasRegistrarse{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:950px) and (min-width:901px) {
+    
+    #letrasRegistrarse{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:951px) {
+    
+    #letrasRegistrarse{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 25%;
+        float: left;
+    }
+}
+
+@media screen and (max-width:999px) and (min-width:992px) {
+    
+    #letrasRegistrarse{
+        margin-top: 15%;
+    }
+
+    h1{
+        font-size: 45px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 30px;
+        padding: 50px 40px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 25%;
+        float: left;
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    #letrasRegistrarse{
+        margin-top: 10%;
+    }
+
+    h1{
+        font-size: 50px;
+        line-height: 120%;
+    }
+
+    .btn-special{
+        font-size: 40px;
+        padding: 60px 50px;
+        margin-top: 5%;
+    }
+
+    footer {
+        background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+        color: #FFFFFF;
+    }
+
+    .informacionFooter{
+        margin-top: 50px;
+        color: #FFFFFF;
+        width: 25%;
+        float: left;
+    }
+}
+
+.btn-special {
+    background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+    background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+    background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+    background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+    color: #FFFFFF;
+    border-radius:14px;
+    -moz-border-radius:14px;
+    -webkit-border-radius:14px;
+    font-family: Typo_Round_Regular_Demo ; 
+} 
+
+.naranja {
+    color: #FF5100;
+}

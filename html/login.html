@@ -413,18 +413,23 @@
 									<img src="img/Logos/LogosFiadoFianales-02.png" style="border-radius: 60px;">
 								</div>
 								<br>
-						  		<div class="form-group">
-									<label for="exampleInputEmail1">Correo Electrónico:</label>
-									<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-								</div>
-								<div class="form-group">
-									<label for="contraseña">Contraseña</label>
-									<input type="password" class="form-control" id="contraseña" aria-describedby="emailHelp">
-								</div>
-								<div class="text-center">
-									<button type="submit" class="btn btn-naranja"><a href="informacionInvestigacion.html" style="color: white;">INICIAR SESIÓN</a></button>
-								</div>
-								<br>
+								<form enctype="multipart/form-data" style="padding: 50px;">
+									<div class="form-group">
+										<label for="exampleInputEmail1">Correo Electrónico:</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+										<input type="text" class="form-control" id="TOKEN" name="TOKEN" data-toggle="tooltip" data-placement="bottom" title="MI TOKEN">
+									</div>
+									<div class="form-group">
+										<label for="contraseña">Contraseña</label>
+										<input type="password" class="form-control" id="pass" aria-describedby="emailHelp">
+									</div>
+									<div class="text-center">
+										<!--<button type="submit" class="btn btn-naranja"><a href="informacionInvestigacion.html" style="color: white;">INICIAR SESIÓN</a></button>-->
+										
+		<input type="button" class="btn btn-special" id="enviar22" name="enviar22" value="Registrar Movimiento" readonly>
+									</div>
+									<br>
+								</form>
 								<div class="text-center">
 									<a href="#">¿Problemas para ingresar?</a>
 									<p>¿No tienes cuenta? <a href="registro.html">Registrate</a></p>
@@ -541,6 +546,8 @@
 	    <!--TWITTER FETCHER-->
 	    <script src="js/twitterFetcher_min.js"></script>
 	    <!-- Custom Script -->
-	    <script src="js/scripts.js"></script>
+		<script src="js/scripts.js"></script>
+		<!---->
+		<script src="js/login.js"></script>
 	</body>
 </html>

@@ -1,0 +1,542 @@
+@media screen and (max-width:350px) and (min-width:300px) {
+	.formulario{
+		width: 100%;
+	}
+
+	#logo{
+		border-radius: 50px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:400px) and (min-width:351px) {
+	.formulario{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:450px) and (min-width:401px) {
+	.formulario{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:450px) and (min-width:401px) {
+	.formulario{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:500px) and (min-width:451px) {
+	.formulario{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:550px) and (min-width:501px) {
+	.formulario{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:600px) and (min-width:551px) {
+	.formulario{
+		width: 75%;
+		margin-left: 15%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:650px) and (min-width:601px) {
+	.formulario{
+		width: 75%;
+		margin-left: 15%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width:700px) and (min-width:651px) {
+	.formulario{
+		width: 75%;
+		margin-left: 15%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width:750px) and (min-width:701px) {
+	.formulario{
+		width: 75%;
+		margin-left: 15%;
+	}
+
+	#logo{
+		border-radius: 20px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width:800px) and (min-width:751px) {
+	.formulario{
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	#logo{
+		border-radius: 30px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width:850px) and (min-width:801px) {
+	.formulario{
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	#logo{
+		border-radius: 30px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width:850px) and (min-width:801px) {
+	.formulario{
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	#logo{
+		border-radius: 30px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width:900px) and (min-width:851px) {
+	.formulario{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	#logo{
+		border-radius: 30px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width:950px) and (min-width:901px) {
+	.formulario{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	#logo{
+		border-radius: 30px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width:991px) and (min-width:951px) {
+	.formulario{
+		width: 70%;
+		margin-left: 15%;
+	}
+
+	#logo{
+		border-radius: 30px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 25%;
+		float: left;
+	}
+}
+
+@media screen and (max-width:999px) and (min-width:992px) {
+	.formulario{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	#logo{
+		border-radius: 50px;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 25%;
+		float: left;
+	}
+}
+
+@media screen and (min-width:1000px) {
+	.formulario{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	#logo{
+		border-radius: 50px;
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	footer {
+		background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+		color: #FFFFFF;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 25%;
+		float: left;
+	}
+}
+
+.btn-special {
+	background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+	background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+	background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+	background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+	color: #FFFFFF;
+	border-radius:14px;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	font-size: 22px;
+	padding: 8px 60px;
+	font-family: Typo_Round_Regular_Demo ; 
+	margin-top: 2%;
+} 
+
+label{
+	font-family: Typo_Round_Regular_Demo;
+	font-size: 18px; 
+}
+
+.registrarse{
+	margin-top: 5%;
+}
+
+.registrarse a, p{
+	font-size: 20px;
+}
+
+#correoLogin{
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}
+
+#contraseñaLogin{
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+}

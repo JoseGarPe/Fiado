@@ -1,0 +1,1857 @@
+@media screen and (max-width: 350px) and (min-width: 300px) {
+
+	#cabecera{
+		margin-top: 30%;
+	}
+
+	#mensaje{
+		width: 50%;
+		margin: 10% 0px;
+	}	
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	#contenedorDatos{
+		margin-left: 5%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 60%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) and (min-width: 351px) {
+
+	#cabecera{
+		margin-top: 20%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	#mensaje{
+		width: 50%;
+		margin: 10% 0px;
+	}
+
+	#contenedorDatos{
+		margin-left: 15%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 60%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 450px) and (min-width: 401px) {
+
+	#cabecera{
+		margin-top: 20%;
+	}
+
+	#mensaje{
+		width: 50%;
+		margin: 10% 0px;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	#contenedorDatos{
+		margin-left: 15%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 50%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) and (min-width: 451px) {
+
+	#cabecera{
+		margin-top: 20%;
+	}
+
+	#imagen{
+		width: 40%;
+	}
+
+	#datos{
+		width: 60%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 550px) and (min-width: 501px) {
+
+	#cabecera{
+		margin-top: 20%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 100%;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 600px) and (min-width: 551px) {
+
+	#cabecera{
+		margin-top: 10%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 650px) and (min-width: 601px) {
+
+	#cabecera{
+		margin-top: 15%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 700px) and (min-width: 651px) {
+
+	#cabecera{
+		margin-top: 15%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	#contenedorDatos{
+		margin-left: 15%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 750px) and (min-width: 701px) {
+
+	#cabecera{
+		margin-top: 15%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 751px) {
+
+	#cabecera{
+		margin-top: 15%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 800px) and (min-width: 768px) {
+
+	#cabecera{
+		margin-top: 15%;
+	}
+
+	#datosIzquierdo{
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	#formulario{
+		width: 80%;
+		margin-left: 10%
+	}
+
+	#imagen{
+		width: 30%;
+	}
+
+	#datos{
+		width: 30%;
+	}
+
+	#mensaje{
+		width: 90%;
+		margin-top: 15%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 850px) and (min-width: 801px) {
+
+	#cabecera{
+		margin-top: 15%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 851px) {
+
+	#cabecera{
+		margin-top: 15%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	#formulario{
+		width: 90%;
+		margin-left: 5%
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 950px) and (min-width: 901px) {
+
+	#cabecera{
+		margin-top: 10%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 40%;
+	}
+
+	#formulario{
+		width: 45%;
+		margin-left: 10%;
+		margin-top: 10%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 991px) and (min-width: 951px) {
+
+	#cabecera{
+		margin-top: 10%;
+	}
+
+	#noseWe{
+		width: 100%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 50%;
+	}
+
+	#formulario{
+		width: 45%;
+		margin-left: 5%;
+		margin-top: 10%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 25%;
+		float: left;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 999px) and (min-width: 992px) {
+
+	#cabecera{
+		margin-top: 10%;
+	}
+
+	#noseWe{
+		width: 100%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 50%;
+	}
+
+	#formulario{
+		width: 45%;
+		margin-left: 5%;
+		margin-top: 10%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 25%;
+		float: left;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+
+	#cabecera{
+		margin-top: 8%;
+	}
+
+	#noseWe{
+		width: 100%;
+	}
+
+	#mensaje{
+		width: 80%;
+		margin-top: 9%;
+		margin-left: 5%;
+	}
+
+	#imagen{
+		width: 50%;
+	}
+
+	#datos{
+		width: 50%;
+	}
+
+	#datosIzquierdo{
+		width: 50%;
+	}
+
+	#formulario{
+		width: 45%;
+		margin-left: 5%;
+		margin-top: 7%;
+	}
+
+	.imagenMensaje{
+		width: 100%;
+	}
+
+	.imagenMensaje img{
+		width: 20%;
+		float: left;
+		margin-left: 3%;
+	}
+
+	.imagenMensaje p{
+		width: 50%;
+		float: left;
+		margin-left: 5%;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono{
+		width: 100%;
+	}
+
+	.imagenTelefono img{
+		width: 25%;
+		float: left;
+		padding: 10px 0px;
+	}
+
+	.imagenTelefono p{
+		width: 50%;
+		float: left;
+		margin-top: 7%;
+		margin-left: 3%;
+	}
+
+	.imagenCelular{
+		width: 100%;
+	}
+
+	.imagenCelular img{
+		width: 15%;
+		float: left;
+		margin-left: 6%;
+		padding: 10px 0px;
+	}
+
+	.imagenCelular p{
+		width: 50%;
+		float: left;
+		margin-top: 8%;
+		margin-left: 6%;
+	}
+
+	.googlePlay{
+	  	width: 45%;
+	  	margin-bottom: 5%;
+	}
+
+	#googleMaps{
+		width: 100%;
+		height: 500px;
+	}
+
+	.informacionFooter{
+		margin-top: 50px;
+		color: #FFFFFF;
+		width: 25%;
+		float: left;
+	}
+
+	.btn-special{
+		font-size: 22px;
+		padding: 10px 10px;
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+.btn-special {
+	background:-webkit-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+	background:-o-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+	background:-moz-linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+	background:linear-gradient(90deg, #ff0000 0%, rgb(255, 133, 0) 80%);
+	color: #FFFFFF;
+	border-radius:14px;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	font-family: Typo_Round_Regular_Demo ; 
+	margin-top: 2%;
+}
+.naranja {
+	color: #FF5100;
+}
