@@ -47,6 +47,9 @@
 		<script src="js/grafico1.js"></script>
 
 		<style type="text/css">
+		label{
+			 font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+		}
 			.cajit{
 				border-radius: 0px 45px 46px 0px;
 -moz-border-radius: 0px 45px 46px 0px;
@@ -884,7 +887,17 @@ border: 0px solid #000000;
 						</nav>
 					</header>
 					<br>
+					
 					<div class="container">
+						
+					<div class="row">
+						<div class="col-md-12">
+						<div class="col-md-6"></div>
+						<div class="col-md-6">
+				<a href="login.html" style="float: right;"><i class="fa fa-sign-out" aria-hidden="true" style="color:#FF5100; font-size: 25px;" ></i></a>
+						</div>
+						</div>
+					</div>
 						<div class="row left-center">
 							<div class="col-md-12">
 								<h2 class="naranja">Bienvenido Roger Jacir</h2>
@@ -958,7 +971,7 @@ border: 0px solid #000000;
 									</a>
 								</li>
 							</ul>
-							<div class="container contenedor_chill" style="padding-bottom: 125px;">
+							<div class="container contenedor_chill" style="padding-bottom: 125px;margin-top:5px;">
 								<br><br><br>
 								<!-- Tab panes -->
 								<div class="tab-content">
@@ -1150,7 +1163,7 @@ border: 0px solid #000000;
 															<!--		</div> 
 															-->
 														<div class="table-responsive" style="margin-left:45px;margin-right:65px;">
-															<table class="table">
+															<table class="table table-striped">
 																<thead>
 																<tr>
 																	<th>Fecha</th>
@@ -1164,7 +1177,7 @@ border: 0px solid #000000;
 																<tr>
 																	<td><label>03/07/2020</label></td>
 																	<td>Ingreso de capital</td>
-																	<td>$500</td>
+																	<td class="text-success">+$500</td>
 																	<td></td>
 																	<td>$1,000</td>
 																</tr>
@@ -1172,7 +1185,7 @@ border: 0px solid #000000;
 																	<td><label>03/07/2020</label></td>
 																	<td>Ingreso de capital</td>
 																	<td></td>
-																	<td>$500</td>
+																	<td class="text-danger">-$500</td>
 																	<td>$500</td>
 																</tr>
 																</tbody>
@@ -1182,7 +1195,7 @@ border: 0px solid #000000;
 								  	</div>
 								  	<div role="tabpanel" class="tab-pane fade" id="references">
 								  	<div class="table-responsive" style="margin-left:45px;margin-right:65px;">
-								  			<table class="table">
+								  			<table class="table  table-striped">
 											    <thead>
 											      <tr>
 											        <th>Monto</th>
@@ -1330,15 +1343,15 @@ border: 0px solid #000000;
 		  <!--form ingreso-->
 		  <form enctype="multipart/form-data" style="padding: 50px;">
 			<div class="form-group">
-				<label for="monto">Ingresa el monto</label>
+				<label for="monto">Ingresa la cantidad a depositar:</label>
 				<input type="text" class="form-control" id="monto" name="monto" data-toggle="tooltip" data-placement="bottom" title="Ingresa el monto">
 			  </div>
 			  <div class="form-group">
-				<label for="idTransaccion">Ingresa el Id de transacción</label>
+				<label for="idTransaccion">Ingresa el Id de transacción:</label>
 				<input type="text" class="form-control" id="idTransaccion" name="idTransaccion" data-toggle="tooltip" data-placement="bottom" title="Ingresa el ID de transacción">
 			  </div>
 			  <div class="form-group">
-				<label for="comentario">Ingresa tu comentario</label>
+				<label for="comentario">Ingresa tu comentario:</label>
 				<input type="text" class="form-control" id="comentario" name="comentario" data-toggle="tooltip" data-placement="bottom" title="Ingresa tu comentario">
 			  </div>
 			  <div class="custom-file" id="divComprobante" style="height: 40px; border-radius: 5px;">
@@ -1385,15 +1398,15 @@ border: 0px solid #000000;
 		  <!--form ingreso-->
 		  <form enctype="multipart/form-data" style="padding: 50px;">
 			<div class="form-group">
-				<label for="monto">Ingresa el monto</label>
+				<label for="monto">Ingresa la cantidad a retirar:</label>
 				<input type="text" class="form-control" id="monto" name="monto" data-toggle="tooltip" data-placement="bottom" title="Ingresa el monto">
 			  </div>
 			  <div class="form-group">
-				<label for="idTransaccion">Ingresa el Id de transacción</label>
+				<label for="idTransaccion">Ingresa el Id de transacción:</label>
 				<input type="text" class="form-control" id="idTransaccion" name="idTransaccion" data-toggle="tooltip" data-placement="bottom" title="Ingresa el ID de transacción">
 			  </div>
 			  <div class="form-group">
-				<label for="comentario">Ingresa tu comentario</label>
+				<label for="comentario">Ingresa tu comentario:</label>
 				<input type="text" class="form-control" id="comentario" name="comentario" data-toggle="tooltip" data-placement="bottom" title="Ingresa tu comentario">
 			  </div>
 			<!--  <div class="custom-file" id="divComprobante" style="height: 40px; border-radius: 5px;">

@@ -388,11 +388,11 @@
 							<div class="col-md-9">
 								<center><label style="font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;" ><strong>Ten a la mano estos documentos</strong></label></center>
 									<ul style="font-size: 13px; padding: 20px;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;" class="box-iconss">
-										<li>DUI</li>
-										<li>NIT</li>
-										<li>Información Beneficiarios</li>
-										<li>Recibos de Agua y Luz, hasta la fecha</li>
-										<li>Tarjeta de contribuyente (IVA)</li>
+										<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> DUI</li>
+										<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> NIT</li>
+										<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> Información Beneficiarios</li>
+										<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> Recibos de Agua y Luz, hasta la fecha</li>
+										<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> Tarjeta de contribuyente (IVA)</li>
 									</ul>
 							</div>
 						</div><br><br>
@@ -1001,6 +1001,27 @@
 			</div>
 		</div>
 
+		  <!-- Modal HTML -->
+		  <div id="myModal" class="modal fade">
+            <div class="modal-dialog modal-login">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Ten a la mano estos documentos</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+						<ul style="font-size: 13px; padding: 20px;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;" class="box-iconss">
+							<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> DUI</li>
+							<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> NIT</li>
+							<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> Información Beneficiarios</li>
+							<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> Recibos de Agua y Luz, hasta la fecha</li>
+							<li><i class="fa fa-check" aria-hidden="true" style="color: #FF5100;"></i> Tarjeta de contribuyente (IVA)</li>
+						</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 	    <!-- jQuery -->
 	    <script src="js/jquery.js"></script>
 	    <!-- Bootstrap Core JavaScript -->
@@ -1159,6 +1180,11 @@
       imagen2.value=document.getElementById(idCanvas2).toDataURL('image/png');
       document.forms[idForm].submit();
     }
+</script>
+<script>
+	$( document ).ready(function() {
+    $('#myModal').modal('toggle')
+});
 </script>
 	</body>
 </html>
